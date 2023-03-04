@@ -7,7 +7,6 @@
   margin: 0
   padding: 0
 
-  
 ul
   margin: 0
   padding: 0
@@ -28,23 +27,25 @@ img
 
 // Titles
 h1, h2, h3, h4, h5, h6
+  font-family: $second-font
   // font-family: inherit
   // line-height: 1.1
   // font-weight: 600
   // color: inherit
 
-h1
-  font-size: 36px
-h2
-  font-size: 30px
-h3
-  font-size: 24px
-h4
-  font-size: 18px
-h5
-  font-size: 14px
-h6
-  font-size: 12px
+.title
+  font-weight: 700
+  font-size: 80px
+  line-height: 100%
+  &--first-yellow
+    span
+      color: yellow
+  &--darken
+    color: $title-color
+  &--white
+    color: $white
+
+.text
 
 // Paragraphs
 p
