@@ -1,10 +1,26 @@
 .header
-  background: #F9F9F9
-  padding: 9px 0 8px
+
   &__top
+    background: #F9F9F9
+    padding: 2px 0 2px
+
+  &__top-wrap
     display: flex
     align-items: center
+    justify-content: space-between
+
+  &__left-wrap
+    display: flex
+    align-items: center
+
+  &__right-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-basis: 384px
+
   &__city-link
+    text-decoration: underline
     display: flex
     align-items: center
     font-weight: 600
@@ -12,6 +28,7 @@
     line-height: 100%
     color: #2B3B50
     margin-right: 30px
+
   &__city-title
     margin-right: 9px
 
@@ -19,14 +36,142 @@
     display: block
     width: 12px
     height: 7px
-    fill: #2B3B50
+    fill: $main-color
+
   &__list
     min-width: 436px
     display: flex
     justify-content: space-between
+
   &__link
     text-decoration: none
     font-weight: 400
     font-size: 12px
     line-height: 100%
-    color: #2B3B50
+    color: $main-color
+
+  &__order-link
+    display: flex
+    align-items: center
+    text-decoration: none
+
+  &__order-link svg
+    display: block
+    width: 12px
+    height: 12px
+    fill: $main-color
+
+  &__order-title
+    font-weight: 600
+    font-size: 12px
+    line-height: 100%
+    color: $main-color
+    margin-left: 14px
+
+  &__tel-link
+    display: block
+    text-decoration: none
+    font-weight: 600
+    font-size: 12px
+    line-height: 100%
+    color: $main-color
+
+  &__main
+    padding: 30px 0 20px
+    border-bottom: 1px solid #DDE0E3
+  &__main-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__main-left
+    display: flex
+    align-items: center
+    max-width: 371px
+  &__logo
+    // min-width: 255px
+    // min-height: 50px
+    // object-fit: cover
+
+  &__dealer-link
+    font-family: $deff
+    font-weight: 400
+    font-size: 12px
+    line-height: 133%
+    color: #000000
+    margin-left: 20px
+  &__main-icons
+    display: flex
+  &__main-icon-link:not(:last-child)
+    margin-right: 18px
+
+.main-nav
+  &__list
+    display: flex
+    justify-content: space-between
+    min-width: 732px
+  &__link
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    border: 1px solid #DEDEDE
+    border-radius: 5px
+    color: $main-color
+  &__bottom-list
+    display: flex
+
+.basket__link
+  position: relative
+
+.basket__link-circle
+  min-width: 20px
+  min-height: 20px
+  background-color: #B4C8FF
+  position: absolute
+  right: -12px
+  top: -10px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.basket__link-circle span
+  color: #1D1B1B
+  font-weight: 600
+  font-size: 15px
+  line-height: 18px
+
+.main__link--btn
+  padding: 7px 20px
+
+.main__link--catalog
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 109px
+  height: 28px
+  position: relative
+  padding: 7px 13px 7px 15px
+
+.icon--catalog
+  display: block
+  width: 13px
+  height: 13px
+  color: $main-color
+
+.icon--search__link
+  display: block
+  width: 17px
+  height: 17px
+  color: $main-color
+
+.icon--favourite__link
+  display: block
+  width: 19px
+  height: 17px
+  color: $main-color
+
+.icon--basket__link
+  display: block
+  width: 19px
+  height: 17px
+  color: $main-color
