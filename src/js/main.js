@@ -51,7 +51,7 @@ $('.js-popup').on('click', function (event) {
 });
 
 // Mobile menu toggle
-$('.js-menu').on('click',function () {
+$('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
   $('.menu').toggleClass('is-opened');
 });
@@ -63,7 +63,7 @@ $('input[type="tel"]').inputmask({
 });
 
 // E-mail Ajax Send
-$('form').on('submit',function (e) {
+$('form').on('submit', function (e) {
   e.preventDefault();
 
   let form = $(this);
@@ -142,7 +142,7 @@ const mfpPopup = function (popupID, source) {
 //   $('.header__cities, .header__arrow').click(function() {
 //     $('.header__modal').toggle();
 //   });
-  
+
 //   $('.header_modal li').click(function() {
 //     var city = $(this).text();
 //     $('.header__cities').text(city);
@@ -150,32 +150,28 @@ const mfpPopup = function (popupID, source) {
 //   });
 // });
 
+// $(document).ready(function() {
+//   $('.header__arrow').click(function() {
+//     $('.header__modal').toggle();
+//   });
 
-$(document).ready(function() {
-  $('.header__arrow').click(function() {
-    $('.header__modal').toggle();
-  });
-  
-  $('.header_modal li').click(function() {
-    var city = $(this).text();
-    $('.header__arrow').text(city);
-    $('.header__modal').hide();
-  });
-});
+//   $('.header_modal li').click(function() {
+//     var city = $(this).text();
+//     $('.header__arrow').text(city);
+//     $('.header__modal').hide();
+//   });
+// });
 
+// var searchImage = document.querySelector(".header-main__search");
+// var searchBox = document.querySelector(".search-box");
+// var isSearchVisible = false;
 
-var searchImage = document.querySelector(".header-main__search");
-var searchBox = document.querySelector(".search-box");
-var isSearchVisible = false;
-
-searchImage.addEventListener("click", function() {
-  if (isSearchVisible) {
-    searchBox.style.display = "none";
-    isSearchVisible = false;
-  } else {
-    searchBox.style.display = "block";
-    isSearchVisible = true;
-  }
-});
-
-
+// searchImage.addEventListener("click", function() {
+//   if (isSearchVisible) {
+//     searchBox.style.display = "none";
+//     isSearchVisible = false;
+//   } else {
+//     searchBox.style.display = "block";
+//     isSearchVisible = true;
+//   }
+// });

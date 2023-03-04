@@ -1,101 +1,107 @@
 <header class="header">
-  <div class="container">
-    <div class="header__content-wrap">
-      <a class="header__cities" href="#">г. Санкт-Петербург</a>
-      <div class="header__img">
-        <img class="header__arrow" src="../../assets/images/header/arrow.svg" alt="" />
-      </div>
-      <div class="header__modal">
-        <ul>
-          <li>Москва</li>
-          <li>Санкт-Петербург</li>
-          <li>Екатеринбург</li>
-          <li>Казань</li>
-          <li>Новосибирск</li>
-          <li>Владивосток</li>
-        </ul>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a class="header__link" href="#">Дизайнерам</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Наши работы</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__link" href="#">Где купить</a>
-          </li>
-        </ul>
-      </nav>
-      <img class="header__heart" src="../../assets/images/header/space.svg" alt="" />
-      <div class="header__str">Заказать бесплатный замер</div>
-      <div class="header__phone-wrap">
-        <a class="header__phone" href="tel:+74959746937">+7 (495) 974-69-37</a>
-      </div>
-    </div>
-  </div>
-  <div class="header-main">
+  <!-- HEADER TOP -->
+  <div class="header__top">
     <div class="container">
-      <div class="header-main__content">
-        <div class="header-main__wrap">
-          <div class="logo header-main__logo">
-            <img src="../../assets/images/header/ProfilDoors 4.png" alt="logo" />
-          </div>
-          <div class="header-main__dealer">Официальный<br />диллер</div>
+      <div class="header__top-wrap">
+        <div class="header__left-wrap">
+          <a href="#" class="header__city-link">
+            <p class="header__city-title">г. Санкт-Петербург</p>
+            <svg class="icon icon--city-arrow"><use xlink:href="assets/svg-sprite.svg#city-arrow"></use></svg>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="" class="header__link">Дизайнерам</a></li>
+              <li class="header__item"><a href="" class="header__link">Доставка и оплата</a></li>
+              <li class="header__item"><a href="" class="header__link">Наши работы</a></li>
+              <li class="header__item"><a href="" class="header__link">Где купить</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="header-main__nav">
-          <ul class="header-main__list">
-            <li class="header-main__list-item1">
-              <div class="header-main__elipse">
-                <img class="header-main__elipse1" src="../../assets/images/header/Ellipse.png" alt="eliose" />
-                <img class="header-main__elipse2" src="../../assets/images/header/Ellipse.png" alt="eliose" />
-                <img class="header-main__elipse3" src="../../assets/images/header/Ellipse.png" alt="eliose" />
-                <img class="header-main__elipse4" src="../../assets/images/header/Ellipse.png" alt="eliose" />
-              </div>
-              <a class="header-main__link" href="#">Каталог</a>
-            </li>
-            <li class="header-main__list-item2">
-              <a class="header-main__link" href="#">Межкомнатные двери</a>
-            </li>
-            <li class="header-main__list-item3">
-              <a class="header-main__link" href="#">Скрытые двери</a>
-            </li>
-            <li class="header-main__list-item4">
-              <a class="header-main__link" href="#">Системы открывания</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-main__icon">
-          <div class="header-main__item">
-            <img class="header-main__search" src="../../assets/images/header/search.svg" alt="" />
-            <div class="search-box">
-              <input type="text" class="search-input" />
-              <button class="search-button">Search</button>
-            </div>
-            <img class="header-main__heart" src="../../assets/images/header/heart.svg" alt="" />
-            <img class="header-main__basket" src="../../assets/images/header/basket.svg" alt="basket" />
-          </div>
+
+        <div class="header__right-wrap">
+          <a href="#" class="header__order-link">
+            <svg class="icon icon--city-arrow"><use xlink:href="assets/svg-sprite.svg#rocket"></use></svg>
+            <p class="header__order-title">Заказать бесплатный замер</p>
+          </a>
+          <a href="tel:+74959746937" class="header__tel-link">+7 (495) 974-69-37</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <div class="header-main__menu">
-    <div class="header-main__btn">
-      <div class="header-main__button1">
-        <img class="header-main__elipse1" src="../../assets/images/header/Ellipse.png" alt="eliose">
-        <img class="header-main__elipse2" src="../../assets/images/header/Ellipse.png" alt="eliose">
-        <img class="header-main__elipse3" src="../../assets/images/header/Ellipse.png" alt="eliose">
-        <img class="header-main__elipse4" src="../../assets/images/header/Ellipse.png" alt="eliose">
-          <p class="header-main__str">Каталог</p>
+  <!-- HEADER MAIN -->
+  <div class="header__main">
+    <div class="container">
+      <div class="header__main-wrap">
+        <div class="header__main-left">
+          <a href="#" class="header__logo-link">
+            <img src="assets/images/header/logo.png" alt="logo" class="header__logo" />
+          </a>
+          <a href="#" class="header__dealer-link">Официальный диллер</a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link main__link--catalog">
+                <svg class="icon icon--catalog"><use xlink:href="assets/svg-sprite.svg#catalog-btn-icon"></use></svg>
+                <p>Каталог</p>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link main__link--btn">Межкомнатные двери</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link main__link--btn">Скрытые двери</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link main__link--btn">Системы открывания</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__main-icons">
+          <a href="#" class="header__main-icon-link">
+            <svg class="icon icon--search__link"><use xlink:href="assets/svg-sprite.svg#search-icon"></use></svg>
+          </a>
+          <a href="#" class="header__main-icon-link">
+            <svg class="icon icon--favourite__link"><use xlink:href="assets/svg-sprite.svg#favourite-icon"></use></svg>
+          </a>
+          <a href="#" class="header__main-icon-link basket__link">
+            <svg class="icon icon--basket__link"><use xlink:href="assets/svg-sprite.svg#basket-icon"></use></svg>
+            <div class="basket__link-circle"><span>2</span></div>
+          </a>
+        </div>
       </div>
-      <div class="header-main__button2">Межкомнатные двери</div>
-      <div class="header-main__button3">Скрытые двери</div>
-      <div class="header-main__button4">Системы открывания</div>
     </div>
-  </div>  -->
+  </div>
+
+  <!-- HEADER BOTTOM -->
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-wrap">
+        <nav class="header__bottom-nav">
+          <ul class="header__bottom-list">
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">U</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">E</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">L</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">LK</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">M</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">P</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">PA</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">PD</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">PM</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">PW</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">XN</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">Z</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">ZN</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">AG</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">AGK</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">AGN</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">AGP</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">AV</a></li>
+            <li class="header__bottom-item"><a href="" class="header__bottom-link">AX</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
