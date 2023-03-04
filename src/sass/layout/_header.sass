@@ -1,5 +1,4 @@
 .header
-
   &__top
     background: #F9F9F9
     padding: 2px 0 2px
@@ -87,10 +86,9 @@
     display: flex
     align-items: center
     max-width: 371px
-  &__logo
-    // min-width: 255px
-    // min-height: 50px
-    // object-fit: cover
+  &__logo-link
+    min-width: 255px
+    min-height: 50px
 
   &__dealer-link
     font-family: $deff
@@ -103,6 +101,16 @@
     display: flex
   &__main-icon-link:not(:last-child)
     margin-right: 18px
+  &__bottom
+    padding: 20px 0
+  &__bottom-list
+    display: flex
+    justify-content: space-between
+  &__bottom-link
+    color: $main-color
+    font-weight: 500
+    font-size: 12px
+    line-height: 100%
 
 .main-nav
   &__list
@@ -116,8 +124,6 @@
     border: 1px solid #DEDEDE
     border-radius: 5px
     color: $main-color
-  &__bottom-list
-    display: flex
 
 .basket__link
   position: relative
