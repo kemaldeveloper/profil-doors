@@ -28,9 +28,11 @@ const MQ = {
 
 MQ.updateState();
 
-$(document).ready(function () {
-  //
+
+$(document).on('ready', function () {
+  initMainSlider();
 });
+
 
 $(window).on('load', function () {
   //
@@ -175,3 +177,17 @@ const mfpPopup = function (popupID, source) {
 //     isSearchVisible = true;
 //   }
 // });
+
+ 
+const initMainSlider = () => {
+  const mainSlider = $('.main-slider');
+
+  mainSlider.slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    dotsClass: 'main-slider-dots',
+  });
+};
