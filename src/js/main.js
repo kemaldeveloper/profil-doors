@@ -29,10 +29,12 @@ const MQ = {
 MQ.updateState();
 
 
-$(document).on('ready', function () {
+$().on('ready', function () {
   initMainSlider();
 });
 
+$(document).ready(() => {
+  initMainSlider()})
 
 $(window).on('load', function () {
   //
@@ -140,43 +142,7 @@ const mfpPopup = function (popupID, source) {
   });
 };
 
-// $(document).ready(function() {
-//   $('.header__cities, .header__arrow').click(function() {
-//     $('.header__modal').toggle();
-//   });
 
-//   $('.header_modal li').click(function() {
-//     var city = $(this).text();
-//     $('.header__cities').text(city);
-//     $('.header__modal').hide();
-//   });
-// });
-
-// $(document).ready(function() {
-//   $('.header__arrow').click(function() {
-//     $('.header__modal').toggle();
-//   });
-
-//   $('.header_modal li').click(function() {
-//     var city = $(this).text();
-//     $('.header__arrow').text(city);
-//     $('.header__modal').hide();
-//   });
-// });
-
-// var searchImage = document.querySelector(".header-main__search");
-// var searchBox = document.querySelector(".search-box");
-// var isSearchVisible = false;
-
-// searchImage.addEventListener("click", function() {
-//   if (isSearchVisible) {
-//     searchBox.style.display = "none";
-//     isSearchVisible = false;
-//   } else {
-//     searchBox.style.display = "block";
-//     isSearchVisible = true;
-//   }
-// });
 
  
 const initMainSlider = () => {
@@ -190,4 +156,8 @@ const initMainSlider = () => {
     arrows: false,
     dotsClass: 'main-slider-dots',
   });
+  console.log(1)
 };
+
+
+
