@@ -141,16 +141,16 @@ const mfpPopup = function (popupID, source) {
 const initMainSlider = () => {
   const mainSliderClassName = $('.main-slider');
 
-  mainSliderClassName.on('init', function (event, slick) {
+  mainSliderClassName.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     const slider = $(event.currentTarget);
-    const sliderDots = slider.find('.main-slider__dots');
-    const sliderItemContent = slider.find('.main-slider__content .container');
-    const sliderItemContentHeight = sliderItemContent.outerHeight();
+    const currentSlickSlide = $(slider.find('.main-slider__item')[nextSlide]);
+    const currentDots = currentSlickSlide.find('.main-slider__dots li');
 
-    // sliderDots.css('margin-top', sliderItemContentHeight);
+    currentDots.removeClass('active');
+    $(currentDots[nextSlide]).addClass('active');
   });
 
-  const mainSlider = mainSliderClassName.slick({
+  mainSliderClassName.slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
