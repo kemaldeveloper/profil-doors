@@ -1,63 +1,105 @@
-.warranty
+.main-screen
+  height: calc(100vh - 183px)
   position: relative
+
 .main-slider
+  height: inherit
   position: relative
-  &__item
-    position: relative
+  z-index: 1
+
+  & .slick-list
+    height: inherit
+
+  & .slick-track
+    height: inherit
+
+  &__content-wrap
+    width: 100%
+    height: 100%
+
   &__img-wrap
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
-  &__img
+    position: absolute
+    top: 0
+    left: 50%
+    width: 100%
+    height: 100%
+    transform: translateX(-50%)
+    object-fit: cover
+    z-index: 0
+
+  &__content
     position: relative
-    z-index: -1
-    top: -307px
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    z-index: 1
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+      z-index: -1
+
   &__title
-    position: absolute
-    top: 106px
-    left: 85px
+    max-width: 500px
+    margin-bottom: 26px
     span
-      color: #B4C8FF
+      color: $lighten-blue
+
   &__link
-    position: absolute
-    left: 79px
-    top: 299px
+    position: relative
+    display: inline-flex
+    align-items: center
     font-weight: 500
     font-size: 12.7082px
     line-height: 15px
     text-align: center
-    color: #FFFFFF
-.icon
-  width: 7.99px
-  height: 21.12px
-  fill: #FFFFFF
-  &--arrow-circled
-    position: absolute
-    top: -2px
-    left: 80px
-.title
-  font-family: $second-font
-  font-weight: 700
-  font-size: 80px
-  line-height: 100%
-  color: #FFFF
-.main-slider-dots
-  display: flex
-  position: absolute
-  top: 341px
-  left: 85px
-  button
-    font-size: 0px
+    color: $white
+    margin-bottom: 40px
+    &:hover
+      color: $white
+    &:after
+      content: ''
+      position: absolute
+      bottom: -1px
+      left: 0
+      height: 1px
+      width: 100%
+      background: $white
+      transition: all 0.3s ease
+
+  &__link-content-wrap
+    display: flex
+    align-items: center
+
+  &__link-text
+    display: inline-block
+    margin-right: 6px
+
+  &__dots
+    display: flex
+    align-items: center
+    width: 100%
+
+    & > li
+      line-height: normal
+      display: flex
+      align-items: center
+      &.slick-active
+        .main-slider__dot-link
+          background: $lighten-blue
+
+      &:not(:last-child)
+        margin-right: 16px
+
+  &__dot-link
+    display: inline-block
+    position: relative
     width: 60px
     height: 3px
-    margin-right: 20px
     border-radius: 12px
-    fill: #B4C8FF
-
-  
-  
-
-
-
-// .main-slider.slick-dost
-//   li
-//   button
-//     font-size: 0
+    background: rgba(#DDDDDD, 0.3)

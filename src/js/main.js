@@ -28,13 +28,9 @@ const MQ = {
 
 MQ.updateState();
 
-
-$().on('ready', function () {
+$(document).ready(() => {
   initMainSlider();
 });
-
-$(document).ready(() => {
-  initMainSlider()})
 
 $(window).on('load', function () {
   //
@@ -142,22 +138,30 @@ const mfpPopup = function (popupID, source) {
   });
 };
 
-
-
- 
 const initMainSlider = () => {
-  const mainSlider = $('.main-slider');
+  const mainSliderClassName = $('.main-slider');
 
-  mainSlider.slick({
+  mainSliderClassName.on('init', function (event, slick) {
+    const slider = $(event.currentTarget);
+    const sliderDots = slider.find('.main-slider__dots');
+    const sliderItemContent = slider.find('.main-slider__content .container');
+    const sliderItemContentHeight = sliderItemContent.outerHeight();
+
+    // sliderDots.css('margin-top', sliderItemContentHeight);
+  });
+
+  const mainSlider = mainSliderClassName.slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     arrows: false,
-    dotsClass: 'main-slider-dots',
+    fade: true,
+    cssEase: 'linear',
+    dotsClass: 'main-slider__dots',
+    appendDots: $('.main-slider__content .container'),
+    customPaging: function (slider, i) {
+      return '<a class="main-slider__dot-link" href="#"></a>';
+    },
   });
-  console.log(1)
 };
-
-
-
