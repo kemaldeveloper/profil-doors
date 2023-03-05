@@ -150,6 +150,18 @@ const initMainSlider = () => {
     $(currentDots[nextSlide]).addClass('active');
   });
 
+  // const initMainSlider = () => {
+  //   const mainSliderClassName = $('.main-slider');
+
+  //   mainSliderClassName.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  //     const slider = $(event.currentTarget);
+  //     const currentSlickSlide = $(slider.find('.main-slider__item')[nextSlide]);
+  //     const currentDots = currentSlickSlide.find('.main-slider__dots li');
+
+  //     currentDots.removeClass('active');
+  //     $(currentDots[nextSlide]).addClass('active');
+  //   });
+
   mainSliderClassName.slick({
     infinite: false,
     slidesToShow: 1,
