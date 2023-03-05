@@ -107,6 +107,7 @@
     display: flex
     justify-content: space-between
   &__bottom-link
+    text-transform: uppercase
     color: $main-color
     font-weight: 500
     font-size: 12px
@@ -118,12 +119,24 @@
     justify-content: space-between
     min-width: 732px
   &__link
+    display: block
+    max-height: 28px
     font-weight: 500
     font-size: 14px
     line-height: 100%
     border: 1px solid #DEDEDE
     border-radius: 5px
     color: $main-color
+  &__link--btn
+    padding: 7px 20px
+  &__link--catalog
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 109px
+    height: 28px
+    position: relative
+    padding: 7px 13px 7px 15px
 
 .basket__link
   position: relative
@@ -145,18 +158,6 @@
   font-weight: 600
   font-size: 15px
   line-height: 18px
-
-.main__link--btn
-  padding: 7px 20px
-
-.main__link--catalog
-  display: flex
-  justify-content: space-between
-  align-items: center
-  width: 109px
-  height: 28px
-  position: relative
-  padding: 7px 13px 7px 15px
 
 .icon--catalog
   display: block
