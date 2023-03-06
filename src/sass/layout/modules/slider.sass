@@ -1,0 +1,37 @@
+.slider
+  position: relative
+  &-wrap
+    margin-left: calc((100vw - 1300px + 30px) / 2)
+  &__box
+    position: relative
+  &__box--bordered
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    // margin-right: 40px
+  &__box--background
+    background: linear-gradient(180deg, #5E8894 0%, #032C38 100%)
+  &__box--padding
+    padding: 46px 63px
+  &__subtitle
+    margin-top: 20px
+  &__description
+    margin-top: 14px
+  &__descr-wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    left: 10px
+    top: 14px
+    padding: 2px 11px
+  &__img-description--link
+    position: absolute
+    left: 22px
+    top: 16.4px
+    color: $white
+    &:hover
+      color: $white
+
+.slider .slick-slide
+  width: 250px
+  min-height: 505px
+  margin-right: 40px
