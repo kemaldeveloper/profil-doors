@@ -177,3 +177,20 @@ const initMainSlider = () => {
     },
   });
 };
+
+$('.slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  // autoplay: true,
+  variableWidth: true,
+  autoplaySpeed: 2000,
+  infinite: false,
+  prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
+  nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
+});
+
+{
+  /* <svg class="icon icon--prev-arrow prev">
+  <use xlink:href="assets/svg-sprite.svg#next-arrow"></use>
+</svg>; */
+}
