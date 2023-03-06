@@ -1,26 +1,20 @@
 .footer
   padding: 79px 0 70px
   background: $title-color
-.footer-item
-  display: flex
-  justify-content: space-between
-.left-box
-  &__str
-    max-width: 456px
-    font-weight: 400
-    font-size: 16px
-    line-height: 110%
-    color: $white
-    margin-top: 4px
-.right-box
-  &__descr
-    font-weight: 600
-    font-size: 18px
-    line-height: 21px
-    color: $white
-    margin-bottom: 40px
-.menu
-  &__text
+  &__container
+    position: relative
+    padding-top: 78px
+    display: flex
+    &--line-between
+      &:after
+        content: ''
+        position: absolute
+        top: 44px
+        left: 0
+        height: 1px
+        width: 1340px
+        background: rgba(255, 255, 255, 0.2)
+  &__info-text
     max-width: 341px
     font-weight: 300
     font-size: 12px
@@ -33,36 +27,45 @@
     line-height: 133%
     color: $white
     text-decoration: underline
-.box-wrap
-  &__subtitle
+  &__wrap
+    min-width: 578px
+    display: flex
+    justify-content: space-between
+    margin-left: 146px
+  &__title
     font-weight: 600
     font-size: 16px
     line-height: 100%
     color: $white
     margin-bottom: 20px
-  &__item
+.content
+  display: flex
+  justify-content: space-between
+  &__str
+    max-width: 456px
+    font-weight: 400
+    font-size: 16px
+    line-height: 110%
+    color: $white
+    margin-top: 4px
+  &__descr
+    font-weight: 600
+    font-size: 18px
+    line-height: 21px
+    color: $white
+    margin-bottom: 40px
+
+.footer-nav
+  &__list
     font-weight: 400
     font-size: 14px
     line-height: 100%
     color: $white
     margin-top: 33px
-  &__list
+  &__item
     margin-top: 16px
   &__link
     font-weight: 400
     font-size: 14px
     line-height: 100%
     color: $white
-    &--text
-.content-wrap
-  min-width: 578px
-  display: flex
-  justify-content: space-between
-  margin-left: 146px
-.footer-info
-  margin-top: 33px
-  display: flex
-  &__down
-    margin-top: 44px
-    height: 1px
-    background: rgba(255, 255, 255, 0.2)
