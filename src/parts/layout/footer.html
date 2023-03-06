@@ -1,32 +1,73 @@
   <!-- Footer-->
   <footer class="footer">
     <div class="container">
-
-      <div class="main-content">
-        <div class="main-content__left-box">
-          <h2 class="title title--color" >
-            <span>получите скидку</span>-50% на монтаж
-          </h2>
-          <div class="main-content__content">
-            <p>Мы зафиксируем за вашим номером скидку 50% на монтаж. Обещаем не присылать спам и ненужные рекламные предложения.</p>
+      <div class="footer-item">
+        <div class="left-box">
+          <h2 class="title title--text" ><span> получите скидку </span>-50% на монтаж</h2>
+          <h3 class="left-box__str" >Мы зафиксируем за вашим номером скидку 50% на монтаж. Обещаем не присылать спам и ненужные рекламные предложения.</h3>
+        </div>
+        <div class="right-box">
+          <h3 class="right-box__descr" >Введи ваш номер и им<br>и мы закрепим за ними скидку</h3>
+          <form action="#">
+            <div class="form-wrap">
+              <div class="form-wrap__contacts">
+                <svg class="icon icon--human">
+                  <use xlink:href="assets/svg-sprite.svg#icon-human"></use>
+                </svg>
+                <input type="text" name="name" placeholder="Имя" class="my-name" >
+              </div>
+            </div>
+            <div class="form-wrap">
+              <div class="form-wrap__contacts form-wrap__field">
+                <svg class="icon icon--phone">
+                  <use xlink:href="assets/svg-sprite.svg#icon-phone"></use>
+                </svg>
+                <input type="tel" name="phone" placeholder="Телефон" class="my-name">
+              </div>
+            </div>
+            <button type="submit" class="btn-primary">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-info__down"></div>
+      <div class="footer-info">
+        <div class="menu">
+          <a href="#" class="menu__logo">
+            <img src="../../assets/images/footer-logo.svg" alt="logo" class="footer-logo" />
+          </a>
+          <p class="menu__text">© Официальный сайт фирменной сети Профиль ДорсМежкомнатные и стеклянные двери фабрики ProfilDoors в СПб</p>
+          <a class="menu__info" href="#">Правовая информация</a>
+        </div>
+        <div class="content-wrap">
+          <div class="box-wrap">
+            <div class="box-wrap__subtitle">КАТЕГОРИИ</div>
+            <ul class="box-wrap__item">
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Межкомнатные двери</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Скрытые двери</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Раздвижные двери</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Фурнитура</a></li>
+            </ul>
+          </div>
+          <div class="box-wrap">
+            <div class="box-wrap__subtitle">АДРЕСА САЛОНОВ</div>
+            <ul class="box-wrap__item">
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Межкомнатные двери</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Скрытые двери</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Раздвижные двери</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Фурнитура</a></li>
+            </ul>
+          </div>
+          <div class="box-wrap">
+            <div class="box-wrap__subtitle">ИНФО</div>
+            <ul class="box-wrap__item">
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Доставка</a></li>
+              <li class="box-wrap__list" ><a class="box-wrap__link" href="#">Установка</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      
-      <div class="right-box">
-        <h2 class="right-box__info" >Введи ваш номер и имя и мы закрепим за ними скидку</h2>
-        <form action="#">
-          <svg class="icon icon--human">
-            <use xlink:href="assets/svg-sprite.svg#icon-human"></use>
-          </svg>
-          <input type="text" name="name" placeholder="Имя">
-        </form>
-      </div>
-
     </div>
   </footer>
-
-  
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
