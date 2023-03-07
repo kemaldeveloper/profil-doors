@@ -5,6 +5,8 @@
     position: relative
     display: flex
     justify-content: space-between
+    +xxl
+      flex-wrap: wrap
   &__content-wrap
     max-width: 415px
   &__title-wrap
@@ -27,6 +29,9 @@
       margin-right: 7px
   &__description
     max-width: 447px
+  &__img
+    +xxl
+      margin: 30px auto 0
   &__text
     color: #ffffff
     &:not(:last-child)
@@ -36,3 +41,5 @@
     padding: 16px 95px
     width: 320px
     height: 48px
+    +xxl
+      margin-bottom: 50px

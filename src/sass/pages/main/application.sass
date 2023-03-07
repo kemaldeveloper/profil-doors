@@ -1,4 +1,16 @@
 .application
   padding: 99px 0 95px
-  background-image: url('../assets/images/eighth-block0.jpg')
+  background-image: url('../../assets/images/aplication/fon1.jpg')
   background-size: 100% 100%
+  +sm 
+    background-image: url('../../assets/images/aplication/fon2.jpg')
+.content
+  &__str
+    &--sm
+      +sm
+        max-width: 334px
+        font-size: 14px
+        line-height: 130%
+        margin-top: 10px
+        font-weight: 400
+        
