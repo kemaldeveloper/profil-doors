@@ -50,6 +50,20 @@ $('.js-popup').on('click', function (event) {
   mfpPopup(popupID);
 });
 
+$('.city-popup').on('click', function (event) {
+  event.preventDefault();
+  let popupID = $(this).attr('href');
+
+  mfpPopup(popupID);
+});
+
+$('.fix-popup').on('click', function (event) {
+  event.preventDefault();
+  let popupID = $(this).attr('href');
+
+  mfpPopup(popupID);
+});
+
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
@@ -57,10 +71,11 @@ $('.js-menu').on('click', function () {
 });
 
 // Phone input mask
-$('input[type="tel"]').inputmask({
-  mask: '+7 (999) 999-99-99',
-  showMaskOnHover: false,
-});
+
+// $('input[type="tel"]').inputmask({
+//   mask: '+7 (999) 999-99-99',
+//   showMaskOnHover: false,
+// });
 
 // E-mail Ajax Send
 $('form').on('submit', function (e) {
@@ -150,18 +165,6 @@ const initMainSlider = () => {
     $(currentDots[nextSlide]).addClass('active');
   });
 
-  // const initMainSlider = () => {
-  //   const mainSliderClassName = $('.main-slider');
-
-  //   mainSliderClassName.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-  //     const slider = $(event.currentTarget);
-  //     const currentSlickSlide = $(slider.find('.main-slider__item')[nextSlide]);
-  //     const currentDots = currentSlickSlide.find('.main-slider__dots li');
-
-  //     currentDots.removeClass('active');
-  //     $(currentDots[nextSlide]).addClass('active');
-  //   });
-
   mainSliderClassName.slick({
     infinite: false,
     slidesToShow: 1,
@@ -188,9 +191,3 @@ $('.slider').slick({
   prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
   nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
 });
-
-{
-  /* <svg class="icon icon--prev-arrow prev">
-  <use xlink:href="assets/svg-sprite.svg#next-arrow"></use>
-</svg>; */
-}
