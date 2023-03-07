@@ -1,22 +1,53 @@
 .input-wrap
-  margin-bottom: 30px
+  position: relative
+  border-bottom: 1px solid #A9AAAA
+  display: flex
+  align-items: center
 
 input,
 textarea
   width: 100%
-  font-size: 16px
-  color: yellow // TODO: Потом нужно вставить нужный цвет
-  padding: 5px 10px
-  border: 1px solid #999
   transition: all .3s ease
+  border: none
   &:focus
     outline: none
-    border-color: $c1
+    color: $c1
   &:disabled
-    background: #fff
+    // background: #fff
+  &:autofill
 
-::placeholder
-  color: #999
+.form
+  &__input-name
+    width: 460px
+    height: 60px
+    &::placeholder
+      color: $main-color
+      opacity: 0.8
+      font-weight: 400
+      font-size: 14px
+      line-height: 100%
+    &:active
+      &::placeholder
+        font-weight: 600
+
+  &__input-phone
+    width: 460px
+    height: 60px
+    &::placeholder
+      color: $main-color
+      opacity: 0.8
+      font-weight: 400
+      font-size: 14px
+      line-height: 100%
+    &:focus
+      &::placeholder
+        font-weight: 600
+  &__btn
+    margin-top: 40px
+    width: 460px
+    height: 48px
+    color: $title-color
+    &:hover
 
 .form-wrap
   +sm 
@@ -54,3 +85,7 @@ textarea
   background: 0
   color: $white
   padding: 5px 20px
+
+input:-webkit-autofill
+  -webkit-animation-name: autofill
+  -webkit-animation-fill-mode: both

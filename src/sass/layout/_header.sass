@@ -27,15 +27,13 @@
     line-height: 100%
     color: #2B3B50
     margin-right: 30px
+    text-decoration: none
+    &:hover
+      color: $main-color
 
   &__city-title
     margin-right: 9px
-
-  &__city-link svg
-    display: block
-    width: 12px
-    height: 7px
-    fill: $main-color
+    border-bottom: 1px solid $main-color
 
   &__list
     min-width: 436px
@@ -48,17 +46,14 @@
     font-size: 12px
     line-height: 100%
     color: $main-color
+    &:hover
+      border-bottom: 1px solid $main-color
+      color: $main-color
 
   &__order-link
     display: flex
     align-items: center
     text-decoration: none
-
-  &__order-link svg
-    display: block
-    width: 12px
-    height: 12px
-    fill: $main-color
 
   &__order-title
     font-weight: 600
@@ -66,6 +61,8 @@
     line-height: 100%
     color: $main-color
     margin-left: 14px
+    &:hover
+      border-bottom: 1px solid $main-color
 
   &__tel-link
     display: block
@@ -74,6 +71,8 @@
     font-size: 12px
     line-height: 100%
     color: $main-color
+    &:hover
+      color: $main-color
 
   &__main
     padding: 30px 0 20px
@@ -106,12 +105,18 @@
   &__bottom-list
     display: flex
     justify-content: space-between
+  &__bottom-item
+    // height: 12px
   &__bottom-link
     text-transform: uppercase
     color: $main-color
     font-weight: 500
     font-size: 12px
     line-height: 100%
+    &:hover
+      text-decoration: underline
+      color: $main-color
+      // border-bottom: 1px solid $main-color
 
 .main-nav
   &__list
@@ -127,6 +132,9 @@
     border: 1px solid #DEDEDE
     border-radius: 5px
     color: $main-color
+    &:hover
+      border: 1px solid $main-color
+      color: $main-color
   &__link--btn
     padding: 7px 20px
   &__link--catalog
@@ -158,27 +166,3 @@
   font-weight: 600
   font-size: 15px
   line-height: 18px
-
-.icon--catalog
-  display: block
-  width: 13px
-  height: 13px
-  color: $main-color
-
-.icon--search__link
-  display: block
-  width: 17px
-  height: 17px
-  color: $main-color
-
-.icon--favourite__link
-  display: block
-  width: 19px
-  height: 17px
-  color: $main-color
-
-.icon--basket__link
-  display: block
-  width: 19px
-  height: 17px
-  color: $main-color

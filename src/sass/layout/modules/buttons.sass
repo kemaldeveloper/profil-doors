@@ -1,6 +1,6 @@
 .btn
   position: relative
-  display: inline-block
+  // display: inline-block
   font-weight: 400
   font-size: 16px
   line-height: 100%
@@ -13,17 +13,6 @@
   transition: all .3s ease
   user-select: none
   background-color: $accent
-  // &:focus:not(.disabled),
-  // &:hover:not(.disabled)
-  //   outline: none
-  //   cursor: pointer
-  //   color: #fff
-  //   text-decoration: none
-  //   background-color: lighten($c1, 10%)
-
-  &:active:not(.disabled)
-    background-color: darken($c1, 5%)
-
   &.disabled
     opacity: .4
 
@@ -35,6 +24,9 @@
   font-weight: 500
   font-size: 14px
   line-height: 100%
+  &:hover
+    color: $main-color
+    border: 1px solid $main-color
 
 .btn-primary
   padding: 16px 230px
