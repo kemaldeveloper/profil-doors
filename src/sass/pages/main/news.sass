@@ -1,1 +1,45 @@
 .news
+  position: relative
+  padding: 99px 0 100px 0
+  +sm 
+    padding: 80px 0
+  
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    +xxl
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+.news-info
+  margin-top: 19px
+  &__collections
+    margin-bottom: 19px
+  
+  &__date
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: #8C8C8C
+    margin-bottom: 16px
+  &__subtitle
+    font-weight: 600
+    font-size: 18px
+    line-height: 115%
+    color: $title-color
+    margin-bottom: 9px
+  &__text
+    max-width: 400px
+    font-weight: 400
+    font-size: 16px
+    line-height: 110%
+    color: $black 
+    +xxl
+      margin-bottom: 60px
+    +sm 
+      margin: 0
+  
+.news-info2
+  +sm 
+    display: none

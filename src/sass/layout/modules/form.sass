@@ -50,12 +50,16 @@ textarea
     &:hover
 
 .form-wrap
+  +sm 
+    margin-top: 30px
   &:after
     content: ""
     display: block
     border-bottom: 1px solid #FFFFFF
     margin-top: 16px
     width: 550px
+    +sm 
+      width: 348px
   &__contacts
     display: flex
     align-items: center
@@ -66,6 +70,14 @@ textarea
     display: flex
     align-items: center
 .my-name
+  border: none
+  font-weight: 400
+  font-size: 14px
+  line-height: 100%
+  background: 0
+  color: $white
+  padding: 5px 20px
+.phone
   border: none
   font-weight: 400
   font-size: 14px

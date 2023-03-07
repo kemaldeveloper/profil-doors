@@ -40,6 +40,127 @@
   color: $black
   margin-top: 30px
   transition: all 0.3s ease
+  +sm 
+    padding: 79px 0
+    width: 350px
+    height: 48px
+    padding: 0
+    margin-top: 30px
   &:active
     transform: translateY(5px)
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+
+.refresh-btn
+  position: relative
+  width: 166px
+  height: 16.8px
+  top: 50px
+  left: 10px
+  font-weight: 700
+  font-size: 12px
+  line-height: 100%
+  color: $white
+  border: none
+  border: 0.6px solid $white
+  border-radius: 3px
+  text-align: center
+  background-color: rgba(80, 77, 77, 0.5)
+  +xxl
+    left: 100px
+  +lg 
+    left: 150px
+  +sm 
+    left: 75px
+    top: 61.5px
+
+
+
+.first-btn
+  max-width: 250px
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  margin-left: 50px
+  +sm
+    margin: 0
+  &__list
+    margin-right: 10px
+    padding: 7px 20px
+    width: 73px
+    height: 28px
+    border: 1px solid #DEDEDE
+    border-radius: 5px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    text-align: center
+    color: $main-color
+  &__small:not(:last-child)
+    margin-right: 10px
+    padding: 7px 20px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    color: #2B3B50
+    width: 60px
+    height: 28px
+    border: 1px solid #DEDEDE
+    border-radius: 5px
+    margin-top: 16px
+  &__button
+    padding: 7px 20px
+    width: 139px
+    height: 28px
+    background: rgba(180, 200, 255, 0.3)
+    border-radius: 5px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    text-align: center
+    color: $main-color
+    margin-top: 18px
+.second-btn
+  max-width: 235px
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  margin-left: 115px
+  +sm
+    margin: 20px 0 0 0
+  &__list:not(:last-child)
+    margin-right: 10px
+    padding: 7px 20px
+    width: 98px
+    height: 28px
+    border: 1px solid #DEDEDE
+    border-radius: 5px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    text-align: center
+    color: $main-color
+  &__middle:not(:last-child)
+    margin-right: 10px
+    padding: 7px 20px
+    width: 76px
+    height: 28px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    color: #2B3B50
+    border: 1px solid #DEDEDE
+    border-radius: 5px
+    margin-top: 16px
+  &__button
+    padding: 7px 20px
+    width: 139px
+    height: 28px
+    background: rgba(180, 200, 255, 0.3)
+    border-radius: 5px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    text-align: center
+    color: $main-color
+    margin-top: 18px
+
