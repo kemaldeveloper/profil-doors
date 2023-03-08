@@ -24,16 +24,37 @@
     color: $main-color
     margin-bottom: 28px
 
+.mfp
   .mfp-close
     display: none
-    top: 5px
-    right: 5px
-    opacity: 1
-    transition: all .2s ease
-    &:focus
-      outline: none
-    &:active
-      transform: translateY(1px)
+
+.mfp--city-popup
+  position: relative
+  max-width: 349px
+  max-height: 316px
+  padding: 60px
+  margin: 2.5rem auto
+  background: #fff
+  text-align: left
+  .mfp-close
+    display: none
+
+.choose
+  &__city-list
+    margin-top: 20px
+  &__city-link
+    font-weight: 400
+    font-size: 20px
+    line-height: 100%
+    color: $title-color
+    &:hover
+      color: $title-color
+  &__city-subtitle
+    font-weight: 600
+    font-size: 16px
+    line-height: 100%
+    color: $subtitle-cl
+    padding-top: 15px
 
 .form-result
   position: absolute

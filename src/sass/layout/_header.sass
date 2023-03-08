@@ -17,6 +17,8 @@
     align-items: center
     justify-content: space-between
     flex-basis: 384px
+    +xl
+      flex-basis: 340px
 
   &__city-link
     text-decoration: underline
@@ -30,6 +32,8 @@
     text-decoration: none
     &:hover
       color: $main-color
+    +xl
+      margin-right: 20px
 
   &__city-title
     margin-right: 9px
@@ -39,6 +43,8 @@
     min-width: 436px
     display: flex
     justify-content: space-between
+    +xl
+      min-width: 395px
 
   &__link
     text-decoration: none
@@ -86,8 +92,12 @@
     align-items: center
     max-width: 371px
   &__logo-link
-    min-width: 255px
-    min-height: 50px
+    width: 255px
+    height: 50px
+    +xxl
+      width: 220px
+  &__logo
+    object-fit: cover
 
   &__dealer-link
     font-family: $deff
