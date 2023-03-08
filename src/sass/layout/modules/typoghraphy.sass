@@ -45,13 +45,20 @@ h1, h2, h3, h4, h5, h6
   &--text
     max-width: 559px
     color: $white
+    margin-bottom: 4px
+    +sm 
+      max-width: 359px
+      font-size: 60px
+      margin-bottom: 10px
     span
       color: $accent
   &--sm
-    font-size: 40px
-    max-width: 312px
+    +sm
+      font-size: 40px
+      max-width: 312px
   &--news-sm
-    font-size: 40px
+    +sm
+      font-size: 40px
 
 .text
   font-weight: 400

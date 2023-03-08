@@ -1,6 +1,8 @@
 .footer
-  padding: 76px 0 44px
+  padding: 76px 0 44px 0
   background: $title-color
+  +sm
+    padding: 97px 0 74px 0
 .content
   display: flex
   justify-content: space-between
@@ -12,20 +14,22 @@
     font-size: 16px
     line-height: 110%
     color: $white
-    margin-top: 4px
-    +xl
-      margin-top: 35px
-  &__descr
+    margin-bottom: 29px
+    +sm
+      width: 320px
+      font-size: 14px
+  &__desc
     font-weight: 600
     font-size: 18px
     line-height: 21px
     color: $white
     margin-bottom: 40px
-    +xl
-      margin-top: 29px
+    +sm 
+      font-size: 14px
+      margin-bottom: 32px
+      
 .footer-bottom
   position: relative
-  // padding: 31px 0 70px
   background: $title-color
   &__content
     position: relative
@@ -41,43 +45,48 @@
         position: absolute
         top: 0
         left: 0
-        height: 1px
-  &__info-text
+    +sm 
+      width: 350px
+  &__prof
+    margin-bottom: 20px
+  &__text
     max-width: 341px
     font-weight: 300
     font-size: 12px
     line-height: 133%
     color: $white
-    margin: 20px 0 6px 0
-  &__info
+    margin-bottom: 29px
+  &__str
     font-weight: 300
     font-size: 12px
     line-height: 133%
     color: $white
     text-decoration: underline
+    +xl 
+      
   &__wrap
-    min-width: 578px
+    width: 578px
     display: flex
     justify-content: space-between
     margin-left: 146px
     +xl
-      margin: 0
+      margin-left: 0
       flex-direction: column
   &__col
   &__title
-    margin-bottom: 24px
     font-weight: 600
     font-size: 16px
     line-height: 100%
     color: $white
     +xl
-      margin: 40px 0 24px 0
+      margin: 40px 0 20px
 .footer
   &__list
     font-weight: 400
     font-size: 14px
     line-height: 100%
     color: $white
+    margin-top: 26px
   &__item:not(:last-child)
     margin-bottom: 16px
   &__link
