@@ -54,8 +54,8 @@
   position: relative
   width: 166px
   height: 16.8px
-  top: 50px
-  left: 10px
+  top: 52.5px
+  left: 22px
   font-weight: 700
   font-size: 12px
   line-height: 100%
@@ -69,7 +69,7 @@
     left: 100px
   +lg 
     left: 150px
-  +sm 
+  +sm
     left: 75px
     top: 61.5px
 
@@ -84,7 +84,10 @@
   +sm
     margin: 0
   &__list
-    margin-right: 10px
+    &:nth-child(1)
+      margin-right: 15px
+    &:nth-child(2)
+      margin-right: 15px
     padding: 7px 20px
     width: 73px
     height: 28px
@@ -96,7 +99,7 @@
     text-align: center
     color: $main-color
   &__small:not(:last-child)
-    margin-right: 10px
+    margin-right: 15px
     padding: 7px 20px
     font-weight: 500
     font-size: 14px
@@ -127,8 +130,9 @@
   margin-left: 115px
   +sm
     margin: 20px 0 0 0
-  &__list:not(:last-child)
-    margin-right: 10px
+  &__list
+    &:nth-child(1)
+      margin-right: 20px
     padding: 7px 20px
     width: 98px
     height: 28px
@@ -140,7 +144,7 @@
     text-align: center
     color: $main-color
   &__middle:not(:last-child)
-    margin-right: 10px
+    margin-right: 20px
     padding: 7px 20px
     width: 76px
     height: 28px
