@@ -11,7 +11,7 @@ textarea
   border: none
   &:focus
     outline: none
-    color: $c1
+    // color: $c1
   &:disabled
     // background: #fff
   &:autofill
@@ -71,22 +71,24 @@ textarea
     align-items: center
 
 .my-name
-  border: none
-  font-weight: 400
-  font-size: 14px
-  line-height: 100%
-  background: 0
+  width: 550px
+  height: 32px
   color: $white
-  padding: 5px 20px
+  background: 0 0 
+  margin-left: 20px
+  cursor: pointer
+  &::placeholder
+    font-weight: 400
+    font-size: 14px
+    line-height: 100%
+    color: $white
+    opacity: 0.8
+  &:active
+    &::placeholder
+      font-weight: 600
+      
 
-.phone
-  border: none
-  font-weight: 400
-  font-size: 14px
-  line-height: 100%
-  background: 0
-  color: $white
-  padding: 5px 20px
+
 
 input:-webkit-autofill
   -webkit-animation-name: autofill

@@ -4,14 +4,29 @@
   background-size: 100% 100%
   +sm 
     background-image: url('../../assets/images/aplication/fon2.jpg')
+  
 .content
+  &__title
+    margin-bottom: 10px
+    color: $white
+    +sm
+      max-width: 312px
+      font-size: 40px
+      margin-bottom: 30px
+    span
+      max-width: 513px
+      color: $accent
   &__str
+    min-width: 513px
+    font-weight: 400
+    font-size: 16px
+    line-height: 110%
+    color: $white
     &--sm
       +sm
         max-width: 334px
         font-size: 14px
         line-height: 130%
-        margin-top: 10px
         font-weight: 400
   
         

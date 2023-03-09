@@ -20,10 +20,11 @@
   display: block
   border: 1px solid #DEDEDE
   border-radius: 5px
-  padding: 6px 19px
+  padding: 7px 20px
   font-weight: 500
   font-size: 14px
   line-height: 100%
+  color: $main-color
   &:hover
     color: $main-color
     border: 1px solid $main-color
@@ -46,9 +47,9 @@
     height: 48px
     padding: 0
     margin-top: 30px
-  &:active
-    transform: translateY(5px)
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+  &:hover
+    color: #1a1f31
+    background-color: #fff
 
 .refresh-btn
   position: relative
@@ -79,92 +80,28 @@
   max-width: 250px
   display: flex
   flex-wrap: wrap
-  list-style-type: none
   margin-left: 50px
   +sm
     margin: 0
-  &__list
+  &__link
     &:nth-child(1)
-      margin-right: 15px
+      margin-right: 11px
     &:nth-child(2)
       margin-right: 15px
-    padding: 7px 20px
-    width: 73px
-    height: 28px
-    border: 1px solid #DEDEDE
-    border-radius: 5px
-    font-weight: 500
-    font-size: 14px
-    line-height: 100%
-    text-align: center
-    color: $main-color
   &__small:not(:last-child)
     margin-right: 15px
-    padding: 7px 20px
-    font-weight: 500
-    font-size: 14px
-    line-height: 100%
-    color: #2B3B50
-    width: 60px
-    height: 28px
-    border: 1px solid #DEDEDE
-    border-radius: 5px
     margin-top: 16px
   &__button
-    padding: 7px 20px
-    width: 139px
-    height: 28px
     background: rgba(180, 200, 255, 0.3)
-    border-radius: 5px
-    font-weight: 500
-    font-size: 14px
-    line-height: 100%
-    text-align: center
-    color: $main-color
+    border: none
     margin-top: 18px
-.second-btn
-  max-width: 235px
-  display: flex
-  flex-wrap: wrap
-  list-style-type: none
-  margin-left: 115px
-  +sm
-    margin: 20px 0 0 0
-  &__list
-    &:nth-child(1)
-      margin-right: 20px
-    padding: 7px 20px
-    width: 98px
-    height: 28px
-    border: 1px solid #DEDEDE
-    border-radius: 5px
-    font-weight: 500
-    font-size: 14px
-    line-height: 100%
-    text-align: center
-    color: $main-color
-  &__middle:not(:last-child)
-    margin-right: 20px
-    padding: 7px 20px
-    width: 76px
-    height: 28px
-    font-weight: 500
-    font-size: 14px
-    line-height: 100%
-    color: #2B3B50
-    border: 1px solid #DEDEDE
-    border-radius: 5px
-    margin-top: 16px
-  &__button
-    padding: 7px 20px
-    width: 139px
-    height: 28px
-    background: rgba(180, 200, 255, 0.3)
-    border-radius: 5px
-    font-weight: 500
-    font-size: 14px
-    line-height: 100%
-    text-align: center
-    color: $main-color
-    margin-top: 18px
+    &:hover
+      background: #B4C8FF
+      border: none
+      color: $white
+  &--button
+    max-width: 235px
+    margin-left: 115px
+
+
 
