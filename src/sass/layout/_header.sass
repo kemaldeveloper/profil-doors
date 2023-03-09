@@ -1,7 +1,7 @@
 .header
   &__top
     background: #F9F9F9
-    padding: 2px 0 2px
+    padding: 9px 0 8px
 
   &__top-wrap
     display: flex
@@ -46,11 +46,12 @@
     +xl
       min-width: 395px
 
-  &__link
+  &__item
     text-decoration: none
     font-weight: 400
     font-size: 12px
     line-height: 100%
+  &__link
     color: $main-color
     &:hover
       border-bottom: 1px solid $main-color
@@ -60,11 +61,11 @@
     display: flex
     align-items: center
     text-decoration: none
-
-  &__order-title
+    line-height: 100%
     font-weight: 600
     font-size: 12px
-    line-height: 100%
+
+  &__order-title
     color: $main-color
     margin-left: 14px
     &:hover
@@ -91,11 +92,24 @@
     display: flex
     align-items: center
     max-width: 371px
+  &__link-wrap
+    +lg
+
   &__logo-link
     width: 255px
     height: 50px
     +xxl
       width: 220px
+    +lg
+
+  &__logo-link--dn-992
+    +lg
+      display: none
+  &__logo-link--dn
+    display: none
+    +lg
+      display: block
+
   &__logo
     object-fit: cover
 
