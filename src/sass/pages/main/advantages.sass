@@ -2,36 +2,38 @@
   padding: 50px 0 100px
   &__wrapper
     display: flex
-    // justify-content: space-between
+    column-gap: 93px
+    +xxl
+      column-gap: 37px
     +xl
       flex-wrap: wrap
-      column-gap: 350px
+      justify-content: center
+      align-items: center
+      column-gap: 91px
       row-gap: 30px
-    +lg
-      column-gap: 150px
     +md
       column-gap: 0
-    +sm
-      flex-wrap: nowrap
-      flex-direction: column
-      align-items: center
-      justify-content: center
+
+  &__item-wrap
+    margin-top: 24px
+    +md
+      max-width: 250px
+      min-width: 250px
+      margin-left: 41px
+
   &__item
     position: relative
-    max-width: 250px
     min-width: 250px
-    &:not(:last-child)
-      margin-right: 93px
-      +xxl
-        margin-right: 50px
-      +xl
-        margin-right: 0
+    max-width: 250px
     +md
-      max-width: 245px
-      min-width: 240px
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 323px
+      min-width: 323px
   &__subtitle
     color: $blue-bg
-    margin-top: 63px
+    // margin-top: 63px
   &__description
     margin-top: 11px
     color: $black

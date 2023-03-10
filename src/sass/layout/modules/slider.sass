@@ -1,7 +1,17 @@
 .slider
   position: relative
   &-wrap
-    margin-left: calc((100vw - 1300px + 30px) / 2)
+    margin-left: calc((100vw - 1311px + 30px) / 2)
+    +xxl
+      margin-left: calc((100vw - 1140px + 30px) / 2)
+    +xl
+      margin-left: calc((100vw - 960px + 30px) / 2)
+    +lg
+      margin-left: calc((100vw - 720px + 30px) / 2)
+    +md
+      margin-left: calc((100vw - 520px + 30px) / 2)
+    +sm
+      margin-left: 15px
   &__box
     position: relative
   &__box--bordered
@@ -45,3 +55,5 @@
   width: 250px
   min-height: 505px
   margin-right: 40px
+  +sm
+    margin-right: 44px

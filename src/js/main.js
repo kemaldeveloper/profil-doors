@@ -166,6 +166,7 @@ const initMainSlider = () => {
   });
 
   mainSliderClassName.slick({
+    centerMode: true,
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -188,6 +189,24 @@ $('.slider').slick({
   variableWidth: true,
   autoplaySpeed: 2000,
   infinite: false,
-  prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
-  nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
+  prevArrow: $('.slider__prev'),
+  nextArrow: $('.slider__next'),
+  // prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
+  // nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+$('.slider__prev').on('click', function () {
+  $('.slider').slick('slickPrev');
+});
+
+$('.slider__next').on('click', function () {
+  $('.slider').slick('slickNext');
 });
