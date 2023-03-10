@@ -3,18 +3,18 @@
     <div class="container">
       <div class="content">
         <div class="content__item">
-          <h2 class="title title--text" ><span> получите скидку </span>-50% на монтаж</h2>
-          <h3 class="content__str" >Мы зафиксируем за вашим номером скидку 50% на монтаж. Обещаем не присылать спам и ненужные рекламные предложения.</h3>
+          <h2 class="title content__title" ><span> получите скидку </span>-50% на монтаж</h2>
+          <h3 class="content__str" >Мы зафиксируем за вашим номером скидку 50% на монтаж.Обещаем не присылать спам и ненужные рекламные предложения.</h3>
         </div>
         <div class="content__wrap">
-          <h2 class="content__desc" >Введи ваш номер и им<br>и мы закрепим за ними скидку</h2>
+          <h2 class="content__desc" >Введи ваш номер и имя<br>и мы закрепим за ними скидку</h2>
           <form action="#">
             <div class="form-wrap">
               <div class="form-wrap__contacts">
                 <svg class="icon icon--human">
                   <use xlink:href="assets/svg-sprite.svg#icon-human"></use>
                 </svg>
-                <input type="text" name="name" placeholder="Имя" class="my-name" >
+                <input class="my-name" name="name" type="text" placeholder="Имя" required="required">
               </div>
             </div>
             <div class="form-wrap">
@@ -22,7 +22,7 @@
                 <svg class="icon icon--phone">
                   <use xlink:href="assets/svg-sprite.svg#icon-phone"></use>
                 </svg>
-                <input type="tel" name="phone" placeholder="Телефон" class="phone">
+                <input class="my-name" name="phone" placeholder="Телефон" required="required">
               </div>
             </div>
             <button type="submit" class="btn-primary">Отправить</button>
@@ -36,16 +36,16 @@
     <div class="container">
       <div class="footer-bottom__content footer-bottom__content--line-between">
         <div class="footer-bottom__col">
-          <a href="#" class="footer-bottom__logo">
-            <img src="../../assets/images/footer-logo.svg" alt="logo" class="footer-bottom__prof">
+          <a href="#" class="footer-bottom__link">
+            <img src="../../assets/images/footer-logo.svg" alt="logo" class="footer-bottom__logo">
           </a>
           <div class="footer-bottom__info" >
-            <p class="footer-bottom__text">© Официальный сайт фирменной сети Профиль ДорсМежкомнатные и стеклянные двери фабрики ProfilDoors в СПб</p>
+            <p class="footer-bottom__text">© Официальный сайт фирменной сети Профиль Дорс Межкомнатные и стеклянные двери фабрики ProfilDoors в СПб</p>
             <a class="footer-bottom__str" href="#">Правовая информация</a>
           </div>
         </div>
         <div class="footer-bottom__wrap">
-          <div class="footer-bottom__col">
+          <div class="footer__col">
             <div class="footer-bottom__title">КАТЕГОРИИ</div>
               <ul class="footer__list">
                 <li class="footer__item" ><a class="footer__link" href="#">Межкомнатные двери</a></li>
@@ -69,6 +69,10 @@
                 <li class="footer__item" ><a class="footer__link" href="#">Доставка</a></li>
                 <li class="footer__item" ><a class="footer__link" href="#">Установка</a></li>
               </ul>
+          </div>
+          <div class="phone">
+            <a href="tel:+74959746937" class="phone__tel-phone">+7 (495) 974-69-37</a>
+            <h6><a class="phone__link" href="#">ПЕРЕЗВОНИТЕ МНЕ</a></h6>
           </div>
         </div>
       </div>

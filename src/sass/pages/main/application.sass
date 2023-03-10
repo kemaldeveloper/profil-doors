@@ -1,17 +1,42 @@
 .application
-  padding: 99px 0 95px
+  padding: 95px 0 95px
   background-image: url('../../assets/images/aplication/fon1.jpg')
   background-size: 100% 100%
-  +sm 
-    background-image: url('../../assets/images/aplication/fon2.jpg')
-.content
+  +xsm 
+    padding: 79px 0
+  &__content
+    display: flex
+    justify-content: space-between
+    +lg 
+      flex-wrap: wrap
+  &__title
+    margin-bottom: 16px
+    max-width: 525px
+    color: $white
+    +sm
+      max-width: 390px
+      font-size: 60px
+      margin-bottom: 30px
+    +xsm 
+      max-width: 312px
+      font-size: 40px
+      line-height: 100%
+    span
+      color: $accent
   &__str
-    &--sm
-      +sm
-        max-width: 334px
-        font-size: 14px
-        line-height: 130%
-        margin-top: 10px
-        font-weight: 400
+    max-width: 513px
+    font-weight: 400
+    font-size: 16px
+    line-height: 110%
+    color: $white
+    +lg 
+      margin-bottom: 40px
+    +sm
+      max-width: 334px
+      font-size: 14px
+      line-height: 130%
+      margin-bottom: 30px
+    +xsm 
+      margin-bottom: -9px
   
         
