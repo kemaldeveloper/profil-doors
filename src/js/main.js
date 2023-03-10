@@ -45,24 +45,24 @@ $(window).on('resize', function () {
 // Popup opener
 $('.js-popup').on('click', function (event) {
   event.preventDefault();
-  let popupID = $(this).attr('href');
+  const popupID = $(this).attr('href');
 
   mfpPopup(popupID);
 });
 
-$('.city-popup').on('click', function (event) {
-  event.preventDefault();
-  let popupID = $(this).attr('href');
+// $('.city-popup').on('click', function (event) {
+//   event.preventDefault();
+//   let popupID = $(this).attr('href');
 
-  mfpPopup(popupID);
-});
+//   mfpPopup(popupID);
+// });
 
-$('.fix-popup').on('click', function (event) {
-  event.preventDefault();
-  let popupID = $(this).attr('href');
+// $('.fix-popup').on('click', function (event) {
+//   event.preventDefault();
+//   let popupID = $(this).attr('href');
 
-  mfpPopup(popupID);
-});
+//   mfpPopup(popupID);
+// });
 
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
