@@ -56,27 +56,42 @@ textarea
     content: ""
     display: block
     border-bottom: 1px solid #FFFFFF
-    margin-top: 16px
+    margin-top: 9px
     width: 550px
-    +sm
-      width: 348px
+    +xl
+      width: 400px
+    +lg
+      width: 550px
+    +md 
+      width: 545px
+    +sm 
+      width: 350px
+    // +xsm 
+    //   width: 350px
   &__contacts
     display: flex
     align-items: center
   &__field
-    margin-top: 34px
+    margin-top: 29px
   &__phone
     margin-top: 18px
     display: flex
     align-items: center
 
 .my-name
-  width: 550px
-  height: 32px
+  width: 495px
   color: $white
   background: 0 0 
   margin-left: 20px
   cursor: pointer
+  +xl
+    width: 345px
+  +lg
+    width: 390px
+  +md 
+    width: 345px
+  +sm 
+    width: 260px
   &::placeholder
     font-weight: 400
     font-size: 14px

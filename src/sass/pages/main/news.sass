@@ -1,47 +1,78 @@
 .news
   position: relative
   padding: 50px 0 100px
+  +lg 
+    padding-bottom: 70px
   +sm
     padding: 80px 0
+  +xsm 
+    padding: 40px 0 48px 0
+  &__seeall
+    display: flex
+    justify-content: space-between
   &__title
-    +sm 
+    +xsm 
       font-size: 40px
+      max-width: 216px
   &__wrap
     display: flex
     justify-content: space-between
     align-items: baseline
-    +xxl
-      display: flex
+    +lg
       flex-wrap: wrap
-      justify-content: space-around
+      justify-content: center
+      align-items: center
 .news-info
   margin-top: 19px
+  +xxl
+    max-width: 360px
+  +xl 
+    max-width: 300px
+  +lg
+    max-width: 100%
+  +xsm 
+    max-width: 100%
   &__collections
     margin-bottom: 19px
-
+    max-width: 100%
+    height: auto
   &__date
     font-weight: 400
     font-size: 16px
     line-height: 100%
     color: #8C8C8C
     margin-bottom: 16px
+    +xsm 
+      font-size: 12px
+      margin-bottom: 13px
   &__subtitle
     font-weight: 600
     font-size: 18px
     line-height: 115%
     color: $title-color
     margin-bottom: 9px
+    +xsm 
+      font-size: 14px
+      line-height: 130%
   &__text
     max-width: 400px
     font-weight: 400
     font-size: 16px
     line-height: 110%
     color: $black
-    +xxl
-      margin-bottom: 60px
-    +sm
-      margin: 0
+    +lg
+      margin-bottom: 30px
+    +xsm 
+      width: 350px
+      font-size: 14px
+      line-height: 130%
 
 .news-info2
-  +sm
+  +xxl
+    max-width: 360px
+  +xl 
+    max-width: 300px
+  +lg
+    max-width: 100%
+  +xsm
     display: none

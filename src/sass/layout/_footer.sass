@@ -1,34 +1,58 @@
 .footer
-  padding: 76px 0 44px 0
+  padding: 72px 0 41px 0
   background: $title-color
   +sm
     padding: 97px 0 74px 0
+  +xsm 
+    padding: 97.5px 0 80px 0
 .content
   display: flex
   justify-content: space-between
-  +xl
+  +lg
     flex-wrap: wrap
   &__title
+    color: $white
     max-width: 525px
-    margin-bottom: 4px
+    margin-bottom: 9px
+    +xl
+      max-width: 444px
+      font-size: 65px
+    +lg 
+      font-size: 60px
+    +xsm 
+      margin-bottom: 15px
+      padding: 0
+    span
+      color: $accent
   &__str
-    max-width: 456px
+    max-width: 504px
     font-weight: 400
     font-size: 16px
     line-height: 110%
     color: $white
+    +xl
+      width: 310px
+    +lg 
+      margin-bottom: 30px
     +sm
-      width: 320px
+      max-width: 330px
       font-size: 14px
+    +xsm
+      max-width: 330px
+      line-height: 130%
+      margin-bottom: 23px
   &__desc
+    // padding-top: 8px
     font-weight: 600
     font-size: 18px
     line-height: 21px
     color: $white
-    margin-bottom: 40px
+    margin-bottom: 35px
     +sm 
       font-size: 14px
       margin-bottom: 32px
+    +xsm 
+      margin-bottom: -9px
       
 .footer-bottom
   position: relative
@@ -37,64 +61,103 @@
     position: relative
     display: flex
     border-top: 1px solid #383131
-    padding: 31px 0 70px 0
-    +xl
-      display: flex
-      flex-direction: column
+    padding: 37px 0 70px 0
     &--line-between
-      &:after
-        content: ''
-        position: absolute
-        top: 0
-        left: 0
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+    +lg 
+      flex-wrap: wrap
     +sm 
       width: 350px
-  &__prof
-    margin-bottom: 20px
+    +xsm 
+      padding: 74px 0 74.5px 0
+  &__logo
+    margin-bottom: 13px
+    +xsm
+      max-width: 243px
   &__text
     max-width: 341px
     font-weight: 300
     font-size: 12px
     line-height: 133%
     color: $white
-    margin-bottom: 29px
+    margin-bottom: 9px
   &__str
     font-weight: 300
     font-size: 12px
     line-height: 133%
     color: $white
     text-decoration: underline
-    +xl 
-      
   &__wrap
-    width: 578px
+    width: 576px
     display: flex
     justify-content: space-between
     margin-left: 146px
-    +xl
-      margin-left: 0
+    +xl  
+      margin-left: 70px
+    +lg 
       flex-direction: column
+      margin-left: 0
   &__col
+    +lg 
+      margin-bottom: 20px
+    +xsm 
+      margin-bottom: 37px
+
   &__title
     font-weight: 600
     font-size: 16px
     line-height: 100%
     color: $white
+    margin-bottom: 24px
     +xl
-      margin: 40px 0 20px
+      margin-bottom: 15px
+    +lg 
+      margin: 0
+      margin-bottom: 20px
+    +xsm 
+      
+      margin-bottom: 24px
 .footer
+  &__col
+    +lg
+      margin-top: 20px
+    +xsm
+      margin: 0
   &__list
     font-weight: 400
     font-size: 14px
     line-height: 100%
     color: $white
-    margin-top: 26px
+    +xsm 
+      margin-bottom: 40px
   &__item:not(:last-child)
-    margin-bottom: 16px
+    margin-bottom: 15px
   &__link
     font-weight: 400
     font-size: 14px
     line-height: 100%
+    color: $white
+
+.phone
+  display: none
+  +xsm
+    display: block
+  &__tel-phone
+    font-weight: 600
+    font-size: 12px
+    line-height: 100%
+    color: $white
+    &:hover
+      color: $white
+  &__link
+    font-weight: 600
+    font-size: 10px
+    line-height: 100%
+    text-decoration-line: underline
     color: $white
 
 

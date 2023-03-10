@@ -30,7 +30,9 @@
     border: 1px solid $main-color
 
 .btn-primary
-  padding: 16px 230px
+  width: 550px
+  height: 48px
+  padding: 16px 0 
   background: $accent
   border: none
   outline: none
@@ -41,12 +43,15 @@
   color: $black
   margin-top: 30px
   transition: all 0.3s ease
+  +xl
+    width: 400px
+  +lg
+    width: 550px
   +sm 
-    padding: 79px 0
     width: 350px
-    height: 48px
     padding: 0
-    margin-top: 30px
+  +xsm 
+    width: 350px
   &:hover
     color: #1a1f31
     background-color: #fff
@@ -73,6 +78,10 @@
   +sm
     left: 75px
     top: 61.5px
+  +xsm 
+    left: 0
+    width: 148px
+    height: 14.71px
 
 
 
@@ -81,20 +90,46 @@
   display: flex
   flex-wrap: wrap
   margin-left: 50px
+  +xxl
+    margin-left: 30px
+  +xl
+    max-width: 274px
+    margin-left: 100px
+  +md 
+      margin-left: 0
+  +lg 
+    max-width: 255px
   +sm
-    margin: 0
+    margin-bottom: 25px
+  +xsm 
+    max-width: 162px
   &__link
+    +xsm 
+      padding: 4.5px 13px
+      font-size: 9.072px
     &:nth-child(1)
       margin-right: 11px
+      +xsm 
+        margin-right: 8px
     &:nth-child(2)
-      margin-right: 15px
+      margin-right: 18px
+      +xsm 
+        margin-right: 8px
   &__small:not(:last-child)
     margin-right: 15px
     margin-top: 16px
+    +xsm 
+      margin-top: 10px
+      padding: 4.5px 13px
+      font-size: 9.072px
   &__button
     background: rgba(180, 200, 255, 0.3)
     border: none
     margin-top: 18px
+    +xsm 
+      margin-top: 11.5px
+      padding: 4.5px 13px
+      font-size: 9.072px
     &:hover
       background: #B4C8FF
       border: none
@@ -102,6 +137,24 @@
   &--button
     max-width: 235px
     margin-left: 115px
+    +xxl
+      margin-left: 40px
+    +lg 
+      margin-left: 100px
+    +md 
+      margin-left: 0
+    +xsm 
+      max-width: 162px
+
+.seeall-button
+  display: none
+  +xsm
+    display: block
+    background: $white
+    height: 28px
+    border: 0.999998px solid #DEDEDE
+    
+
 
 
 
