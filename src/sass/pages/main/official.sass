@@ -5,19 +5,47 @@
     position: relative
     display: flex
     justify-content: space-between
-    +xxl
+    +lg 
       flex-wrap: wrap
+      
   &__content-wrap
-    max-width: 415px
+    // max-width: 415px
+    +xl 
+      max-width: 270px
+    +lg 
+      margin-bottom: 80px
+      max-width: 415px
+    +xsm 
+      margin-bottom: 38px
+    
   &__title-wrap
-    position: relative
+    // position: relative
   &__link-wrap
     position: absolute
-    bottom: 45px
-    right: 59px
+    top: 107px
+    left: 303px
+    +xl 
+      top: 85px
+      left: 210px
+    +lg 
+      top: 107px
+      left: 303px
+    +sm 
+      display: none
   &__title
+    max-width: 495px
+    padding-top: 20px
     color: #ffffff
-    margin-bottom: 17px
+    margin-bottom: 24px
+    +xl 
+      padding-top: 0
+      font-size: 55px
+    +lg 
+      font-size: 80px
+    +xsm 
+      // max-width: 315px
+      font-size: 60px
+      margin-bottom: 22px
   &__link
     font-family: $second-font
     font-weight: 400
@@ -28,23 +56,58 @@
     &:not(:last-child)
       margin-right: 7px
   &__description
-    max-width: 447px
-  &__img
-    +xxl
-      margin: 30px auto 0
+   
   &__text
+    max-width: 410px
     color: #ffffff
+    +xsm 
+      max-width: 335px
+      font-size: 14px
+      line-height: 130%
+    &--str
+      max-width: 280px
+      +xsm 
+        max-width: 215px
+    &--desc
+      max-width: 350px
+      +xsm 
+        max-width: 305px
     &:not(:last-child)
-      margin-bottom: 21px
+      margin-bottom: 17px
+      +xsm 
+        margin-bottom: 18px
+      
+    
   &__btn
     display: block
     margin-top: 35px
-    padding: 16px 95px
+    padding: 16px 0
     width: 320px
     height: 48px
     color: $title-color
     &:hover
       color: $title-color
       background-color: $white
-    +xxl
-      margin-bottom: 50px
+    +xl 
+      width: 260px
+    +lg 
+      width: 320px
+    +xsm 
+      display: none
+  &__city
+    // margin-left: 80px
+    // height: 100%
+    object-fit: cover
+    +md 
+
+    +xsm 
+      display: none
+    // +lg
+    //   object-fit: cover
+    //   height: 100%
+  &__cities
+    display: none
+    +xsm 
+      display: block
+      margin-right: 16px
+    

@@ -42,27 +42,31 @@
   line-height: 100%
   text-align: center
   color: $black
-  margin-top: 30px
+  margin-top: 40px
   transition: all 0.3s ease
+  &--btn 
+    margin-top: 30px
   +xl
     width: 400px
   +lg
     width: 550px
-  +sm
+  +md 
+    width: 485px
+  +sm 
     width: 350px
     padding: 0
-  +xsm
+  +xsm 
+    margin-top: 18px
     width: 350px
   &:hover
     color: #1a1f31
     background-color: #fff
 
 .refresh-btn
-  position: relative
+  position: absolute
+  margin: 10px 0 0 10px
   width: 166px
   height: 16.8px
-  top: 52.5px
-  left: 22px
   font-weight: 700
   font-size: 12px
   line-height: 100%
@@ -89,9 +93,9 @@
   display: flex
   flex-wrap: wrap
   margin-left: 50px
+  
   +xxl
-    margin-left: 30px
-  +xl
+    margin-left: 25px
     max-width: 274px
     margin-left: 100px
   +md
@@ -117,7 +121,8 @@
   &__small:not(:last-child)
     margin-right: 15px
     margin-top: 16px
-    +xsm
+    
+    +xsm 
       margin-top: 10px
       padding: 4.5px 13px
       font-size: 9.072px
@@ -125,7 +130,8 @@
     background: rgba(180, 200, 255, 0.3)
     border: none
     margin-top: 18px
-    +xsm
+    
+    +xsm 
       margin-top: 11.5px
       padding: 4.5px 13px
       font-size: 9.072px
@@ -136,6 +142,7 @@
   &--button
     max-width: 235px
     margin-left: 115px
+    
     +xxl
       margin-left: 40px
     +lg
@@ -144,6 +151,23 @@
       margin-left: 0
     +xsm
       max-width: 162px
+
+.first-item-btn
+  max-width: 250px
+  display: flex
+  flex-wrap: wrap
+  margin-left: 50px
+  +xxl 
+    margin-left: 25px
+  +xl 
+    max-width: 278px
+  +lg 
+    max-width: 250px
+  +md 
+    margin: 0
+    margin-bottom: 25px
+  +xsm 
+    max-width: 162px
 
 .seeall-button
   display: none

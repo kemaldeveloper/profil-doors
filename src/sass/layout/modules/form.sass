@@ -56,14 +56,14 @@ textarea
     content: ""
     display: block
     border-bottom: 1px solid #FFFFFF
-    margin-top: 9px
+    margin-top: 15px
     width: 550px
     +xl
       width: 400px
     +lg
       width: 550px
     +md 
-      width: 545px
+      width: 480px
     +sm 
       width: 350px
     // +xsm 
@@ -73,6 +73,8 @@ textarea
     align-items: center
   &__field
     margin-top: 29px
+    &--line
+      margin-bottom: -8px
   &__phone
     margin-top: 18px
     display: flex
@@ -84,12 +86,13 @@ textarea
   background: 0 0 
   margin-left: 20px
   cursor: pointer
+  
   +xl
     width: 345px
   +lg
     width: 390px
   +md 
-    width: 345px
+    width: 420px
   +sm 
     width: 260px
   &::placeholder
