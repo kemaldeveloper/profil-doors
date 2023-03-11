@@ -185,7 +185,6 @@ const initMainSlider = () => {
 $('.slider').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  // autoplay: true,
   variableWidth: true,
   autoplaySpeed: 2000,
   infinite: false,
@@ -195,7 +194,7 @@ $('.slider').slick({
   // nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
   responsive: [
     {
-      breakpoint: 576,
+      breakpoint: 1440,
       settings: {
         slidesToShow: 1,
       },
@@ -203,10 +202,10 @@ $('.slider').slick({
   ],
 });
 
-$('.slider__prev').on('click', function () {
-  $('.slider').slick('slickPrev');
+$('.prev').on('click', function () {
+  $(this).closest('.slider-block').find('.slider').slick('slickPrev');
 });
 
-$('.slider__next').on('click', function () {
-  $('.slider').slick('slickNext');
+$('.next').on('click', function () {
+  $(this).closest('.slider-block').find('.slider').slick('slickNext');
 });
