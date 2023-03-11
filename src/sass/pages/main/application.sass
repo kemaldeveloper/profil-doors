@@ -1,13 +1,13 @@
 .application
   padding: 95px 0 95px
-  background-image: url('../../assets/images/aplication/fon1.jpg')
-  background-size: 100% 100%
-  +xsm 
+  background: url('../../assets/images/aplication/fon1.jpg') center (center/cover) no-repeat
+  // background-size: 100% 100%
+  +xsm
     padding: 79px 0
   &__content
     display: flex
     justify-content: space-between
-    +lg 
+    +lg
       flex-wrap: wrap
   &__title
     margin-bottom: 16px
@@ -17,7 +17,7 @@
       max-width: 390px
       font-size: 60px
       margin-bottom: 30px
-    +xsm 
+    +xsm
       max-width: 312px
       font-size: 40px
       line-height: 100%
@@ -29,14 +29,12 @@
     font-size: 16px
     line-height: 110%
     color: $white
-    +lg 
+    +lg
       margin-bottom: 40px
     +sm
       max-width: 334px
       font-size: 14px
       line-height: 130%
       margin-bottom: 30px
-    +xsm 
+    +xsm
       margin-bottom: -9px
-  
-        

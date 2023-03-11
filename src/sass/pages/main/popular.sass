@@ -1,12 +1,23 @@
-.hits
+.popular
   padding: 100px 0 50px
   &__wrap
     display: flex
     justify-content: space-between
     align-items: center
     margin-bottom: 28px
+    +md
+      align-items: flex-start
+  &__title
+    +sm
+      max-width: 256px
+      font-size: 40px
   &__link
+    color: $main-color
     margin-right: 35px
+    +lg
+      margin-right: 15px
+    +md
+      margin: 6px 0 0
   &__buttons-wrap
     display: flex
   &__arrows-wrap
