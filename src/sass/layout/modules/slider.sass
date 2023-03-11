@@ -1,7 +1,7 @@
 .slider
   position: relative
   &-wrap
-    margin-left: calc((100vw - 1318px + 30px) / 2)
+    margin-left: calc((100vw - 1322px + 30px) / 2)
     +xxl
       margin-left: calc((100vw - 1140px + 30px) / 2)
     +xl
@@ -12,6 +12,8 @@
       margin-left: calc((100vw - 520px + 30px) / 2)
     +sm
       margin-left: 15px
+    +xsm
+      margin-left: 20px
   &__box
     position: relative
   &__box--bordered
@@ -21,47 +23,68 @@
     background: linear-gradient(180deg, #5E8894 0%, #032C38 100%)
   &__box--padding
     padding: 46px 63px
+    +xsm
+      padding: 41px 55px 41px
   &__subtitle
     margin-top: 20px
     +lg
       font-size: 16px
     +md
       font-size: 14px
+    +xsm
+      margin-top: 26px
   &__description
     margin-top: 16px
     +lg
       font-size: 16px
     +md
       font-size: 14px
+      line-height: 130%
+    +xsm
+      margin-top: 6px
   &__descr-wrap
     display: flex
     align-items: center
     justify-content: center
     position: absolute
-    left: 10px
-    top: 14px
+    left: 13px
+    top: 13px
     padding: 2px 11px
   &__img-description--link
     position: absolute
-    left: 22px
-    top: 16.4px
+    left: 24px
+    top: 17.7px
     color: $white
     &:hover
       color: $white
   &__bottom-wrap
-    margin-top: 19px
+    margin-top: 21px
     display: flex
     align-items: center
     justify-content: space-between
+    +xsm
+      margin-top: 29px
   &__doors-category
     font-weight: 700
     font-size: 16px
     line-height: 100%
     color: #747474
+    +xsm
+      font-size: 14px
+      line-height: 130%
+      font-weight: 400
+      letter-spacing: 0.01em
+      transform: translateX(4px)
+  &__price
+    +xsm
+    margin-left: 3px
 
 .slider .slick-slide
   width: 250px
-  min-height: 505px
-  margin-right: 40px
+  // min-height: 505px
+  margin-right: 41px
   +sm
     margin-right: 44px
+  +xsm
+    width: 220px
+    min-height: 448px
