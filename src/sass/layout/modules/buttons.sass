@@ -25,6 +25,7 @@
   font-size: 14px
   line-height: 100%
   color: $main-color
+  width: max-content
   &:hover
     color: $main-color
     border: 1px solid $main-color
@@ -32,7 +33,7 @@
 .btn-primary
   width: 550px
   height: 48px
-  padding: 16px 0 
+  padding: 16px 0
   background: $accent
   border: none
   outline: none
@@ -75,19 +76,17 @@
   border-radius: 3px
   text-align: center
   background-color: rgba(80, 77, 77, 0.5)
-  // +xxl
-  //   // left: 100px
-  // +lg 
-  //   // left: 150px
-  // +sm
-  //   // left: 75px
-  //   // top: 61.5px
-  // +xsm 
-  //   // left: 0
-  //   width: 148px
-  //   height: 14.71px
-
-
+  +xxl
+    left: 100px
+  +lg
+    left: 150px
+  +sm
+    left: 75px
+    top: 61.5px
+  +xsm
+    left: 0
+    width: 148px
+    height: 14.71px
 
 .first-btn
   max-width: 250px
@@ -98,26 +97,26 @@
   +xxl
     margin-left: 25px
     max-width: 274px
-    
-  +md 
+    margin-left: 100px
+  +md
     margin-left: 0
-  +lg 
+  +lg
     max-width: 255px
   +sm
-    // margin-bottom: 25px
-  +xsm 
+    margin-bottom: 25px
+  +xsm
     max-width: 162px
   &__link
-    +xsm 
+    +xsm
       padding: 4.5px 13px
       font-size: 9.072px
     &:nth-child(1)
       margin-right: 11px
-      +xsm 
+      +xsm
         margin-right: 8px
     &:nth-child(2)
       margin-right: 18px
-      +xsm 
+      +xsm
         margin-right: 8px
   &__small:not(:last-child)
     margin-right: 15px
@@ -146,11 +145,11 @@
     
     +xxl
       margin-left: 40px
-    +lg 
+    +lg
       margin-left: 100px
-    +md 
+    +md
       margin-left: 0
-    +xsm 
+    +xsm
       max-width: 162px
 
 .first-item-btn
@@ -177,8 +176,3 @@
     background: $white
     height: 28px
     border: 0.999998px solid #DEDEDE
-    
-
-
-
-

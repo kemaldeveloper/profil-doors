@@ -45,24 +45,24 @@ $(window).on('resize', function () {
 // Popup opener
 $('.js-popup').on('click', function (event) {
   event.preventDefault();
-  let popupID = $(this).attr('href');
+  const popupID = $(this).attr('href');
 
   mfpPopup(popupID);
 });
 
-$('.city-popup').on('click', function (event) {
-  event.preventDefault();
-  let popupID = $(this).attr('href');
+// $('.city-popup').on('click', function (event) {
+//   event.preventDefault();
+//   let popupID = $(this).attr('href');
 
-  mfpPopup(popupID);
-});
+//   mfpPopup(popupID);
+// });
 
-$('.fix-popup').on('click', function (event) {
-  event.preventDefault();
-  let popupID = $(this).attr('href');
+// $('.fix-popup').on('click', function (event) {
+//   event.preventDefault();
+//   let popupID = $(this).attr('href');
 
-  mfpPopup(popupID);
-});
+//   mfpPopup(popupID);
+// });
 
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
@@ -166,6 +166,7 @@ const initMainSlider = () => {
   });
 
   mainSliderClassName.slick({
+    centerMode: true,
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -184,10 +185,27 @@ const initMainSlider = () => {
 $('.slider').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  // autoplay: true,
   variableWidth: true,
   autoplaySpeed: 2000,
   infinite: false,
-  prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
-  nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
+  prevArrow: $('.slider__prev'),
+  nextArrow: $('.slider__next'),
+  // prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
+  // nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+$('.prev').on('click', function () {
+  $(this).closest('.slider-block').find('.slider').slick('slickPrev');
+});
+
+$('.next').on('click', function () {
+  $(this).closest('.slider-block').find('.slider').slick('slickNext');
 });

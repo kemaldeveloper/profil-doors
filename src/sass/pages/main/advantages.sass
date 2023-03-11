@@ -2,21 +2,38 @@
   padding: 50px 0 100px
   &__wrapper
     display: flex
-    justify-content: space-between
+    column-gap: 93px
+    +xxl
+      column-gap: 37px
     +xl
       flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      column-gap: 91px
+      row-gap: 30px
+    +md
+      column-gap: 0
+
+  &__item-wrap
+    margin-top: 24px
+    +md
+      max-width: 250px
+      min-width: 250px
+      margin-left: 41px
+
   &__item
+    position: relative
+    min-width: 250px
     max-width: 250px
-    min-height: 146px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    +xl
-      margin-bottom: 40px
-  &__item svg
-    // margin-bottom: 22px
+    +md
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 323px
+      min-width: 323px
   &__subtitle
     color: $blue-bg
-    // margin-bottom: 10px
+    // margin-top: 63px
   &__description
+    margin-top: 11px
     color: $black
