@@ -1,16 +1,22 @@
 .collection
-  padding: 50px 0 100px 0
+  padding: 47px 0 100px 0
   +sm
     padding: 40px 0 64px 0
   &__content
     display: flex
     justify-content: space-between
-    +xl
-      display: flex
-      justify-content: space-between 
     +lg 
       flex-wrap: wrap
-      justify-content: center
+  &__wrap
+    // width: 600px
+    +xxl
+      max-width: 530px
+    +xl 
+      max-width: 450px
+    +lg 
+      max-width: 600px
+      &:nth-child(1)
+        margin-bottom: 30px
   &__title
     margin-bottom: 20px
     +sm
@@ -21,32 +27,34 @@
     font-size: 16px
     line-height: 110%
     color: $black
-    // +xl
-    //   font-size: 14px
+    +xl
+      max-width: 166px
     +lg 
-      font-size: 16px
+      max-width: 247px
     +sm
       max-width: 349px
       font-size: 14px
       margin-bottom: 20px
     +xsm
-      font-size: 14px
+      margin-bottom: 15px
       line-height: 130%
   &__photo
-    margin-bottom: 29px
+    margin-bottom: 28px
     +xxl
       max-width: 530px
     +xl
       max-width: 450px
     +lg 
+      max-width: 600px
+    +md
       max-width: 100%
     +xsm 
       margin-bottom: 30px
-  &__item
+  &__item 
     display: flex
     align-items: center
     +lg 
-      margin-bottom: 25px
+      
     +sm
       flex-direction: column
       align-items: start
@@ -56,7 +64,7 @@
     font-size: 18px
     line-height: 115%
     color: $blue-bg
-    margin-bottom: 9px
+    margin-bottom: 13px
     +xl
       font-size: 15px
     +lg 
@@ -74,7 +82,9 @@
     +xl
       max-width: 450px
     +lg 
-      max-width: 100%
+      max-width: 600px
     +xsm 
       margin-bottom: 30px
+    +md
+      max-width: 100%
     

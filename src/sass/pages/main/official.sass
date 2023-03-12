@@ -9,11 +9,10 @@
       flex-wrap: wrap
       
   &__content-wrap
-    // max-width: 415px
     +xl 
       max-width: 270px
     +lg 
-      margin-bottom: 80px
+      margin-bottom: 40px
       max-width: 415px
     +xsm 
       margin-bottom: 38px
@@ -43,7 +42,6 @@
     +lg 
       font-size: 80px
     +xsm 
-      // max-width: 315px
       font-size: 60px
       margin-bottom: 22px
   &__link
@@ -55,11 +53,13 @@
     color: $white
     &:not(:last-child)
       margin-right: 7px
-  &__description
-   
   &__text
     max-width: 410px
     color: #ffffff
+    +xl 
+      font-size: 13px
+    +lg 
+      font-size: 16px
     +xsm 
       max-width: 335px
       font-size: 14px
@@ -73,14 +73,14 @@
       +xsm 
         max-width: 305px
     &:not(:last-child)
-      margin-bottom: 17px
+      margin-bottom: 19px
       +xsm 
         margin-bottom: 18px
       
     
   &__btn
     display: block
-    margin-top: 35px
+    margin-top: 34px
     padding: 16px 0
     width: 320px
     height: 48px
@@ -95,19 +95,21 @@
     +xsm 
       display: none
   &__city
-    // margin-left: 80px
-    // height: 100%
+    max-width: 100%
     object-fit: cover
-    +md 
+    +xl 
+      width: 593px
+      height: 374px
+    +lg 
+      width: 777px
+      height: 491px
 
     +xsm 
       display: none
-    // +lg
-    //   object-fit: cover
-    //   height: 100%
   &__cities
     display: none
     +xsm 
       display: block
       margin-right: 16px
+      
     
