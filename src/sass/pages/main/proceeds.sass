@@ -1,12 +1,29 @@
 .proceeds
-  padding: 50px 0 50px 0
+  padding: 46px 0 50px 0
+  +xsm
+    padding: 9px 0 50px
   &__wrap
     display: flex
     justify-content: space-between
-    align-items: center
-    margin-bottom: 28px
+    margin-bottom: 32px
+    +md
+      align-items: flex-start
+  &__title
+    +sm
+      max-width: 256px
+      font-size: 40px
+    +xsm
+      margin-left: 4px
   &__link
-    margin-right: 35px
+    margin-right: 34px
+    height: 28px
+    margin-top: 29px
+    +lg
+      margin-right: 15px
+    +md
+      margin: 6px 0 0
+    +xsm
+      margin: 2px 1px 0
   &__buttons-wrap
     display: flex
   &__arrows-wrap

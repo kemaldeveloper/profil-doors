@@ -1,27 +1,35 @@
 .popular
-  padding: 100px 0 50px
+  padding: 96px 0 50px
+  +xsm
+    padding: 78px 0 50px
   &__wrap
     display: flex
     justify-content: space-between
-    align-items: center
-    margin-bottom: 28px
+    margin-bottom: 32px
     +md
       align-items: flex-start
   &__title
     +sm
       max-width: 256px
       font-size: 40px
+    +xsm
+      margin-left: 4px
   &__link
     color: $main-color
-    margin-right: 35px
+    margin-right: 34px
+    margin-top: 30px
+    height: 28px
     +lg
       margin-right: 15px
     +md
       margin: 6px 0 0
+    +xsm
+      margin: 2px 3px 0
   &__buttons-wrap
     display: flex
   &__arrows-wrap
     display: flex
-    column-gap: 20px
+    column-gap: 21px
+    margin-top: 30px
     +md
       display: none
