@@ -65,48 +65,37 @@
 .refresh-btn
   position: absolute
   margin: 10px 0 0 10px
-  width: 166px
-  height: 16.8px
+  padding: 2.4px 12px
   font-weight: 700
   font-size: 12px
   line-height: 100%
   color: $white
-  border: none
   border: 0.6px solid $white
   border-radius: 3px
   text-align: center
   background-color: rgba(80, 77, 77, 0.5)
-  +xxl
-    left: 100px
-  +lg
-    left: 150px
-  +sm
-    left: 75px
-    top: 61.5px
-  +xsm
-    left: 0
-    width: 148px
-    height: 14.71px
 
 .first-btn
   max-width: 250px
   display: flex
   flex-wrap: wrap
   margin-left: 50px
-  
   +xxl
     margin-left: 25px
     max-width: 274px
-    margin-left: 100px
-  +md
-    margin-left: 0
   +lg
-    max-width: 255px
-  +sm
-    margin-bottom: 25px
+    margin-left: 50px
+    max-width: 250px
+  +md 
+    margin-left: 25px
+  +sm 
+    margin: 0
   +xsm
     max-width: 162px
   &__link
+    &--indent
+      margin-right: 10px
+      margin-top: 10px
     +xsm
       padding: 4.5px 13px
       font-size: 9.072px
@@ -121,7 +110,6 @@
   &__small:not(:last-child)
     margin-right: 15px
     margin-top: 16px
-    
     +xsm 
       margin-top: 10px
       padding: 4.5px 13px
@@ -130,7 +118,6 @@
     background: rgba(180, 200, 255, 0.3)
     border: none
     margin-top: 18px
-    
     +xsm 
       margin-top: 11.5px
       padding: 4.5px 13px
@@ -142,32 +129,12 @@
   &--button
     max-width: 235px
     margin-left: 115px
-    
     +xxl
       margin-left: 40px
-    +lg
-      margin-left: 100px
     +md
       margin-left: 0
     +xsm
       max-width: 162px
-
-.first-item-btn
-  max-width: 250px
-  display: flex
-  flex-wrap: wrap
-  margin-left: 50px
-  +xxl 
-    margin-left: 25px
-  +xl 
-    max-width: 278px
-  +lg 
-    max-width: 250px
-  +md 
-    margin: 0
-    margin-bottom: 25px
-  +xsm 
-    max-width: 162px
 
 .seeall-button
   display: none
@@ -176,3 +143,41 @@
     background: $white
     height: 28px
     border: 0.999998px solid #DEDEDE
+
+.second-blok-btn
+  width: 235px
+  display: flex
+  flex-wrap: wrap
+  margin-left: 115px
+  +xxl 
+    margin-left: 40px
+  +md
+    margin-left: 5px 
+  +xsm
+    width: 155.72px
+  &__link
+    &:nth-child(1)
+      margin-right: 21px
+    +xsm
+      padding: 4.5px 13px
+      font-size: 9.072px
+  &__small
+    &:nth-child(3)
+      margin-right: 17.9px
+      margin-top: 6px
+    +xsm 
+      margin-top: 5px
+      padding: 4.5px 13px
+      font-size: 9.072px
+  &__button
+    background: rgba(180, 200, 255, 0.3)
+    border: none
+    margin-top: 6px
+    &:hover
+      background: #B4C8FF
+      border: none
+      color: $white
+    +xsm 
+      margin-top: 5px
+      padding: 4.5px 13px
+      font-size: 9.072px
