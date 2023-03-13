@@ -1,5 +1,5 @@
 .official
-  background-color: $blue-bg
+  background-color: $blue-bg 
   padding: 80px 0
   &__wrapper
     position: relative
@@ -18,17 +18,20 @@
       margin-bottom: 38px
     
   &__title-wrap
-    // position: relative
+    position: relative
   &__link-wrap
     position: absolute
     top: 107px
     left: 303px
     +xl 
-      top: 85px
+      top: 67px
       left: 210px
     +lg 
-      top: 107px
-      left: 303px
+      top: 100px
+      left: 300px
+    +md 
+      top: 80px
+      left: 225px
     +sm 
       display: none
   &__title
@@ -36,11 +39,15 @@
     padding-top: 20px
     color: #ffffff
     margin-bottom: 24px
+    +xxl 
+      padding: 0
     +xl 
-      padding-top: 0
       font-size: 55px
     +lg 
-      font-size: 80px
+      font-size: 75px
+    +md 
+      max-width: 315px
+      font-size: 60px
     +xsm 
       font-size: 60px
       margin-bottom: 22px
@@ -87,23 +94,33 @@
       color: $title-color
       background-color: $white
     +xl 
+      margin-bottom: 50px
       width: 260px
     +lg 
       width: 320px
     +xsm 
       display: none
   &__city
-    max-width: 100%
+    width: 777px
+    height: 491px
     object-fit: cover
+    +xxl
+      width: 720px
     +xl 
-      width: 593px
+      width: 600px
     +lg 
       width: 777px
+    +md 
+      max-width: 100%
+      height: auto
     +xsm 
       display: none
   &__cities
     display: none
     +xsm 
+      object-fit: cover
+      width: 342px
+      height: 394px
       display: block
       margin-right: 16px
       
