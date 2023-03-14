@@ -22,10 +22,21 @@
   <div class="slider-wrap">
     <ul class="slider slider--gap-40">
       <!-- ITEM-1 -->
-      <li class="slider__item slider__item--gap-40">
-        <div class="slider__box box slider__box--background slider__box--padding">
-          <a class="slider__img-description img-descr slider__img-description--link">скрытые двери</a>
-          <img src="../../assets/images/popular-slider/popular-1.jpg" alt="popular-door" />
+      <!-- 
+        TODO: Для того что-бы отобразить активные элемент слайдера с фоном, нужно сделать следующие манипуляции:
+          1. Через атрибут style нужно добавить background в элемент с классом slider__box, ниже в примере показал куда нужно добавить.
+          2. Дальше добавляем класс актив("slider__item--active") в элемент slider__item
+          3. Убираем класс slider__box--bordered из элемента slider__box
+      -->
+      <li class="slider__item slider__item--gap-40 slider__item--active">
+        <div
+          class="slider__box box slider__box--padding"
+          style="background: url('./assets/images/slider/active-bg.jpg') no-repeat center center/cover"
+        >
+          <div class="slider__descr-wrap descr-wrap">
+            <p class="slider__img-description img-descr">скрытые двери</p>
+          </div>
+          <img src="assets/images/popular-slider/popular-1.jpg" alt="popular-door" />
         </div>
         <h3 class="slider__subtitle subtitle">Серия Z</h3>
         <p class="slider__description description">Скрытые двери под покраску, либо штукатурку</p>
@@ -34,9 +45,9 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">хит продаж</p>
+            <p class="slider__img-description img-descr">хит продаж</p>
           </div>
-          <img src="../../assets/images/-slider/-2.jpg" alt="-door" />
+          <img src="assets/images/popular-slider/popular-2.jpg" alt="popular-door" />
         </div>
         <h3 class="slider__subtitle subtitle">Серия U</h3>
         <p class="slider__description description">Царговые двери с новейшим покрытием UNILACK</p>
@@ -45,9 +56,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">лакированное покрытие</p>
+            <p class="slider__img-description img-descr">лакированное покрытие</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-3.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-3.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия L</h3>
         <p class="slider__description description">Коллекция погонажных дверей в глянцевом покрытии</p>
@@ -56,9 +71,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">лакированное покрытие</p>
+            <p class="slider__img-description img-descr">лакированное покрытие</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-4.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-4.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия LK</h3>
         <p class="slider__description description">Каркасные двери в глянцевом покрытии</p>
@@ -67,9 +86,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">бюджетные модели</p>
+            <p class="slider__img-description img-descr">бюджетные модели</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-5.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-5.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия XN</h3>
         <p class="slider__description description">Коллекция дверей в покрытии полипропилен</p>
@@ -78,7 +101,11 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--background slider__box--padding">
           <a class="slider__img-description img-descr slider__img-description--link">скрытые двери</a>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-1.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-1.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия Z</h3>
         <p class="slider__description description">Скрытые двери под покраску, либо штукатурку</p>
@@ -87,9 +114,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">хит продаж</p>
+            <p class="slider__img-description img-descr">хит продаж</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-2.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-2.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия U</h3>
         <p class="slider__description description">Царговые двери с новейшим покрытием UNILACK</p>
@@ -98,9 +129,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">лакированное покрытие</p>
+            <p class="slider__img-description img-descr">лакированное покрытие</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-3.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-3.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия L</h3>
         <p class="slider__description description">Коллекция погонажных дверей в глянцевом покрытии</p>
@@ -109,9 +144,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">лакированное покрытие</p>
+            <p class="slider__img-description img-descr">лакированное покрытие</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-4.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-4.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия LK</h3>
         <p class="slider__description description">Каркасные двери в глянцевом покрытии</p>
@@ -120,9 +159,13 @@
       <li class="slider__item slider__item--gap-40">
         <div class="slider__box box slider__box--bordered slider__box--padding">
           <div class="slider__descr-wrap descr-wrap">
-            <p class="slider__img-description img-descr slider__img-description--bordered">бюджетные модели</p>
+            <p class="slider__img-description img-descr">бюджетные модели</p>
           </div>
+          <<<<<<< HEAD
           <img src="../../assets/images/-slider/-5.jpg" alt="-door" />
+          =======
+          <img src="assets/images/popular-slider/popular-5.jpg" alt="popular-door" />
+          >>>>>>> 393f25bd35c9fd3a8b9ad3fabe16aeac30bff6c1
         </div>
         <h3 class="slider__subtitle subtitle">Серия XN</h3>
         <p class="slider__description description">Коллекция дверей в покрытии полипропилен</p>

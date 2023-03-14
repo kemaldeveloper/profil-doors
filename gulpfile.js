@@ -144,5 +144,5 @@ function startWatch() {
 }
 
 // Export
-export const build = series(cleanDist, jsLibs, js, cssLibs, css, buildCopy, buildHtml);
+export const build = series(cleanDist, jsLibs, js, cssLibs, css, buildCopy, buildHtml, svgSprite);
 export default series(jsLibs, js, cssLibs, css, svgSprite, parallel(browserSync, startWatch));
