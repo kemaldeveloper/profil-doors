@@ -14,23 +14,35 @@
       margin-left: 15px
     +xsm
       margin-left: 20px
-  &__item--gap-40
-    width: 250px
-    margin-right: 40px
-  &__item--gap-30
-    width: 250px
-    margin-right: 30px
+
+  &__item
+    &--gap-40
+      width: 250px
+      margin-right: 40px
+    &--gap-30
+      width: 250px
+      margin-right: 30px
+    &--active
+      .slider
+        &__descr-wrap
+          border: none
+          opacity: 1
+          color: $white
+        &__slider__box
+          // border: none
+
   &__box
     position: relative
-  &__box--bordered
-    border: 1px solid rgba(0, 0, 0, 0.2)
-    // margin-right: 40px
-  &__box--background
-    background: linear-gradient(180deg, #5E8894 0%, #032C38 100%)
-  &__box--padding
-    padding: 46px 63px
-    +xsm
-      padding: 41px 55px 41px
+    &--bordered
+      border: 1px solid rgba(0, 0, 0, 0.2)
+      // margin-right: 40px
+    &--background
+      background: linear-gradient(180deg, #5E8894 0%, #032C38 100%)
+    &--padding
+      padding: 46px 63px
+      +xsm
+        padding: 41px 55px 41px
+
   &__subtitle
     margin-top: 20px
     +lg
@@ -39,6 +51,7 @@
       font-size: 14px
     +xsm
       margin-top: 26px
+
   &__description
     margin-top: 16px
     +lg
@@ -48,21 +61,22 @@
       line-height: 130%
     +xsm
       margin-top: 6px
+
   &__descr-wrap
-    display: flex
-    align-items: center
-    justify-content: center
     position: absolute
     left: 13px
     top: 13px
+    display: flex
+    align-items: center
+    justify-content: center
     padding: 2px 11px
+
   &__img-description--link
     position: absolute
     left: 24px
     top: 17.7px
     color: $white
-    &:hover
-      color: $white
+
   &__bottom-wrap
     margin-top: 21px
     display: flex
@@ -70,6 +84,7 @@
     justify-content: space-between
     +xsm
       margin-top: 29px
+
   &__doors-category
     font-weight: 700
     font-size: 16px
@@ -81,9 +96,10 @@
       font-weight: 400
       letter-spacing: 0.01em
       transform: translateX(4px)
+
   &__price
     +xsm
-    margin-left: 3px
+      margin-left: 3px
 
 // .slider .slick-slide
 //   width: 250px
