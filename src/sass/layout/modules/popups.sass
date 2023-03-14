@@ -42,10 +42,13 @@
 .choose
   &__city-list
     margin-top: 20px
-  &__city-link
+  &__city-item
     font-weight: 400
     font-size: 20px
     line-height: 100%
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__city-link
     color: $title-color
     &:hover
       color: $title-color
