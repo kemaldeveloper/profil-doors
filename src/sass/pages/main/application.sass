@@ -1,7 +1,25 @@
 .application
-  padding: 95px 0 95px
-  background: url('../../assets/images/aplication/fon1.jpg') center (center/cover) no-repeat
-  +xsm
+  padding: 93px 0 95px 0
+  position: relative
+  z-index: 999
+  opacity: 1
+  background: url('../../assets/images/aplication/fon0.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+    z-index: -1
+  +md 
+    background: url('../../assets/images/aplication/fon3.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+  +sm
     padding: 79px 0
   &__content
     display: flex
@@ -12,14 +30,15 @@
     margin-bottom: 16px
     max-width: 525px
     color: $white
-    +sm
-      max-width: 390px
+    +xl 
       font-size: 60px
-      margin-bottom: 30px
-    +xsm
-      max-width: 312px
+    +lg 
+      font-size: 70px
+    +sm
       font-size: 40px
+      max-width: 312px
       line-height: 100%
+      margin-bottom: 30px
     span
       color: $accent
   &__str
@@ -28,12 +47,16 @@
     font-size: 16px
     line-height: 110%
     color: $white
+    +xl 
+      max-width: 350px
     +lg
-      margin-bottom: 40px
+      max-width: 513px
+      margin-bottom: 75px
     +sm
       max-width: 334px
       font-size: 14px
       line-height: 130%
-      margin-bottom: 30px
-    +xsm
-      margin-bottom: -9px
+      margin-bottom: 24px
+    +xsm 
+      max-width: 319px
+    

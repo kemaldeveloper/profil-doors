@@ -7,16 +7,11 @@
     justify-content: space-between
     +lg 
       flex-wrap: wrap
-      
   &__content-wrap
     +xl 
       max-width: 270px
     +lg 
-      margin-bottom: 40px
       max-width: 415px
-    +xsm 
-      margin-bottom: 38px
-    
   &__title-wrap
     position: relative
   &__link-wrap
@@ -48,8 +43,7 @@
     +md 
       max-width: 315px
       font-size: 60px
-    +xsm 
-      font-size: 60px
+    +sm 
       margin-bottom: 22px
   &__link
     font-family: $second-font
@@ -63,17 +57,19 @@
   &__text
     max-width: 410px
     color: #ffffff
+    margin-bottom: 34px
     +xl 
       font-size: 13px
     +lg 
       font-size: 16px
-    +xsm 
+    +sm 
       max-width: 335px
       font-size: 14px
       line-height: 130%
+      color: #DFDFDF
     &--str
       max-width: 280px
-      +xsm 
+      +sm 
         max-width: 215px
     &--desc
       max-width: 350px
@@ -81,25 +77,22 @@
         max-width: 305px
     &:not(:last-child)
       margin-bottom: 19px
-      +xsm 
+      +sm 
         margin-bottom: 18px
   &__btn
     display: block
-    margin-top: 34px
+    text-align: center
+    max-width: 320px
     padding: 16px 0
-    width: 320px
-    height: 48px
     color: $title-color
     &:hover
       color: $title-color
       background-color: $white
     +xl 
-      margin-bottom: 50px
       width: 260px
     +lg 
+      margin-bottom: 40px
       width: 320px
-    +xsm 
-      display: none
   &__city
     width: 777px
     height: 491px
@@ -113,15 +106,15 @@
     +md 
       max-width: 100%
       height: auto
-    +xsm 
+    +sm 
       display: none
   &__cities
     display: none
-    +xsm 
+    +sm 
       object-fit: cover
       width: 342px
       height: 394px
       display: block
-      margin-right: 16px
+      margin: 0 auto
       
     
