@@ -57,41 +57,25 @@ textarea
     display: block
     border-bottom: 1px solid #FFFFFF
     margin-top: 9px
-    width: 550px
-    +xl
-      width: 400px
-    +lg
-      width: 550px
-    +md 
-      width: 480px
-    +sm 
-      width: 350px
+    max-width: 100%
+   
   &__contacts
     display: flex
     align-items: center
   &__field
     margin-top: 29px
-    &--line
-      // margin-bottom: -8px
+    // &--line
+    //   margin-bottom: -8px
   &__phone
     margin-top: 18px
     display: flex
     align-items: center
 
 .my-name
-  width: 495px
   color: $white
   background: 0 0 
   margin-left: 20px
   cursor: pointer
-  +xl
-    width: 345px
-  +lg
-    width: 390px
-  +md 
-    width: 420px
-  +sm 
-    width: 260px
   &::placeholder
     font-weight: 400
     font-size: 14px
@@ -104,30 +88,20 @@ textarea
       
 .form-item
   +sm
-    margin-top: 30px
+    margin-bottom: 18px
   &:after
     content: ""
     display: block
+    max-width: 100%
     border-bottom: 1px solid #FFFFFF
-    margin-top: 14px
-    width: 550px
-    +xl
-      width: 400px
-    +lg
-      width: 550px
-    +md 
-      width: 480px
-    +sm 
-      width: 350px
+    padding-top: 16px
   &__contacts
     display: flex
     align-items: center
-    padding-top: 10px
-  &__field
-    padding: 0
-    margin-top: 20px
-    &--line
-      margin-bottom: -8px
+    &--field
+      padding-top: 9px
+    &--distance
+      margin-top: 19px
   &__phone
     margin-top: 18px
     display: flex

@@ -31,32 +31,36 @@
     border: 1px solid $main-color
 
 .btn-primary
-  width: 550px
-  height: 48px
-  padding: 16px 0
+  max-width: 100%
+  padding: 16px 230px
   background: $accent
   border: none
   outline: none
   font-weight: 400
-  font-size: 16px
   line-height: 100%
   text-align: center
   color: $black
-  margin-top: 40px
+  margin-top: 21px
   transition: all 0.3s ease
   &--btn 
-    margin-top: 30px
+    margin-top: 31px
+  +xxl
+    padding: 16px 200px
   +xl
-    width: 400px
+    padding: 16px 175px
   +lg
-    width: 550px
+    padding:  16px 230px
   +md 
-    width: 485px
+    padding: 16px 200px
   +sm 
-    width: 350px
-    padding: 0
-  +xsm 
-    margin-top: 18px
+    margin-top: 24px 
+    padding: 16px 130px
+  +xsm
+    padding: 16px 115px
+  &--button
+    margin-top: 40px
+    +sm 
+      margin-top: 10px
   &:hover
     color: #1a1f31
     background-color: #fff
@@ -73,7 +77,7 @@
   border-radius: 3px
   text-align: center
   background-color: rgba(80, 77, 77, 0.5)
-  +xsm 
+  +sm 
     padding: 2px 10px
     font-size: 10px
     margin: 24px 0 0 8px
@@ -90,29 +94,28 @@
     max-width: 250px
   +md 
     margin-left: 25px
-  +sm 
+  +sm
     margin: 0
-  +xsm
     max-width: 162px
   &__link
     &--indent
       margin-right: 10px
       margin-top: 10px
-    +xsm
+    +sm
       padding: 4.5px 13px
       font-size: 9.072px
     &:nth-child(1)
       margin-right: 11px
-      +xsm
+      +sm
         margin-right: 8px
     &:nth-child(2)
       margin-right: 18px
-      +xsm
+      +sm
         margin-right: 8px
   &__small:not(:last-child)
     margin-right: 15px
     margin-top: 16px
-    +xsm 
+    +sm 
       margin-top: 10px
       padding: 4.5px 13px
       font-size: 9.072px
@@ -120,7 +123,7 @@
     background: rgba(180, 200, 255, 0.3)
     border: none
     margin-top: 18px
-    +xsm 
+    +sm 
       margin-top: 11.5px
       padding: 4.5px 13px
       font-size: 9.072px
@@ -135,16 +138,16 @@
       margin-left: 40px
     +md
       margin-left: 0
-    +xsm
+    +sm
       max-width: 162px
 
 .seeall-button
   display: none
-  +xsm
+  +sm
     display: block
     background: $white
     height: 28px
-    border: 0.999998px solid #DEDEDE
+    border: 1px solid #DEDEDE
 
 .second-blok-btn
   width: 235px
@@ -153,14 +156,16 @@
   margin-left: 115px
   +xxl 
     margin-left: 40px
+  +lg 
+    margin-left: 80px
   +md
-    margin-left: 5px 
-  +xsm
+    margin: 0 
+  +sm
     width: 155.72px
   &__link
     &:nth-child(1)
       margin-right: 21px
-    +xsm
+    +sm
       &:nth-child(1)
         margin-right: 13px
       padding: 4.5px 13px
@@ -169,10 +174,10 @@
     &:nth-child(3)
       margin-right: 17.9px
       margin-top: 6px
-    +xsm 
+    +sm 
       &:nth-child(3)
         margin-right: 13px
-      margin-top: 5px
+      margin-top: 1px
       padding: 4.5px 13px
       font-size: 9.072px
   &__button
@@ -183,7 +188,7 @@
       background: #B4C8FF
       border: none
       color: $white
-    +xsm 
+    +sm 
       margin-top: 5px
       padding: 4.5px 13px
       font-size: 9.072px
