@@ -165,6 +165,16 @@ const initMainSlider = () => {
     $(currentDots[nextSlide]).addClass('active');
   });
 
+  mainSliderClassName.on('init', function (event, slick) {
+    slick.$slider.find('.main-slider__current-count').text(slick.currentSlide + 1);
+    slick.$slider.find('.main-slider__total-count').text(slick.slideCount);
+  });
+
+  mainSliderClassName.on('beforeChange', function (event, slick, currentSlide = 0, nextSlide) {
+    slick.$slider.find('.main-slider__current-count').text(nextSlide + 1);
+    slick.$slider.find('.main-slider__total-count').text(slick.slideCount);
+  });
+
   mainSliderClassName.slick({
     centerMode: true,
     infinite: false,
@@ -179,6 +189,31 @@ const initMainSlider = () => {
     customPaging: function (slider, i) {
       return '<a class="main-slider__dot-link" href="#"></a>';
     },
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          dots: false,
+          arrows: true,
+          prevArrow: $('.main-slider__btn--prev'),
+          nextArrow: $('.main-slider__btn--next'),
+        },
+      },
+    ],
+  });
+
+  $('.main-slider__btn--prev').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const sliderElement = $(this).closest('.main-slider');
+    $(sliderElement).slick('slickPrev');
+  });
+
+  $('.main-slider__btn--next').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const sliderElement = $(this).closest('.main-slider');
+    $(sliderElement).slick('slickNext');
   });
 };
 

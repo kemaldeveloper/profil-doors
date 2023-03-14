@@ -1,10 +1,11 @@
 .main-screen
   height: calc(100vh - 183px)
   position: relative
-  +md 
+  +md
     height: calc(90vh - 183px)
-  +sm 
+  +sm
     height: calc(85vh - 183px)
+
 .main-slider
   height: inherit
   position: relative
@@ -15,6 +16,33 @@
 
   & .slick-track
     height: inherit
+
+  &__mobile-nav
+    display: flex
+    align-items: center
+    +min_sm
+      display: none
+
+  &__btn
+    color: $white
+    &:hover
+      color: $white
+
+  &__counter
+    display: flex
+    align-items: center
+    color: $white
+    font-weight: 700
+    font-size: 13px
+    line-height: 100%
+    font-family: $second-font
+    padding: 0 8px
+
+  &__current-count
+  &__count-seperator
+    margin: 0 1px
+
+  &__total-count
 
   &__content-wrap
     width: 100%
@@ -90,7 +118,7 @@
     display: flex
     align-items: center
     width: 100%
-  
+
     & > li
       line-height: normal
       display: flex
@@ -101,7 +129,7 @@
 
       &:not(:last-child)
         margin-right: 16px
-  
+
   &__dot-link
     display: inline-block
     position: relative
@@ -109,5 +137,3 @@
     height: 3px
     border-radius: 12px
     background: rgba(#DDDDDD, 0.3)
-    +sm 
-      display: none
