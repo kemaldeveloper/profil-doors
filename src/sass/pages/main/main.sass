@@ -1,7 +1,10 @@
 .main-screen
   height: calc(100vh - 183px)
   position: relative
-
+  +md 
+    height: calc(90vh - 183px)
+  +sm 
+    height: calc(85vh - 183px)
 .main-slider
   height: inherit
   position: relative
@@ -87,7 +90,7 @@
     display: flex
     align-items: center
     width: 100%
-
+  
     & > li
       line-height: normal
       display: flex
@@ -106,3 +109,7 @@
     height: 3px
     border-radius: 12px
     background: rgba(#DDDDDD, 0.3)
+    +md 
+      display: none
+  &__dot-link
+    

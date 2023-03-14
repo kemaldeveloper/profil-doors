@@ -2,6 +2,8 @@
   &__top
     background: #F9F9F9
     padding: 10px 0 8px
+    +xl
+      padding: 9px 0 9px
 
   &__top-wrap
     display: flex
@@ -16,41 +18,53 @@
     display: flex
     align-items: center
     justify-content: space-between
-    flex-basis: 384px
+    flex-basis: 387px
     +xl
       flex-basis: 340px
 
   &__city-link
-    text-decoration: underline
     display: flex
     align-items: center
     font-weight: 600
     font-size: 12px
     line-height: 100%
-    color: #2B3B50
+    color: $main-color
     margin-right: 30px
     text-decoration: none
     &:hover
       color: $main-color
     +xl
       margin-right: 20px
+      font-size: 10px
 
   &__city-title
     margin-right: 9px
-    text-decoration: underline
+    position: relative
+    &::after
+      content: ''
+      height: 1px
+      width: 100%
+      position: absolute
+      bottom: -1px
+      left: 0
+      background-color: $main-color
 
   &__list
     min-width: 436px
     display: flex
     justify-content: space-between
     +xl
-      min-width: 395px
-
+      min-width: 379px
+    +lg
+      min-width: 334px
   &__item
     text-decoration: none
     font-weight: 400
     font-size: 12px
     line-height: 100%
+    +xl
+    font-size: 10px
+
   &__link
     color: $main-color
     &:hover
@@ -64,12 +78,24 @@
     line-height: 100%
     font-weight: 600
     font-size: 12px
+    +xl
+      font-size: 10px
 
   &__order-title
+    position: relative
+    margin-left: 14px
     color: $main-color
-    margin-left: 12px
     &:hover
-      border-bottom: 1px solid $main-color
+      &::after
+        content: ''
+        height: 1px
+        width: 100%
+        position: absolute
+        bottom: -1px
+        left: 0
+        background-color: $main-color
+    +xl
+      margin-left: 10px
 
   &__tel-link
     width: 115px
@@ -81,35 +107,48 @@
     color: $main-color
     &:hover
       color: $main-color
+    +xl
+      font-size: 10px
 
   &__main
     padding: 30px 0 20px
     border-bottom: 1px solid #DDE0E3
+    +xxl
+      padding: 10px 0 20px
   &__main-wrap
     display: flex
     align-items: center
-    justify-content: space-between
+    +xxl
+      // justify-content: space-between
   &__main-left
     display: flex
     align-items: center
     max-width: 371px
-  &__link-wrap
-    +lg
+    margin-right: 45px
+    +xxl
+      margin-right: 18px
+    +xl
+      margin-right: 22px
 
   &__logo-link
     width: 255px
     height: 50px
     +xxl
-      width: 220px
+      width: 206px
+      height: 40px
+    +xl
+      width: 192px
+      height: 37px
     +lg
-
+      width: 128px
+      height: 24px
   &__logo-link--dn-992
-    +lg
-      display: none
+    // +lg
+    //   display: none
   &__logo-link--dn
     display: none
-    +lg
-      display: block
+    // +lg
+    //   display: block
 
   &__logo
     object-fit: cover
@@ -121,20 +160,25 @@
     line-height: 133%
     color: #000000
     margin-left: 20px
+    &:hover
+      color: $main-color
+    +xxl
+      margin-left: 16.5px
+    +lg
+      font-size: 8.7px
   &__main-icons
-    width: 105px
     display: flex
+    margin-left: 22px
+    +xxl
+      margin-left: auto
   &__main-icon-link:not(:last-child)
-    margin-right: 18px
+    margin-right: 19px
   &__bottom
     padding: 20px 0
     border-bottom: 1px solid #DDE0E3
   &__bottom-list
     display: flex
     justify-content: space-between
-    max-width: 1266px
-  &__bottom-item
-    // height: 12px
   &__bottom-link
     text-transform: uppercase
     color: $main-color
@@ -144,14 +188,22 @@
     &:hover
       text-decoration: underline
       color: $main-color
-      // border-bottom: 1px solid $main-color
 
 .main-nav
-  width: 710px
   &__list
     display: flex
+    align-items: flex-start
     justify-content: space-between
-    width: 734px
+    min-width: 732px
+    +xxl
+      min-width: 513px
+    +xl
+      min-width: 0
+
+  &__item--1200-dn
+    +xxl
+      display: none
+
   &__link
     display: block
     max-height: 28px
@@ -164,8 +216,12 @@
     &:hover
       border: 1px solid $main-color
       color: $main-color
+
   &__link--btn
     padding: 7px 20px
+    width: max-content
+    +xl
+      display: none
   &__link--catalog
     display: flex
     justify-content: space-between
@@ -173,7 +229,7 @@
     width: 109px
     height: 28px
     position: relative
-    padding: 7px 13px 7px 15px
+    padding: 9px 13px 7px 14px
 
 .basket__link
   position: relative
@@ -184,7 +240,7 @@
   background-color: $lighten-blue
   position: absolute
   right: -12px
-  top: -10px
+  top: -9px
   border-radius: 50%
   display: flex
   justify-content: center
