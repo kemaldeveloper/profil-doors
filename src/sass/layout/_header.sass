@@ -36,8 +36,10 @@
     margin-right: 30px
     text-decoration: none
     white-space: nowrap
+    transition: all 0.5s ease
     &:hover
-      color: $main-color
+      color: lighten(#2B3B50, 5%)
+      transform: translateY(-3px)
     +xl
       margin-right: 20px
       font-size: 10px
@@ -85,6 +87,9 @@
     font-weight: 600
     font-size: 12px
     white-space: nowrap
+    &:hover
+      color: darken($main-color, 10%)
+      transform: translateY(-3px)
     +xl
       font-size: 10px
     +lg
@@ -118,8 +123,10 @@
     line-height: 100%
     color: $main-color
     white-space: nowrap
+    transition: all 0.3s ease
     &:hover
-      color: $main-color
+      color: lighten($main-color, 10%)
+      transform: translateY(-2px)
     +xl
       font-size: 10px
     +lg
@@ -256,8 +263,10 @@
     line-height: 133%
     color: #000000
     margin-left: 20px
+    transition: all 0.3s ease-in-out
     &:hover
-      color: $main-color
+      color: lighten(#2B3B50, 15%)
+      transform: translateY(-1px)
     +xxl
       margin-left: 16.5px
     +lg
@@ -268,6 +277,11 @@
     margin-left: 22px
     +xxl
       margin-left: auto
+
+  &__main-icon-link
+    transition: all 0.3s ease
+    &:hover
+      transform: translateY(-2px)
 
   &__main-icon-link:not(:last-child)
     margin-right: 19px
@@ -317,9 +331,11 @@
     border: 1px solid #DEDEDE
     border-radius: 5px
     color: $main-color
+    transition: all 0.3s ease-in-out
     &:hover
       border: 1px solid $main-color
       color: $main-color
+      transform: translateY(-3px)
 
   &__link--btn
     padding: 7px 20px
