@@ -2,9 +2,8 @@
   height: calc(100vh - 183px)
   position: relative
   +md
-    height: calc(90vh - 183px)
-  +sm
-    height: calc(85vh - 183px)
+    min-height: 100%
+    height: auto
 
 .main-slider
   height: inherit
@@ -77,12 +76,24 @@
       height: 100%
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
       z-index: -1
+    +md
+      min-height: 100%
+      padding: 100px 0 40px 0
 
+  &__item
+    +md 
+      min-height: 100%
   &__title
     max-width: 442px
     margin-bottom: 26px
     span
       color: $lighten-blue
+    +xl 
+      margin-bottom: 40px
+    +sm 
+      margin-bottom: 31px
+    +xsm 
+      font-size: 50px
 
   &__link
     position: relative
@@ -105,6 +116,8 @@
       width: 100%
       background: $white
       transition: all 0.3s ease
+    +sm 
+      margin-bottom: 100px
 
   &__link-content-wrap
     display: flex
@@ -118,7 +131,6 @@
     display: flex
     align-items: center
     width: 100%
-
     & > li
       line-height: normal
       display: flex
@@ -137,3 +149,6 @@
     height: 3px
     border-radius: 12px
     background: rgba(#DDDDDD, 0.3)
+    transition: all 0.3s ease-in-out
+    &:hover
+      transform: scale(1.2)
