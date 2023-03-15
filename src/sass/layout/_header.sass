@@ -4,6 +4,8 @@
     padding: 10px 0 8px
     +xl
       padding: 9px 0 9px
+    +lg
+      padding: 14px 0 18.5px
 
   &__top-wrap
     display: flex
@@ -21,6 +23,8 @@
     flex-basis: 387px
     +xl
       flex-basis: 340px
+    +lg
+      flex-basis: 0
 
   &__city-link
     display: flex
@@ -31,6 +35,7 @@
     color: $main-color
     margin-right: 30px
     text-decoration: none
+    white-space: nowrap
     &:hover
       color: $main-color
     +xl
@@ -56,7 +61,8 @@
     +xl
       min-width: 379px
     +lg
-      min-width: 334px
+      display: none
+
   &__item
     text-decoration: none
     font-weight: 400
@@ -78,8 +84,11 @@
     line-height: 100%
     font-weight: 600
     font-size: 12px
+    white-space: nowrap
     +xl
       font-size: 10px
+    +lg
+      display: none
 
   &__order-title
     position: relative
@@ -97,29 +106,59 @@
     +xl
       margin-left: 10px
 
+  &__callback-wrap
+    +min_lg
+      display: none
+
   &__tel-link
-    width: 115px
     display: block
     text-decoration: none
     font-weight: 600
     font-size: 12px
     line-height: 100%
     color: $main-color
+    white-space: nowrap
     &:hover
       color: $main-color
     +xl
       font-size: 10px
+    +lg
+      font-size: 12px
+
+  &__callback-link
+    position: relative
+    font-weight: 600
+    font-size: 10px
+    line-height: 100%
+    color: $main-color
+    white-space: nowrap
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 1px
+      width: 100%
+      background-color: $main-color
+    &:hover
+      color: $main-color
+    +min_lg
+      display: none
 
   &__main
     padding: 30px 0 20px
     border-bottom: 1px solid #DDE0E3
     +xxl
       padding: 10px 0 20px
+    +lg
+      display: none
+
   &__main-wrap
     display: flex
     align-items: center
     +xxl
       // justify-content: space-between
+
   &__main-left
     display: flex
     align-items: center
@@ -129,6 +168,63 @@
       margin-right: 18px
     +xl
       margin-right: 22px
+
+  &__menu
+    background: #F0F0F0
+    +min_lg
+      display: none
+
+  &__menu-wrapper
+    display: flex
+    justify-content: space-between
+
+  &__menu-link
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__menu-link--whatsapp
+    background-color: #72D365
+
+  &__menu-btn
+    width: 20px
+    height: 12.4px
+    cursor: pointer
+
+  &__menu-btn span:nth-child(1)
+    display: block
+    width: 20px
+    height: 1.4px
+    background: $main-color
+    margin-bottom: 4.6px
+
+  &__menu-btn span:nth-child(2)
+    display: block
+    width: 16px
+    height: 1.4px
+    background: $main-color
+    margin-bottom: 3.6px
+
+  &__menu-btn span:nth-child(3)
+    display: block
+    width: 12px
+    height: 1.4px
+    background: $main-color
+
+  &__menu-line
+    width: 50px
+    height: 1px
+    background: radial-gradient(rgba(188, 188, 188, 0.69), rgba(146, 146, 146, 0), rgba(160, 160, 160, 0))
+    transform: rotate(-90deg)
+
+  &__top-logo
+    display: block
+    +lg
+      width: 100px
+      height: 19.5px
+      margin-bottom: 10px
+    +min_lg
+      display: none
 
   &__logo-link
     width: 255px
@@ -140,15 +236,7 @@
       width: 192px
       height: 37px
     +lg
-      width: 128px
-      height: 24px
-  &__logo-link--dn-992
-    // +lg
-    //   display: none
-  &__logo-link--dn
-    display: none
-    // +lg
-    //   display: block
+      display: none
 
   &__logo
     object-fit: cover
@@ -165,20 +253,25 @@
     +xxl
       margin-left: 16.5px
     +lg
-      font-size: 8.7px
+      display: none
+
   &__main-icons
     display: flex
     margin-left: 22px
     +xxl
       margin-left: auto
+
   &__main-icon-link:not(:last-child)
     margin-right: 19px
+
   &__bottom
     padding: 20px 0
     border-bottom: 1px solid #DDE0E3
+
   &__bottom-list
     display: flex
     justify-content: space-between
+
   &__bottom-link
     text-transform: uppercase
     color: $main-color
@@ -190,6 +283,7 @@
       color: $main-color
 
 .main-nav
+
   &__list
     display: flex
     align-items: flex-start
@@ -222,6 +316,7 @@
     width: max-content
     +xl
       display: none
+
   &__link--catalog
     display: flex
     justify-content: space-between
