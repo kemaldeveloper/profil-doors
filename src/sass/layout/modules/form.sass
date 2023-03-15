@@ -52,15 +52,14 @@ textarea
       transform: translateY(-3px)
 
 .form-wrap
-  +sm
-    margin-top: 30px
   &:after
     content: ""
     display: block
     border-bottom: 1px solid #FFFFFF
-    margin-top: 9px
+    margin-top: 17px
     max-width: 100%
-
+    +sm
+      margin-top: 15px
   &__contacts
     display: flex
     align-items: center
@@ -78,6 +77,10 @@ textarea
   background: 0 0
   margin-left: 20px
   cursor: pointer
+  font-weight: 400
+  font-size: 14px
+  line-height: 100%
+  opacity: 0.8
   &::placeholder
     font-weight: 400
     font-size: 14px
@@ -87,6 +90,7 @@ textarea
   &:active
     &::placeholder
       font-weight: 600
+  +sm 
 
 .form-item
   +sm

@@ -1,10 +1,10 @@
 .footer
-  padding: 75px 0 43px 0
+  padding: 75px 0 44px 0
   background: $title-color
   +sm
-    padding: 97px 0 74px 0
-  +xsm
-    padding: 97.5px 0 80px 0
+    padding: 97px 0 80px 0
+  // +xsm
+  //   padding: 97.5px 0 80px 0
 
 .content
   display: flex
@@ -40,7 +40,7 @@
       max-width: 325px
       font-size: 14px
       line-height: 130%
-      margin-bottom: 20px
+      margin-bottom: 27px
   &__desc
     padding-top: 6px
     font-weight: 600
@@ -49,8 +49,9 @@
     color: $white
     margin-bottom: 33px
     +sm
+      padding: 0
       font-size: 14px
-      margin-bottom: -5px
+      margin-bottom: 25px
 
 .footer-bottom
   position: relative
@@ -59,7 +60,16 @@
     position: relative
     display: flex
     border-top: 1px solid #383131
-    padding: 34px 0 70px 0
+    padding: 34px 0 70px
+    +sm 
+      padding: 80px 0 75px 0
+    &--line-between
+      margin-top: 44px
+      +sm 
+        margin-top: 78px
+        // display: block
+        // width: 243px
+        // height: 47px
     &:after
       content: ''
       position: absolute
@@ -82,7 +92,7 @@
     font-size: 12px
     line-height: 133%
     color: $white
-    margin-bottom: 9px
+    margin: 22px 0 9px 0
 
   &__str
     font-weight: 300
@@ -122,22 +132,21 @@
     +sm
       margin-bottom: 24px
 
-.footer
   &__col
     +lg
       margin-top: 20px
     +sm
       margin: 0
-
   &__list
     font-weight: 400
     font-size: 14px
     line-height: 100%
     color: $white
+    margin-bottom: 40px
     +sm
       margin-bottom: 40px
   &__item:not(:last-child)
-    margin-bottom: 15px
+      margin-bottom: 15px
   &__link
     font-weight: 400
     font-size: 14px
