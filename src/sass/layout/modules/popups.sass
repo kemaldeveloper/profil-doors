@@ -2,15 +2,16 @@
 .mfp
   position: relative
   max-width: 580px
-  min-height: 476px
+  // min-height: 476px
   text-align: left
   padding: 68px 60px
   margin: 2.5rem auto
   background: #fff
   +md
-    max-width: 450px
-  +sm
-    max-width: 360px
+    max-width: 325px
+    padding: 40px 25px
+  // +sm
+  //   max-width: 360px
 
   &__title
     font-weight: 700
@@ -19,6 +20,11 @@
     font-family: $second-font
     margin-bottom: 15px
     color: $title-color
+    +md 
+      font-size: 40px
+      max-width: 250px
+    &--title
+      max-width: 275px
   &__desc
     font-weight: 400
     font-size: 16px
@@ -26,6 +32,11 @@
     letter-spacing: 0.01em
     color: $main-color
     margin-bottom: 28px
+    +md 
+      max-width: 245px
+      margin-bottom: 15px
+    &--text
+      max-width: 275px
 
 .mfp
   .mfp-close
