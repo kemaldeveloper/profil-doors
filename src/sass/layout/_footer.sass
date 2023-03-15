@@ -80,7 +80,11 @@
     +sm
       width: 350px
       padding: 74px 0 74.5px 0
-
+  &__logo
+    width: 243px
+    height: 47.22px
+  &__info
+    margin-bottom: 40px
   &__logo
     margin-bottom: 18px
     +sm
@@ -143,6 +147,7 @@
     line-height: 100%
     color: $white
     margin-bottom: 40px
+    
     +sm
       margin-bottom: 40px
   &__item:not(:last-child)
@@ -152,7 +157,8 @@
     font-size: 14px
     line-height: 100%
     color: $white
-
+    &:hover
+      color: $white
 .phone
   display: none
   +sm
@@ -170,3 +176,4 @@
     line-height: 100%
     text-decoration-line: underline
     color: $white
+
