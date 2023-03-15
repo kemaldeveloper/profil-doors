@@ -42,15 +42,15 @@
   color: $black
   margin-top: 21px
   transition: all 0.3s ease
-  &--btn 
+  &--btn
     margin-top: 31px
   +xxl
     padding: 16px 200px
   +xl
     padding: 16px 175px
   +lg
-    padding:  16px 230px
-  +md 
+    padding: 16px 230px
+  +md
     padding: 16px 200px
   +sm 
     margin-top: 33px 
@@ -59,7 +59,7 @@
     padding: 16px 115px
   &--button
     margin-top: 40px
-    +sm 
+    +sm
       margin-top: 10px
   &:hover
     color: #1a1f31
@@ -76,12 +76,15 @@
   +lg
     margin-left: 50px
     max-width: 250px
-  +md 
+  +md
     margin-left: 25px
   +sm
     margin: 0
     max-width: 162px
   &__link
+    transition: all 0.3s ease
+    &:hover
+      transform: translateY(-3px)
     &--indent
       margin-right: 10px
       margin-top: 10px
@@ -96,22 +99,31 @@
       margin-right: 18px
       +sm
         margin-right: 8px
+
+  &__small
+    transition: all 0.3s ease
+    &:hover
+      transform: translateY(-3px)
+
   &__small:not(:last-child)
     margin-right: 15px
     margin-top: 16px
-    +sm 
+    +sm
       margin-top: 10px
       padding: 4.5px 13px
       font-size: 9.072px
+
   &__button
     background: rgba(180, 200, 255, 0.3)
     border: none
     margin-top: 18px
-    +sm 
+    transition: all 0.3s ease
+    +sm
       margin-top: 11.5px
       padding: 4.5px 13px
       font-size: 9.072px
     &:hover
+      transform: translateY(-3px)
       background: #B4C8FF
       border: none
       color: $white
@@ -138,12 +150,12 @@
   display: flex
   flex-wrap: wrap
   margin-left: 115px
-  +xxl 
+  +xxl
     margin-left: 40px
-  +lg 
+  +lg
     margin-left: 80px
   +md
-    margin: 0 
+    margin: 0
   +sm
     width: 155.72px
   &__link
@@ -152,27 +164,32 @@
     +sm
       &:nth-child(1)
         margin-right: 13px
-      padding: 4.5px 13px
-      font-size: 9.072px
+        padding: 4.5px 13px
+        font-size: 9.072px
   &__small
+    transition: all 0.3s ease
+    &:hover
+      transform: translateY(-3px)
     &:nth-child(3)
       margin-right: 17.9px
       margin-top: 6px
-    +sm 
+    +sm
       &:nth-child(3)
         margin-right: 13px
-      margin-top: 1px
-      padding: 4.5px 13px
-      font-size: 9.072px
+        margin-top: 1px
+        padding: 4.5px 13px
+        font-size: 9.072px
   &__button
     background: rgba(180, 200, 255, 0.3)
     border: none
     margin-top: 6px
+    transition: all 0.3s ease
     &:hover
+      transform: translateY(-3px)
       background: #B4C8FF
       border: none
       color: $white
-    +sm 
+    +sm
       margin-top: 5px
       padding: 4.5px 13px
       font-size: 9.072px
