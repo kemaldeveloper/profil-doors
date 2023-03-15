@@ -1,23 +1,67 @@
 .advantages
   padding: 50px 0 100px
+
   &__wrapper
     display: flex
     justify-content: space-between
+    +md
+      flex-direction: column
+    +sm
+      justify-content: center
+      align-items: center
+
   &__item-wrap
+    +md
+      margin-left: 44px
+    +sm
+      max-width: 250px
+
   &__item
     max-width: 250px
+    +xl
+      max-width: 210px
+    +lg
+      max-width: 154px
+    +md
+      display: flex
+      max-width: 100%
+      &:not(:last-child)
+        margin-bottom: 30px
+
   &__subtitle
     font-weight: 600
     font-size: 18px
     line-height: 115%
     color: $blue-bg
     margin-bottom: 10px
+    +xl
+      font-size: 16px
+    +lg
+      font-size: 12px
+    +md
+      font-size: 14px
+      line-height: 130%
+
+  &__subtitle br
+    +md
+      display: none
+
   &__description
     font-weight: 400
     font-size: 16px
     line-height: 110%
     color: $black
+    letter-spacing: 0.01em
+    +xl
+      font-size: 14px
+    +lg
+      font-size: 10px
+    +md
+      font-size: 14px
+      line-height: 130%
+
     &--text
       width: 125px
+
     &--size-width
       max-width: 170px
