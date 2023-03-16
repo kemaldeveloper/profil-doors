@@ -1,0 +1,89 @@
+.review
+  padding: 50px 0
+  &__wrap
+    display: flex
+    justify-content: space-between
+  .tabs
+    padding-top: 20px
+    
+    &__items
+      display: flex
+      align-items: center
+      margin-bottom: 40px
+    &__title
+      margin-right: 60px
+      font-weight: 400
+      font-size: 14px
+      line-height: 110%
+      color: $black
+      cursor: pointer
+      &:hover
+        color: $black
+
+    &__block
+      // display: none
+      .active
+        display: block
+
+    &__text
+      max-width: 633px
+      font-weight: 400
+      font-size: 14px
+      line-height: 111.5%
+      color: #191E32
+      margin-bottom: 10px
+    &__subtitle
+      font-weight: 600
+      font-size: 14px
+      line-height: 111.5%
+      color: #191E32
+    &__item 
+      margin-bottom: 35px
+      margin-left: 20px
+    &__str
+      list-style-type: disc
+      font-weight: 400
+      font-size: 14px
+      line-height: 111.5%
+      color: #191E32
+    .active
+      font-weight: 600
+      font-size: 14px
+      line-height: 110%
+      color: #000000
+.preview-wrapper
+  &__item
+    padding: 47px 87px 30px 
+    text-align: center
+    background: #2B3B50
+  &__title
+    max-width: 151px
+    font-family: $second-font
+    font-weight: 700
+    font-size: 24px
+    line-height: 100%
+    color: $white
+    margin: auto
+  &__photo
+    object-fit: cover
+    max-width: 110.5px
+    height: 286px
+    margin-top: 20px
+  &__subtitle
+    max-width:: 148px
+    font-family: $second-font
+    font-weight: 700
+    font-size: 24px
+    line-height: 100%
+    color: $white
+    margin: 31px auto 10px
+  &__text
+    max-width: 182.5px
+    font-weight: 500
+    font-size: 16px
+    line-height: 115%
+    color: $white
+  &__btn-infor
+    background: #EDB362
+    max-width: 355px
+    padding: 16px 104.5px
