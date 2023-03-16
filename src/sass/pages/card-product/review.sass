@@ -1,10 +1,23 @@
 .review
   padding: 50px 0
-
+  +lg 
+    padding: 0
   &__wrap
+    position: relative
     display: flex
     justify-content: space-between
+    +lg 
+      flex-wrap: wrap
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #D5D5D5
   .tabs
+    max-width: 633px
     padding-top: 20px
 
     &__items
@@ -26,13 +39,16 @@
         line-height: 110%
         color: $black
         letter-spacing: 0.01em
-
     &__block
       display: none
-
+      opacity: 0
+      transition: opacity 0.3s ease-in-out
+      
     &__block.active
       display: block
-
+      opacity: 1
+      +lg 
+        margin-bottom: 80px
     &__text
       max-width: 633px
       font-weight: 400
@@ -40,11 +56,21 @@
       line-height: 111.5%
       color: #191E32
       margin-bottom: 10px
+      +sm 
+        font-size: 12px
+        line-height: 130%
+        letter-spacing: 0.035em
+        color: #6F737D
     &__subtitle
       font-weight: 600
       font-size: 14px
       line-height: 111.5%
       color: #191E32
+      +sm
+        font-size: 12px
+        line-height: 130%
+        letter-spacing: 0.035em
+        color: #6F737D
     &__item
       margin-bottom: 35px
       margin-left: 20px
@@ -54,18 +80,25 @@
       font-size: 14px
       line-height: 111.5%
       color: #191E32
+      +sm 
+        font-size: 12px
+        line-height: 130%
+        letter-spacing: 0.035em
+        color: #6F737D
     .active
       font-weight: 600
       font-size: 14px
       line-height: 110%
       color: #000000
-
 .preview-wrapper
-
+  +xsm 
+    width: 100%
   &__item
     padding: 47px 87px 30px
     text-align: center
     background: #2B3B50
+    +sm
+      padding: 46px 46px 40px
 
   &__title
     max-width: 151px
@@ -75,6 +108,9 @@
     line-height: 100%
     color: $white
     margin: auto
+    +sm 
+      font-size: 40px
+      max-width: 258px
   &__photo
     object-fit: cover
     max-width: 110.5px
@@ -87,14 +123,33 @@
     font-size: 24px
     line-height: 100%
     color: $white
-    margin: 31px auto 10px
+    padding-top: 31px
+    // margin: 31px auto 10px
+    margin: auto
+    +sm 
+      max-width: 200px
+      font-size: 18px
+      font-family: $deff
   &__text
     max-width: 182.5px
     font-weight: 500
     font-size: 16px
     line-height: 115%
     color: $white
+    margin-top: 10px
+    +sm 
+      padding-top: 10px
+      font-weight: 400
+      font-size: 14px
+      line-height: 130%
+      text-align: center
+      letter-spacing: 0.01em
+      color: $white
+      margin: auto
   &__btn-infor
     background: #EDB362
-    max-width: 355px
+    max-width: 357px
     padding: 16px 104.5px
+    +xsm 
+      padding: 11px 100px
+      max-width: 360px
