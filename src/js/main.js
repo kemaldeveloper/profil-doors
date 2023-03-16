@@ -258,3 +258,48 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .eq($(this).index())
     .addClass('active');
 });
+
+
+
+
+// Анимация плавного появления и исчезновения блоков
+//  с помощью методов fadeIn() и fadeOut():
+
+// $('.tabs__items').on('click', 'li:not(.active)', function () {
+//   let index = $(this).index();
+//   $('.tabs__block.active').fadeOut(300, function () {
+//     $(this).removeClass('active');
+//     $('.tabs__block').eq(index).fadeIn(300).addClass('active');
+//   });
+//   $(this).addClass('active').siblings().removeClass('active');
+// });
+
+
+
+// нимация появления и исчезновения блоков с помощью 
+// методов slideDown() и slideUp():
+
+// $('.tabs__items').on('click', 'li:not(.active)', function () {
+//   let index = $(this).index();
+//   $('.tabs__block.active').slideUp(300, function () {
+//     $(this).removeClass('active');
+//     $('.tabs__block').eq(index).slideDown(300).addClass('active');
+//   });
+//   $(this).addClass('active').siblings().removeClass('active');
+// });
+
+
+// Анимация появления и исчезновения блоков с помощью методов 
+// animate() и opacity():
+
+// $('.tabs__items').on('click', 'li:not(.active)', function () {
+//   let index = $(this).index();
+//   $('.tabs__block.active').animate({opacity: 0}, 300, function () {
+//     $(this).removeClass('active');
+//     $('.tabs__block').eq(index).animate({opacity: 1}, 300).addClass('active');
+//   });
+//   $(this).addClass('active').siblings().removeClass('active');
+// });
+
+
+
