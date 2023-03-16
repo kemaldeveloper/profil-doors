@@ -1,5 +1,7 @@
 .catalog
   padding: 30px 0 100px
+  +sm
+    padding: 30px 0 80px
 
   &__wrapper
     display: flex
@@ -8,6 +10,9 @@
     row-gap: 60px
     +xxl
       column-gap: 30px
+    +sm
+      row-gap: 40px
+      justify-content: center
 
   &__item
     width: 600px
@@ -15,6 +20,9 @@
     background: $catalog-item-bg
     display: flex
     justify-content: space-between
+    transition: all 0.3s ease
+    &:hover
+      background: darken($catalog-item-bg, 5%)
     +xxl
       width: 540px
     +xl
@@ -23,29 +31,58 @@
       flex-direction: column-reverse
       height: 100%
       width: 330px
+    +md
+      width: 100%
+    +sm
+      width: 351px
+      background: transparent
+      &:hover
+        background: transparent
 
   &__content-wrap
-    padding: 30px 0 48px 30px
+    padding: 30px 0 25px 30px
     width: 100%
     +lg
       height: 278px
       padding: 30px 30px 48px 30px
+    +sm
+      height: 177px
+      padding: 40px 30px 0 0
 
   &__title
+    display: block
     font-family: $second-font
     font-weight: 700
     font-size: 24px
     line-height: 100%
     color: $main-color
+    margin-bottom: 25px
+    &:hover
+      color: lighten($main-color, 20%)
     +xl
       font-size: 21px
+    +md
+      text-align: center
+    +sm
+      text-align: start
+      font-size: 24px
+      margin-bottom: 20px
 
-  &__series-wrap
-    display: flex
+  &__title br
+    +md
+      display: none
+    +sm
+      display: block
 
   &__series-list
-    margin-top: 25px
-    width: 50%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    width: 100%
+    height: 170px
+    +sm
+      height: 69px
+      row-gap: 14px
 
   &__series-item
     display: block
@@ -56,21 +93,28 @@
     width: max-content
     &:not(:last-child)
       margin-bottom: 15px
-
+      +sm
+        margin-bottom: 0
   &__series
     color: $main-color
     display: flex
     align-items: center
+    &:hover
+      color: darken($main-color, 10%)
     p
       margin-right: 10px
 
   &__img-wrap
     min-width: 250px
     min-height: 280px
+    margin-left: 10px
     +xl
       min-width: 190px
     +lg
       height: 250px
+      margin: 0
+    +sm
+      height: 351px
 
   &__img
     width: 100%
