@@ -59,9 +59,13 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: 0.01em
 
 .subtitle
+  display: block
   font-weight: 600
   font-size: 18px
   line-height: 115%
+  color: #222222
+  &:hover
+    color: lighten(#222222, 30%)
 
 .description
   font-weight: 400
@@ -70,8 +74,12 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: 0.01em
 
 .box
+  display: block
   width: 250px
   height: 414px
+  color: inherit
+  &:hover
+    color: inherit
   +sm
     width: 220px
     height: 364.32px
