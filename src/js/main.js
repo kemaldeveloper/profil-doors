@@ -180,6 +180,8 @@ const initMainSlider = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
     dots: true,
     arrows: false,
     fade: true,
@@ -243,4 +245,16 @@ $('.prev').on('click', function () {
 
 $('.next').on('click', function () {
   $(this).closest('.slider-block').find('.slider').slick('slickNext');
+});
+
+$('.tabs__items').on('click', 'li:not(.active)', function () {
+  $(this)
+    .addClass('active')
+    .siblings()
+    .removeClass('active')
+    .closest('.tabs')
+    .find('.tabs__block')
+    .removeClass('active')
+    .eq($(this).index())
+    .addClass('active');
 });

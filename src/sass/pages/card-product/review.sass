@@ -1,29 +1,37 @@
 .review
   padding: 50px 0
+
   &__wrap
     display: flex
     justify-content: space-between
   .tabs
     padding-top: 20px
-    
+
     &__items
       display: flex
       align-items: center
       margin-bottom: 40px
-    &__title
-      margin-right: 60px
-      font-weight: 400
-      font-size: 14px
-      line-height: 110%
-      color: $black
-      cursor: pointer
-      &:hover
+      li
+        font-weight: 400
+        font-size: 14px
+        line-height: 110%
+        letter-spacing: 0.01em
+        cursor: pointer
+        &:not(:last-child)
+          margin-right: 60px
+      .acitve
+        margin-right: 60px
+        font-weight: 600
+        font-size: 14px
+        line-height: 110%
         color: $black
+        letter-spacing: 0.01em
 
     &__block
-      // display: none
-      .active
-        display: block
+      display: none
+
+    &__block.active
+      display: block
 
     &__text
       max-width: 633px
@@ -37,7 +45,7 @@
       font-size: 14px
       line-height: 111.5%
       color: #191E32
-    &__item 
+    &__item
       margin-bottom: 35px
       margin-left: 20px
     &__str
@@ -51,11 +59,14 @@
       font-size: 14px
       line-height: 110%
       color: #000000
+
 .preview-wrapper
+
   &__item
-    padding: 47px 87px 30px 
+    padding: 47px 87px 30px
     text-align: center
     background: #2B3B50
+
   &__title
     max-width: 151px
     font-family: $second-font
@@ -70,7 +81,7 @@
     height: 286px
     margin-top: 20px
   &__subtitle
-    max-width:: 148px
+    max-width: 148px
     font-family: $second-font
     font-weight: 700
     font-size: 24px
