@@ -38,8 +38,7 @@
     white-space: nowrap
     transition: all 0.5s ease
     &:hover
-      color: lighten(#2B3B50, 5%)
-      transform: translateY(-3px)
+      color: lighten(#2B3B50, 40%)
     +xl
       margin-right: 20px
       font-size: 10px
@@ -89,7 +88,6 @@
     white-space: nowrap
     &:hover
       color: darken($main-color, 10%)
-      transform: translateY(-3px)
     +xl
       font-size: 10px
     +lg
@@ -125,8 +123,7 @@
     white-space: nowrap
     transition: all 0.3s ease
     &:hover
-      color: lighten($main-color, 10%)
-      transform: translateY(-2px)
+      color: lighten($main-color, 40%)
     +xl
       font-size: 10px
     +lg
@@ -148,7 +145,7 @@
       width: 100%
       background-color: $main-color
     &:hover
-      color: $main-color
+      color: lighten($main-color, 50%)
     +min_lg
       display: none
 
@@ -186,20 +183,35 @@
     justify-content: space-between
 
   &__menu-btn-wrap
-    width: 15%
+    position: relative
     display: flex
     justify-content: center
     align-items: center
+    width: 16%
+    cursor: pointer
+    &:hover
+      background-color: darken(#F0F0F0, 5%)
+    &::after
+      content: ''
+      position: absolute
+      right: 0
+      width: 1px
+      height: 50px
+      background: radial-gradient(rgba(188, 188, 188, 0.69), rgba(146, 146, 146, 0), rgba(160, 160, 160, 0))
 
   &__menu-link
     display: flex
     justify-content: center
     align-items: center
     padding: 17px 0
-    width: 25%
+    width: 28%
+    &:hover
+      background-color: darken(#F0F0F0, 5%)
 
   &__menu-link--whatsapp
     background-color: #72D365
+    &:hover
+      background-color: darken(#72D365, 10%)
 
   &__menu-btn
     width: 20px
@@ -225,12 +237,6 @@
     width: 12px
     height: 1.4px
     background: $main-color
-
-  &__menu-line
-    width: 50px
-    height: 1px
-    background: radial-gradient(rgba(188, 188, 188, 0.69), rgba(146, 146, 146, 0), rgba(160, 160, 160, 0))
-    transform: rotate(-90deg)
 
   &__top-logo
     display: block
@@ -265,8 +271,7 @@
     margin-left: 20px
     transition: all 0.3s ease-in-out
     &:hover
-      color: lighten(#2B3B50, 15%)
-      transform: translateY(-1px)
+      color: lighten(#2B3B50, 30%)
     +xxl
       margin-left: 16.5px
     +lg
@@ -280,8 +285,6 @@
 
   &__main-icon-link
     transition: all 0.3s ease
-    &:hover
-      transform: translateY(-2px)
 
   &__main-icon-link:not(:last-child)
     margin-right: 19px
@@ -335,7 +338,6 @@
     &:hover
       border: 1px solid $main-color
       color: $main-color
-      transform: translateY(-3px)
 
   &__link--btn
     padding: 7px 20px

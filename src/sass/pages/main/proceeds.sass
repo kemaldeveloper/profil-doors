@@ -1,34 +1,39 @@
 .proceeds
   padding: 46px 0 50px 0
-  +xsm
-    padding: 9px 0 50px
+  +sm
+    padding: 18px 0 50px
+
   &__wrap
     display: flex
     justify-content: space-between
     margin-bottom: 32px
     +md
       align-items: flex-start
+    +sm
+      margin-bottom: 41px
+
   &__title
     +sm
       max-width: 256px
       font-size: 40px
     +xsm
       margin-left: 4px
+
   &__link
     margin-right: 34px
     height: 28px
     margin-top: 29px
     transition: all 0.3s ease
-    &:hover
-      transform: translateY(-3px)
     +lg
       margin-right: 15px
     +md
       margin: 6px 0 0
-    +xsm
-      margin: 2px 1px 0
+    +sm
+      margin: 1px 6px 0 0
+
   &__buttons-wrap
     display: flex
+
   &__arrows-wrap
     display: flex
     column-gap: 20px

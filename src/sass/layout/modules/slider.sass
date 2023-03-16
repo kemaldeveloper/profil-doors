@@ -19,6 +19,8 @@
     &--gap-40
       width: 250px
       margin-right: 40px
+      +sm
+        margin-right: 44px
     &--gap-30
       width: 250px
       margin-right: 30px
@@ -28,8 +30,10 @@
           border: none
           opacity: 1
           color: $white
-        &__slider__box
-          // border: none
+
+  &__item
+    +sm
+      width: 220px
 
   &__box
     position: relative
@@ -39,7 +43,7 @@
       // background: linear-gradient(180deg, #5E8894 0%, #032C38 100%)
     &--padding
       padding: 46px 63px
-      +xsm
+      +sm
         padding: 41px 55px 41px
 
   &__subtitle
@@ -48,8 +52,8 @@
       font-size: 16px
     +md
       font-size: 14px
-    +xsm
-      margin-top: 26px
+    +sm
+      margin-top: 25px
 
   &__description
     margin-top: 16px
@@ -58,8 +62,8 @@
     +md
       font-size: 14px
       line-height: 130%
-    +xsm
-      margin-top: 6px
+    +sm
+      margin-top: 7px
 
   &__descr-wrap
     position: absolute
@@ -69,6 +73,9 @@
     align-items: center
     justify-content: center
     padding: 2px 11px
+    +sm
+      left: 15px
+      top: 14px
 
   &__img-description--link
     position: absolute
@@ -81,7 +88,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    +xsm
+    +sm
       margin-top: 29px
 
   &__doors-category
@@ -89,7 +96,7 @@
     font-size: 16px
     line-height: 100%
     color: #747474
-    +xsm
+    +sm
       font-size: 14px
       line-height: 130%
       font-weight: 400
@@ -97,7 +104,7 @@
       transform: translateX(4px)
 
   &__price
-    +xsm
+    +sm
       margin-left: 3px
 
 // .slider .slick-slide
