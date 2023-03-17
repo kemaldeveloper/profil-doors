@@ -256,7 +256,9 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .find('.tabs__block')
     .removeClass('active')
     .eq($(this).index())
-    .addClass('active');
+    .addClass('active')
+    .hide(1000)
+    .show(1);
 });
 
 
