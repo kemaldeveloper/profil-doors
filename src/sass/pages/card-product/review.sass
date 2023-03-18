@@ -19,7 +19,6 @@
   .tabs
     max-width: 633px
     padding-top: 20px
-
     &__items
       display: flex
       align-items: center
@@ -39,16 +38,13 @@
         line-height: 110%
         color: $black
         letter-spacing: 0.01em
-    &__block
-      display: none
-      opacity: 0
-      transition: opacity 0.3s ease-in-out
-      
     &__block.active
       display: block
-      opacity: 1
       +lg 
         margin-bottom: 80px
+    &__block
+      display: none
+      width: 100%
     &__text
       max-width: 633px
       font-weight: 400
@@ -99,7 +95,6 @@
     background: #2B3B50
     +sm
       padding: 46px 46px 40px
-
   &__title
     max-width: 151px
     font-family: $second-font
