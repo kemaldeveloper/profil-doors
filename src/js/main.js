@@ -320,12 +320,20 @@ const quantityInput = () => {
     const inputElement = $('.card-form__quantity-input');
     const quantityInputValue = Number(inputElement.val());
 
+    if (isNaN(quantityInputValue) || quantityInputValue <= 0) {
+      return;
+    }
+
     inputElement.val(quantityInputValue - 1);
   });
 
   $('.card-form__quantity-btn--right').on('click', (e) => {
     const inputElement = $('.card-form__quantity-input');
     const quantityInputValue = Number(inputElement.val());
+
+    if (isNaN(quantityInputValue)) {
+      return;
+    }
 
     inputElement.val(quantityInputValue + 1);
   });
