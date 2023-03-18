@@ -261,9 +261,6 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .show(1);
 });
 
-
-
-
 // Анимация плавного появления и исчезновения блоков
 //  с помощью методов fadeIn() и fadeOut():
 
@@ -276,9 +273,7 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
 //   $(this).addClass('active').siblings().removeClass('active');
 // });
 
-
-
-// нимация появления и исчезновения блоков с помощью 
+// нимация появления и исчезновения блоков с помощью
 // методов slideDown() и slideUp():
 
 // $('.tabs__items').on('click', 'li:not(.active)', function () {
@@ -290,18 +285,14 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
 //   $(this).addClass('active').siblings().removeClass('active');
 // });
 
-
-// Анимация появления и исчезновения блоков с помощью методов 
+// Анимация появления и исчезновения блоков с помощью методов
 // animate() и opacity():
 
 // $('.tabs__items').on('click', 'li:not(.active)', function () {
 //   let index = $(this).index();
-//   $('.tabs__block.active').animate({opacity: 0}, 300, function () {
+//   $('.tabs__block.active').animate({ opacity: 0 }, 300, function () {
 //     $(this).removeClass('active');
-//     $('.tabs__block').eq(index).animate({opacity: 1}, 300).addClass('active');
+//     $('.tabs__block').eq(index).animate({ opacity: 1 }, 300).addClass('active');
 //   });
 //   $(this).addClass('active').siblings().removeClass('active');
 // });
-
-
-
