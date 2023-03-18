@@ -50,20 +50,6 @@ $('.js-popup').on('click', function (event) {
   mfpPopup(popupID);
 });
 
-// $('.city-popup').on('click', function (event) {
-//   event.preventDefault();
-//   let popupID = $(this).attr('href');
-
-//   mfpPopup(popupID);
-// });
-
-// $('.fix-popup').on('click', function (event) {
-//   event.preventDefault();
-//   let popupID = $(this).attr('href');
-
-//   mfpPopup(popupID);
-// });
-
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
@@ -259,6 +245,21 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .addClass('active')
     .hide(1000)
     .show(1);
+});
+
+$('.color-form__img').on('click', function () {
+  $('.color-form__img').removeClass('img--active');
+  $(this).addClass('img--active');
+});
+
+$('.glass-form__img').on('click', function () {
+  $('.glass-form__img').removeClass('img--active');
+  $(this).addClass('img--active');
+});
+
+$('.molding-form__img').on('click', function () {
+  $('.molding-form__img').removeClass('img--active');
+  $(this).addClass('img--active');
 });
 
 // Анимация плавного появления и исчезновения блоков
