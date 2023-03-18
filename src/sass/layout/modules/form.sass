@@ -118,6 +118,7 @@ textarea
     line-height: 100%
     color: $main-color
     max-width: 432px
+    margin-bottom: 30px
 
   &__price
     font-family: $second-font
@@ -135,7 +136,6 @@ textarea
 
   &__quantity
     position: relative
-    width: 86px
 
   &__quantity-btn
     position: absolute
@@ -158,6 +158,7 @@ textarea
     width: 86px
     height: 60px
     border: 1px solid #B4C8FF
+    padding: 0 25px 0 22px
 
   &__btn-wrap
 
@@ -171,6 +172,8 @@ textarea
     color: $title-color
     border: none
     margin: 0 0 10px 10px
+    &:focus
+      border: 2px solid $black
 
   &__btn-descr
     display: block
@@ -180,3 +183,26 @@ textarea
     line-height: 110%
     letter-spacing: 0.01em
     color: #595959
+
+.color-form
+
+  &__label
+    position: relative
+    &:focus
+      border: 2px solid $black
+
+  &__radio
+    // visibility: hidden
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      background: url(../../../assets/images/card-product/color-img/color-img-1.png)
+      width: 51.8px
+      height: 51.8px
+
+  &__radio img
+    &:focus
+      border: 2px solid $black
