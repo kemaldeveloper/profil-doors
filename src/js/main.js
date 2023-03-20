@@ -50,20 +50,6 @@ $('.js-popup').on('click', function (event) {
   mfpPopup(popupID);
 });
 
-// $('.city-popup').on('click', function (event) {
-//   event.preventDefault();
-//   let popupID = $(this).attr('href');
-
-//   mfpPopup(popupID);
-// });
-
-// $('.fix-popup').on('click', function (event) {
-//   event.preventDefault();
-//   let popupID = $(this).attr('href');
-
-//   mfpPopup(popupID);
-// });
-
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
@@ -78,58 +64,58 @@ $('.js-menu').on('click', function () {
 // });
 
 // E-mail Ajax Send
-$('form').on('submit', function (e) {
-  e.preventDefault();
+// $('form').on('submit', function (e) {
+//   e.preventDefault();
 
-  let form = $(this);
-  let formData = {};
-  formData.data = {};
+//   let form = $(this);
+//   let formData = {};
+//   formData.data = {};
 
-  // Serialize
-  form.find('input, textarea').each(function () {
-    let name = $(this).attr('name');
-    let title = $(this).attr('data-name');
-    let value = $(this).val();
+//   // Serialize
+//   form.find('input, textarea').each(function () {
+//     let name = $(this).attr('name');
+//     let title = $(this).attr('data-name');
+//     let value = $(this).val();
 
-    formData.data[name] = {
-      title: title,
-      value: value,
-    };
+//     formData.data[name] = {
+//       title: title,
+//       value: value,
+//     };
 
-    if (name === 'subject') {
-      formData.subject = {
-        value: value,
-      };
-      delete formData.data.subject;
-    }
-  });
+//     if (name === 'subject') {
+//       formData.subject = {
+//         value: value,
+//       };
+//       delete formData.data.subject;
+//     }
+//   });
 
-  $.ajax({
-    type: 'POST',
-    url: 'mail/mail.php',
-    dataType: 'json',
-    data: formData,
-  }).done(function (data) {
-    if (data.status === 'success') {
-      if (form.closest('.mfp-wrap').hasClass('mfp-ready')) {
-        form.find('.form-result').addClass('form-result--success');
-      } else {
-        mfpPopup('#success');
-      }
+//   $.ajax({
+//     type: 'POST',
+//     url: 'mail/mail.php',
+//     dataType: 'json',
+//     data: formData,
+//   }).done(function (data) {
+//     if (data.status === 'success') {
+//       if (form.closest('.mfp-wrap').hasClass('mfp-ready')) {
+//         form.find('.form-result').addClass('form-result--success');
+//       } else {
+//         mfpPopup('#success');
+//       }
 
-      setTimeout(function () {
-        if (form.closest('.mfp-wrap').hasClass('mfp-ready')) {
-          form.find('.form-result').removeClass('form-result--success');
-        }
-        $.magnificPopup.close();
-        form.trigger('reset');
-      }, 3000);
-    } else {
-      alert('Ajax result: ' + data.status);
-    }
-  });
-  return false;
-});
+//       setTimeout(function () {
+//         if (form.closest('.mfp-wrap').hasClass('mfp-ready')) {
+//           form.find('.form-result').removeClass('form-result--success');
+//         }
+//         $.magnificPopup.close();
+//         form.trigger('reset');
+//       }, 3000);
+//     } else {
+//       alert('Ajax result: ' + data.status);
+//     }
+//   });
+//   return false;
+// });
 
 const mfpPopup = function (popupID, source) {
   // https://dimsemenov.com/plugins/magnific-popup/
@@ -261,6 +247,20 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .show(1);
 });
 
+// TODO: @Kemal Потом нужно это реализовать с помощью класса .js-add-border(придумай название, это тестовое название класса)
+const addBorderInActive = (element) => {
+  element.on('click', function () {
+    element.removeClass('img--active');
+    $(this).addClass('img--active');
+  });
+};
+
+addBorderInActive($('.color-form__img'));
+addBorderInActive($('.glass-form__img'));
+addBorderInActive($('.molding-form__img'));
+
+// Анимация плавного появления и исчезновения блоков
+//  с помощью методов fadeIn() и fadeOut():
 
 
 
@@ -375,3 +375,57 @@ colorButtons.forEach(button => {
 });
 
 
+// $('.tabs__items').on('click', 'li:not(.active)', function () {
+//   let index = $(this).index();
+//   $('.tabs__block.active').animate({ opacity: 0 }, 300, function () {
+//     $(this).removeClass('active');
+//     $('.tabs__block').eq(index).animate({ opacity: 1 }, 300).addClass('active');
+//   });
+//   $(this).addClass('active').siblings().removeClass('active');
+// });
+
+// Radio buttons
+const radioButtonsLogic = () => {
+  $('.js-radio-btn').on('change', (e) => {
+    const currentElement = $(e.currentTarget);
+    const radioFormElement = currentElement.closest('.js-radio-form');
+    const formRelation = radioFormElement.find('.js-form-relation');
+    const currentRadioDataName = currentElement.attr('data-name');
+
+    formRelation.text(currentRadioDataName);
+  });
+
+  $('.js-radio-form').each((_, element) => {
+    const defaultCheckedRadioDataName = $(element).find('.js-radio-btn:checked').attr('data-name');
+    $(element).find('.js-form-relation').text(defaultCheckedRadioDataName);
+  });
+};
+
+radioButtonsLogic();
+
+// Quantity input
+const quantityInput = () => {
+  $('.card-form__quantity-btn--left').on('click', (e) => {
+    const inputElement = $('.card-form__quantity-input');
+    const quantityInputValue = Number(inputElement.val());
+
+    if (isNaN(quantityInputValue) || quantityInputValue <= 0) {
+      return;
+    }
+
+    inputElement.val(quantityInputValue - 1);
+  });
+
+  $('.card-form__quantity-btn--right').on('click', (e) => {
+    const inputElement = $('.card-form__quantity-input');
+    const quantityInputValue = Number(inputElement.val());
+
+    if (isNaN(quantityInputValue)) {
+      return;
+    }
+
+    inputElement.val(quantityInputValue + 1);
+  });
+};
+
+quantityInput();
