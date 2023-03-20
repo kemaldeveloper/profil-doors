@@ -262,29 +262,118 @@ addBorderInActive($('.molding-form__img'));
 // Анимация плавного появления и исчезновения блоков
 //  с помощью методов fadeIn() и fadeOut():
 
-// $('.tabs__items').on('click', 'li:not(.active)', function () {
-//   let index = $(this).index();
-//   $('.tabs__block.active').fadeOut(300, function () {
-//     $(this).removeClass('active');
-//     $('.tabs__block').eq(index).fadeIn(300).addClass('active');
-//   });
-//   $(this).addClass('active').siblings().removeClass('active');
-// });
 
-// нимация появления и исчезновения блоков с помощью
-// методов slideDown() и slideUp():
 
-// $('.tabs__items').on('click', 'li:not(.active)', function () {
-//   let index = $(this).index();
-//   $('.tabs__block.active').slideUp(300, function () {
-//     $(this).removeClass('active');
-//     $('.tabs__block').eq(index).slideDown(300).addClass('active');
-//   });
-//   $(this).addClass('active').siblings().removeClass('active');
-// });
 
-// Анимация появления и исчезновения блоков с помощью методов
-// animate() и opacity():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const colorButtonsContainer = document.querySelector('.category-col__choice-color');
+const colorButtons = colorButtonsContainer.querySelectorAll('.category-col__btn');
+
+colorButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    colorButtons.forEach(button => {
+      button.classList.remove('active');
+    });
+
+    button.classList.add('active');
+  });
+});
+
 
 // $('.tabs__items').on('click', 'li:not(.active)', function () {
 //   let index = $(this).index();
