@@ -245,6 +245,7 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .show(1);
 });
 
+
 const addBorderInActive = (element) => {
   element.on('click', function () {
     element.removeClass('img--active');
@@ -254,18 +255,24 @@ const addBorderInActive = (element) => {
 
 addBorderInActive($('.form-img--border'));
 
-// const colorButtonsContainer = document.querySelector('.category-col__choice-color');
-// const colorButtons = colorButtonsContainer.querySelector('.category-col__btn');
+// color btn-imaages
+const colorButtonsContainer = document.querySelector('.category-col__choice-color');
 
-// colorButtons.forEach((button) => {
-//   button.addEventListener('click', () => {
-//     colorButtons.forEach((button) => {
-//       button.classList.remove('active');
-//     });
+if (colorButtonsContainer) {
+  const colorButtons = colorButtonsContainer.querySelectorAll('.category-col__btn');
 
-//     button.classList.add('active');
-//   });
-// });
+  colorButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      colorButtons.forEach((button) => {
+        button.classList.remove('active');
+      });
+
+      button.classList.add('active');
+    });
+  });
+}
+
+
 
 // Radio buttons
 const radioButtonsLogic = () => {
@@ -312,3 +319,7 @@ const quantityInput = () => {
 };
 
 quantityInput();
+
+
+
+
