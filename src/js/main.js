@@ -53,7 +53,19 @@ $('.js-popup').on('click', function (event) {
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
-  $('.mobile-menu').toggleClass('mobile-menu--active');
+  $('.mobile-menu').addClass('mobile-menu--active');
+});
+
+$('.mobile-menu__close-btn').on('click', function () {
+  $('.mobile-menu').removeClass('mobile-menu--active');
+});
+
+$('.spoiler-link').click(function (event) {
+  if ($('.mobile-menu__list').hasClass('spoiler-one')) {
+    $('.spoiler-link').not($(this)).removeClass('active');
+    $('.mobile-menu__spoiler').not($(this).next()).slideUp(300);
+  }
+  $(this).toggleClass('active').next().slideToggle(300);
 });
 
 // Phone input mask

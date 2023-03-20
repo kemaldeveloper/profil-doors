@@ -189,8 +189,6 @@
     align-items: center
     width: 16%
     cursor: pointer
-    &:hover
-      background-color: darken(#F0F0F0, 5%)
     &::after
       content: ''
       position: absolute
@@ -207,6 +205,10 @@
     width: 28%
     &:hover
       background-color: darken(#F0F0F0, 5%)
+      .icon--search-link--hover
+        fill: #b4c8ff
+      .icon--basket-icon--hover
+        fill: #b4c8ff
 
   &__menu-link--whatsapp
     background-color: #72D365
@@ -391,6 +393,7 @@
   &__top-wrap
     display: flex
     justify-content: space-between
+    padding: 0 20px 20px 20px
 
   &__title
     font-weight: 700
@@ -399,18 +402,31 @@
     color: $main-color
     font-family: $second-font
 
+  &__close-btn
+    background: transparent
+    border: none
+
+  &__list
+    margin-bottom: 30px
+
   &__item
     position: relative
+    padding: 0 20px
 
   &__link
     display: flex
+    align-items: center
     width: 100%
     font-weight: 600
     font-size: 14px
     line-height: 130%
     color: $main-color
     padding: 15px 0
-    &::after
+    &:hover
+      color: lighten($main-color, 15%)
+
+  &__link--first
+    &::before
       content: ''
       position: absolute
       left: 0
@@ -419,8 +435,123 @@
       height: 1px
       background: #ECECEC
 
-  &__link span
-    margin-left: 12px
+  &__link
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 1px
+      background: #ECECEC
+
+  &__link.active
+    .icon--menu-arrow
+      transform: rotate(90deg)
+    &::after
+      content: ''
+      display: none
+
+  &__link
+    &-text
+      margin-left: 12px
+
+  &__spoiler, &__catalog-spoiler, &__info-spoiler
+    display: none
+
+  &__spoiler
+    padding-bottom: 25px
+
+  &__spoiler-list
+    display: flex
+    flex-wrap: wrap
+
+  &__spoiler-item
+    font-weight: 500
+    font-size: 12px
+    line-height: 110%
+    text-transform: uppercase
+    width: 60px
+    height: 59px
+    border: 1px solid #E5E5E5
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__spoiler-link
+    color: #545454
+    position: relative
+    &:hover
+      color: lighten(#545454, 15%)
+      &::after
+        content: ''
+        position: absolute
+        bottom: -1px
+        left: 0
+        height: 1px
+        width: 100%
+        background: $main-color
+
+  &__catalog-item
+    font-weight: 400
+    font-size: 14px
+    line-height: 130%
+    margin-bottom: 20px
+
+  &__catalog-link
+    color: $main-color
+    &:hover
+      color: lighten($main-color, 15%)
+
+  &__info-item
+    font-weight: 400
+    font-size: 14px
+    line-height: 130%
+    margin-bottom: 20px
+
+  &__info-link
+    color: $main-color
+    &:hover
+      color: lighten($main-color, 15%)
+
+  &__bottom-wrap
+    padding: 0 20px
+
+  &__title--mb
+    margin-bottom: 20px
+
+  &__social-item
+    height: 46px
+    width: 100%
+    margin-bottom: 15px
+
+  &__social-link
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px solid #ECECEC
+    padding: 13px 20px
+    font-weight: 600
+    font-size: 12px
+    line-height: 100%
+    color: $main-color
+    &:hover
+      color: lighten($main-color, 15%)
+
+  &__social-whatsapp-circle
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 20px
+    height: 20px
+    background: #29A71A
+    border-radius: 50%
+
+  &__time-descr
+    font-weight: 600
+    font-size: 12px
+    line-height: 100%
+    color: #9C9C9C
 
 .mobile-menu--active
   left: 0
