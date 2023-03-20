@@ -282,112 +282,6 @@ textarea
     height: 1px
     overflow: hidden
 
-  &__radio img
-    &:focus
-      border: 2px solid $black
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button
-  display: none
-
-.input-group
-  position: relative
-  display: flex
-  justify-content: space-between
-  align-items: center
-  border: 1px solid #E5E5E5
-  padding: 23.5px 8px
-  margin-bottom: 30px
-  +xxl
-    margin-bottom: 15px
-  +xl
-    margin-bottom: 10px
-  &:after
-    content: ""
-    position: absolute
-    top: 15px
-    left: 50%
-    height: 33px
-    width: 1px
-    border: 1px solid #E5E5E5
-    +xxl
-      top: 15px
-      left: 46%
-  &__addon
-    font-weight: 600
-    font-size: 12px
-    line-height: 115%
-    color: #2B3B50
-  &__control
-    max-width: 52px
-    font-weight: 600
-    font-size: 12px
-    line-height: 115%
-    color: #2B3B50
-    &::placeholder
-      font-weight: 600
-      font-size: 12px
-      line-height: 115%
-      color: #2B3B50
-  
-.form-checkbox
-  max-width: 148px
-  &__wrap
-    display: flex
-    align-items: center 
-    cursor: pointer
-    &:nth-child(1)
-      margin-bottom: 14px
-    &:nth-child(2)
-      margin-bottom: 14px
-  &__btn
-    width: 17px
-    height: 17px
-    outline: 2px solid #2B3B50
-    &:checked::after
-      content: none
-      display: none !important
-  &__text
-    margin-left: 20px
-    font-weight: 600
-    font-size: 14px
-    line-height: 115%
-    color: #2B3B50
-    background-color: transparent
-    cursor: pointer
   &__img
     width: 51.8px
     height: 51.8px
@@ -506,3 +400,81 @@ input[type="number"]::-webkit-outer-spin-button
 
 .img--active
   border: 2px solid $main-color
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+  display: none
+
+.input-group
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border: 1px solid #E5E5E5
+  padding: 23.5px 8px
+  margin-bottom: 30px
+  +xxl
+    margin-bottom: 15px
+  +xl
+    margin-bottom: 10px
+  &:after
+    content: ""
+    position: absolute
+    top: 15px
+    left: 50%
+    height: 33px
+    width: 1px
+    border: 1px solid #E5E5E5
+    +xxl
+      top: 15px
+      left: 46%
+  &__addon
+    font-weight: 600
+    font-size: 12px
+    line-height: 115%
+    color: #2B3B50
+  &__control
+    max-width: 52px
+    font-weight: 600
+    font-size: 12px
+    line-height: 115%
+    color: #2B3B50
+    &::placeholder
+      font-weight: 600
+      font-size: 12px
+      line-height: 115%
+      color: #2B3B50
+
+.form-checkbox
+  max-width: 148px
+  &__wrap
+    display: flex
+    align-items: center
+    cursor: pointer
+    &:nth-child(1)
+      margin-bottom: 14px
+    &:nth-child(2)
+      margin-bottom: 14px
+  &__btn
+    width: 17px
+    height: 17px
+    outline: 2px solid #2B3B50
+    &:checked::after
+      content: none
+      display: none !important
+  &__text
+    margin-left: 20px
+    font-weight: 600
+    font-size: 14px
+    line-height: 115%
+    color: #2B3B50
+    background-color: transparent
+    cursor: pointer
+  &__img
+    width: 51.8px
+    height: 51.8px
+    object-fit: cover
+    cursor: pointer
+    +lg
+      width: 40px
+      height: 40px

@@ -117,6 +117,8 @@
     </div>
   </div>
 
+  <!-- MOBILE MENU -->
+
   <div class="header__menu">
     <div class="container">
       <div class="header__menu-wrapper">
@@ -128,50 +130,179 @@
           </div>
         </div>
         <a href="" class="header__menu-link">
-          <svg class="icon icon--search-link"><use xlink:href="assets/svg-sprite.svg#search-icon"></use></svg>
+          <svg class="icon icon--search-link icon--search-link--hover">
+            <use xlink:href="assets/svg-sprite.svg#search-icon"></use>
+          </svg>
         </a>
         <a href="" class="header__menu-link header__menu-link--whatsapp">
           <svg class="icon icon--whatsapp"><use xlink:href="assets/svg-sprite.svg#whatsapp"></use></svg>
         </a>
         <a href="" class="header__menu-link">
-          <svg class="icon icon--basket-icon"><use xlink:href="assets/svg-sprite.svg#basket-icon"></use></svg>
+          <svg class="icon icon--basket-icon icon--basket-icon--hover">
+            <use xlink:href="assets/svg-sprite.svg#basket-icon"></use>
+          </svg>
         </a>
       </div>
     </div>
     <nav class="mobile-menu">
       <div class="mobile-menu__top-wrap">
         <h4 class="mobile-menu__title">МЕНЮ</h4>
-        <svg class="icon icon--close-menu">
-          <use xlink:href="assets/svg-sprite.svg#close-menu"></use>
-        </svg>
+        <button class="mobile-menu__close-btn">
+          <svg class="icon icon--close-menu">
+            <use xlink:href="assets/svg-sprite.svg#close-menu"></use>
+          </svg>
+        </button>
       </div>
-      <ul class="mobile-menu__list">
+      <ul class="mobile-menu__list spoiler-one">
         <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">
+          <a href="#" class="mobile-menu__link mobile-menu__link--first spoiler-link">
             <svg class="icon icon--menu-table">
               <use xlink:href="assets/svg-sprite.svg#menu-table"></use>
             </svg>
-            <span>Таблица серий</span>
+            <span class="mobile-menu__link-text">Таблица серий</span>
             <svg class="icon icon--menu-arrow">
               <use xlink:href="assets/svg-sprite.svg#menu-arrow"></use>
             </svg>
           </a>
-          <!-- .mobile-menu__ -->
+          <div class="mobile-menu__spoiler">
+            <ul class="mobile-menu__spoiler-list">
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">u</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">l</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">n</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">xn</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">X</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">e</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">LK</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">PA</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">PW</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">PD</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">PM</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">P</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">NA</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">ZN</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">OZ</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">OPA</a></li>
+              <li class="mobile-menu__spoiler-item"><a href="" class="mobile-menu__spoiler-link">SMK</a></li>
+            </ul>
+          </div>
         </li>
+
         <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Каталог</a>
+          <a href="#" class="mobile-menu__link spoiler-link">
+            <span>Каталог</span>
+            <svg class="icon icon--menu-arrow">
+              <use xlink:href="assets/svg-sprite.svg#menu-arrow"></use>
+            </svg>
+          </a>
+          <div class="mobile-menu__spoiler">
+            <ul class="mobiler-menu__catalog-list">
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Межкомнатные двери</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Стеклянные двери</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Скрытые двери</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Системы открывания</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Комплектующие</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Декоративные панели</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Фурнитура</a>
+              </li>
+              <li class="mobile-menu__catalog-item">
+                <a href="#" class="mobile-menu__catalog-link">Все категории</a>
+              </li>
+            </ul>
+          </div>
         </li>
+
         <li class="mobile-menu__item">
           <a href="#" class="mobile-menu__link">Акции</a>
         </li>
+
         <li class="mobile-menu__item">
           <a href="#" class="mobile-menu__link">Дизайнерам</a>
         </li>
+
         <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Информация</a>
+          <a href="#" class="mobile-menu__link spoiler-link">
+            <svg class="icon icon--menu-info">
+              <use xlink:href="assets/svg-sprite.svg#menu-info"></use>
+            </svg>
+            <span class="mobile-menu__link-text">Информация</span>
+            <svg class="icon icon--menu-arrow">
+              <use xlink:href="assets/svg-sprite.svg#menu-arrow"></use>
+            </svg>
+          </a>
+          <div class="mobile-menu__spoiler">
+            <ul class="mobile-menu__info-list">
+              <li class="mobile-menu__info-item">
+                <a href="#" class="mobile-menu__info-link">Оплата и доставка</a>
+              </li>
+              <li class="mobile-menu__info-item">
+                <a href="#" class="mobile-menu__info-link">Замер и установка</a>
+              </li>
+              <li class="mobile-menu__info-item">
+                <a href="#" class="mobile-menu__info-link">Дизайнерам</a>
+              </li>
+              <li class="mobile-menu__info-item">
+                <a href="#" class="mobile-menu__info-link">Акции</a>
+              </li>
+              <li class="mobile-menu__info-item">
+                <a href="#" class="mobile-menu__info-link">Наши рабоы</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
-      <div class="mobile-menu__title">Конктакты</div>
+      <div class="mobile-menu__bottom-wrap">
+        <h4 class="mobile-menu__title mobile-menu__title--mb">Конктакты</h4>
+        <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-item">
+            <a href="#" class="mobile-menu__social-link">
+              <span>Адреса салонов</span>
+              <svg class="icon icon--menu-location">
+                <use xlink:href="assets/svg-sprite.svg#menu-location"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="tel:+74959746937" class="mobile-menu__social-link">
+              <span>+7 (495) 974-69-37</span>
+              <svg class="icon icon--menu-phone">
+                <use xlink:href="assets/svg-sprite.svg#menu-phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="#" class="mobile-menu__social-link">
+              <span>Написать в WhatsApp</span>
+              <span class="mobile-menu__social-whatsapp-circle">
+                <svg class="icon icon--menu-whatsapp">
+                  <use xlink:href="assets/svg-sprite.svg#menu-whatsapp"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="mailto:zakaz@profildoors-spb.ru" class="mobile-menu__social-link">
+              <span>zakaz@profildoors-spb.ru</span>
+              <svg class="icon icon--menu-mail">
+                <use xlink:href="assets/svg-sprite.svg#menu-mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="mobile-menu__time-descr">Пн-вс: 10:00 - 20:00 </span>
+      </div>
     </nav>
   </div>
 
