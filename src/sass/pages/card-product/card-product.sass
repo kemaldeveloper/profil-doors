@@ -4,6 +4,23 @@
   &__wrapper
     display: flex
     justify-content: flex-end
+    +md
+      flex-direction: column
+      align-items: center
 
   &__img-wrap
     margin: 0 auto
+    max-width: 273px
+    max-height: 707px
+    +lg
+      margin: 0 auto 0 0
+      max-width: 248px
+    +md
+      margin: 0 auto 30px
+      max-width: 200px
+
+  &__img
+    object-fit: cover
+    +sm
+      width: 164px
+      height: 394px
