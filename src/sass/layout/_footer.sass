@@ -3,9 +3,6 @@
   background: $title-color
   +sm
     padding: 97px 0 80px 0
-  // +xsm
-  //   padding: 97.5px 0 80px 0
-
 .content
   display: flex
   justify-content: space-between
@@ -52,7 +49,6 @@
       padding: 0
       font-size: 14px
       margin-bottom: 25px
-
 .footer-bottom
   position: relative
   background: $title-color
@@ -67,9 +63,6 @@
       margin-top: 44px
       +sm
         margin-top: 78px
-        // display: block
-        // width: 243px
-        // height: 47px
     &:after
       content: ''
       position: absolute
@@ -86,12 +79,12 @@
       width: 243px
       height: 47.22px
   &__info
-    margin-bottom: 40px
+    +lg 
+      margin-bottom: 40px
   &__logo
     margin-bottom: 18px
     +sm
       max-width: 243px
-
   &__text
     max-width: 341px
     font-weight: 300
@@ -99,7 +92,6 @@
     line-height: 133%
     color: $white
     margin: 22px 0 9px 0
-
   &__str
     font-weight: 300
     font-size: 12px
@@ -108,7 +100,6 @@
     text-decoration: underline
     &:hover
       color: $lighten-blue
-
   &__wrap
     width: 576px
     display: flex
@@ -119,13 +110,6 @@
     +lg
       flex-direction: column
       margin-left: 0
-
-  &__col
-    +lg
-      margin-bottom: 20px
-    +sm
-      margin-bottom: 37px
-
   &__title
     font-weight: 600
     font-size: 16px
@@ -139,24 +123,20 @@
       margin-bottom: 20px
     +sm
       margin-bottom: 24px
-
   &__col
     +lg
       margin-top: 20px
-    +sm
-      margin: 0
+    // +sm
+    //   margin: 0
   &__list
     font-weight: 400
     font-size: 14px
     line-height: 100%
     color: $white
-    margin-bottom: 40px
-    +sm
+    +lg
       margin-bottom: 40px
-
   &__item:not(:last-child)
     margin-bottom: 15px
-
   &__link
     font-weight: 400
     font-size: 14px
@@ -164,7 +144,6 @@
     color: $white
     &:hover
       color: $lighten-blue
-
 .phone
   display: none
   +sm
