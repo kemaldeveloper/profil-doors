@@ -112,6 +112,7 @@ textarea
 .card-form
 
   &__title
+    display: block
     font-family: $second-font
     font-weight: 700
     font-size: 63px
@@ -119,6 +120,8 @@ textarea
     color: $main-color
     max-width: 432px
     margin-bottom: 30px
+    &:hover
+      color: lighten($main-color, 10%)
     +xl
       font-size: 55px
     +lg

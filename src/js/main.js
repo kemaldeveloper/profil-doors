@@ -252,11 +252,8 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .find('.tabs__block')
     .removeClass('active')
     .eq($(this).index())
-    .addClass('active')
-    .hide(1000)
-    .show(1);
+    .addClass('active');
 });
-
 
 const addBorderInActive = (element) => {
   element.on('click', function () {
@@ -283,8 +280,6 @@ if (colorButtonsContainer) {
     });
   });
 }
-
-
 
 // Radio buttons
 const radioButtonsLogic = () => {
@@ -331,7 +326,3 @@ const quantityInput = () => {
 };
 
 quantityInput();
-
-
-
-

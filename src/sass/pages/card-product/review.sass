@@ -1,12 +1,13 @@
 .review
   padding: 50px 0
-  +lg 
+  +lg
     padding: 0
+
   &__wrap
     position: relative
     display: flex
     justify-content: space-between
-    +lg 
+    +lg
       flex-wrap: wrap
     &::before
       content: ''
@@ -16,9 +17,11 @@
       width: 100%
       height: 1px
       background-color: #D5D5D5
+
   .tabs
     max-width: 633px
     padding-top: 20px
+
     &__items
       display: flex
       align-items: center
@@ -38,13 +41,16 @@
         line-height: 110%
         color: $black
         letter-spacing: 0.01em
+
     &__block.active
       display: block
-      +lg 
+      +lg
         margin-bottom: 80px
+
     &__block
       display: none
       width: 100%
+
     &__text
       max-width: 633px
       font-weight: 400
@@ -52,11 +58,12 @@
       line-height: 111.5%
       color: #191E32
       margin-bottom: 10px
-      +sm 
+      +sm
         font-size: 12px
         line-height: 130%
         letter-spacing: 0.035em
         color: #6F737D
+
     &__subtitle
       font-weight: 600
       font-size: 14px
@@ -67,16 +74,18 @@
         line-height: 130%
         letter-spacing: 0.035em
         color: #6F737D
+
     &__item
       margin-bottom: 35px
       margin-left: 20px
+
     &__str
       list-style-type: disc
       font-weight: 400
       font-size: 14px
       line-height: 111.5%
       color: #191E32
-      +sm 
+      +sm
         font-size: 12px
         line-height: 130%
         letter-spacing: 0.035em
@@ -86,15 +95,18 @@
       font-size: 14px
       line-height: 110%
       color: #000000
+
 .preview-wrapper
-  +xsm 
+  +xsm
     width: 100%
+
   &__item
     padding: 47px 87px 30px
     text-align: center
     background: #2B3B50
     +sm
       padding: 46px 46px 40px
+
   &__title
     max-width: 151px
     font-family: $second-font
@@ -103,14 +115,16 @@
     line-height: 100%
     color: $white
     margin: auto
-    +sm 
+    +sm
       font-size: 40px
       max-width: 258px
+
   &__photo
     object-fit: cover
     max-width: 110.5px
     height: 286px
     margin-top: 20px
+
   &__subtitle
     max-width: 148px
     font-family: $second-font
@@ -119,12 +133,12 @@
     line-height: 100%
     color: $white
     padding-top: 31px
-    // margin: 31px auto 10px
     margin: auto
-    +sm 
+    +sm
       max-width: 200px
       font-size: 18px
       font-family: $deff
+
   &__text
     max-width: 182.5px
     font-weight: 500
@@ -132,7 +146,7 @@
     line-height: 115%
     color: $white
     margin-top: 10px
-    +sm 
+    +sm
       padding-top: 10px
       font-weight: 400
       font-size: 14px
@@ -141,10 +155,11 @@
       letter-spacing: 0.01em
       color: $white
       margin: auto
+
   &__btn-infor
     background: #EDB362
     max-width: 357px
     padding: 16px 104.5px
-    +xsm 
+    +xsm
       padding: 11px 100px
       max-width: 360px
