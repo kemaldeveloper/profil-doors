@@ -119,6 +119,14 @@ textarea
     color: $main-color
     max-width: 432px
     margin-bottom: 30px
+    +xl
+      font-size: 55px
+    +lg
+      font-size: 40px
+      max-width: 245px
+    +md
+      text-align: center
+      margin: 0 auto 20px
 
   &__price
     font-family: $second-font
@@ -126,14 +134,32 @@ textarea
     font-size: 60px
     line-height: 100%
     color: $main-color
+    white-space: nowrap
+    +xl
+      font-size: 55px
+      margin-bottom: 20px
+    +lg
+      font-size: 40px
+    +md
+      text-align: center
+      font-size: 35px
+      margin-bottom: 10px
+    +sm
+      font-size: 18px
 
   &__top-wrap
     display: flex
     margin-bottom: 43px
+    +xl
+      flex-direction: column
+    +sm
+      margin-bottom: 40px
 
   &__quantity-wrap
     display: flex
     margin-left: 37px
+    +xl
+      margin-left: 0
 
   &__quantity
     position: relative
@@ -146,13 +172,15 @@ textarea
     font-size: 16px
     line-height: 100%
     color: #000
-    top: 22px
+    top: 0
 
   &__quantity-btn--left
-    left: 15px
+    left: 0
+    padding: 22px 0 22px 15px
 
   &__quantity-btn--right
-    right: 15px
+    right: 0
+    padding: 22px 15px 22px 0
 
   &__quantity-input
     text-align: center
@@ -160,6 +188,7 @@ textarea
     height: 60px
     border: 1px solid #B4C8FF
     padding: 0 25px 0 22px
+    pointer-events: none
 
   &__btn-wrap
 
@@ -173,8 +202,11 @@ textarea
     color: $title-color
     border: none
     margin: 0 0 10px 10px
-    &:focus
-      border: 2px solid $black
+    transition: all 0.5s ease
+    &:hover
+      background-color: darken(#B4C8FF, 10%)
+    +md
+      margin-bottom: 0
 
   &__btn-descr
     display: block
@@ -184,11 +216,29 @@ textarea
     line-height: 110%
     letter-spacing: 0.01em
     color: #595959
+    +md
+      display: none
+
+  &__btn-descr--dn
+    display: block
+    text-align: center
+    font-weight: 400
+    font-size: 14px
+    line-height: 110%
+    letter-spacing: 0.01em
+    color: #595959
+    margin-bottom: 20px
+    +sm
+      font-size: 10px
+    +min_md
+      display: none
 
 .color-form
 
   &--mb
     margin-bottom: 40px
+    +sm
+      margin-bottom: 30px
 
   &__title-wrap
     display: flex
@@ -207,11 +257,24 @@ textarea
     font-size: 16px
     line-height: 147.5%
     color: $main-color
+    letter-spacing: 0.01em
+
+  &__input-wrap
+    display: flex
+    flex-wrap: wrap
+    row-gap: 15px
+    max-width: 558px
+    +xl
+      max-width: 432px
+    +lg
+      max-width: 351px
 
   &__label
     position: relative
     &:not(:last-child)
       margin-right: 20px
+      +sm
+        margin-right: 15px
 
   &__radio
     position: absolute
@@ -224,11 +287,16 @@ textarea
     height: 51.8px
     object-fit: cover
     cursor: pointer
+    +lg
+      width: 40px
+      height: 40px
 
 .glass-form
 
   &--mb
     margin-bottom: 40px
+    +sm
+      margin-bottom: 30px
 
   &__title-wrap
     display: flex
@@ -247,6 +315,17 @@ textarea
     font-size: 16px
     line-height: 147.5%
     color: $main-color
+    letter-spacing: 0.01em
+
+  &__input-wrap
+    display: flex
+    flex-wrap: wrap
+    row-gap: 15px
+    max-width: 558px
+    +xl
+      max-width: 432px
+    +lg
+      max-width: 351px
 
   &__label
     position: relative
@@ -264,6 +343,9 @@ textarea
     height: 51.8px
     object-fit: cover
     cursor: pointer
+    +lg
+      width: 40px
+      height: 40px
 
 .molding-form
 
@@ -284,6 +366,17 @@ textarea
     font-size: 16px
     line-height: 147.5%
     color: $main-color
+    letter-spacing: 0.01em
+
+  &__input-wrap
+    display: flex
+    flex-wrap: wrap
+    row-gap: 15px
+    max-width: 558px
+    +xl
+      max-width: 432px
+    +lg
+      max-width: 351px
 
   &__label
     position: relative
@@ -301,6 +394,9 @@ textarea
     height: 51.8px
     object-fit: cover
     cursor: pointer
+    +lg
+      width: 40px
+      height: 40px
 
 .img--active
   border: 2px solid $main-color

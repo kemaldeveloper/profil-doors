@@ -53,7 +53,7 @@ $('.js-popup').on('click', function (event) {
 // Mobile menu toggle
 $('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
-  $('.menu').toggleClass('is-opened');
+  $('.mobile-menu').toggleClass('mobile-menu--active');
 });
 
 // Phone input mask
@@ -247,7 +247,6 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .show(1);
 });
 
-// TODO: @Kemal Потом нужно это реализовать с помощью класса .js-add-border(придумай название, это тестовое название класса)
 const addBorderInActive = (element) => {
   element.on('click', function () {
     element.removeClass('img--active');
@@ -255,9 +254,7 @@ const addBorderInActive = (element) => {
   });
 };
 
-addBorderInActive($('.color-form__img'));
-addBorderInActive($('.glass-form__img'));
-addBorderInActive($('.molding-form__img'));
+addBorderInActive($('.form-img--border'));
 
 // Анимация плавного появления и исчезновения блоков
 //  с помощью методов fadeIn() и fadeOut():

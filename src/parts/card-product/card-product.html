@@ -2,13 +2,14 @@
   <div class="container">
     <div class="card-product__wrapper">
       <div class="card-product__img-wrap">
-        <img src="assets/images/card-product/card-img-1.png" alt="" class="card-product__img" />
+        <img class="card-product__img" src="assets/images/card-product/card-img-1.png" alt="card-img-1" />
       </div>
 
       <form action="#" class="card-form">
         <h3 class="card-form__title">ПРОФИЛЬ ДОРС 28L белый люкс</h3>
         <div class="card-form__top-wrap">
           <span class="card-form__price">12 990 ₽</span>
+          <span class="card-form__btn-descr--dn">в рассрочку от 1300₽/месяц </span>
           <div class="card-form__quantity-wrap">
             <div class="card-form__quantity">
               <button type="button" class="card-form__quantity-btn card-form__quantity-btn--left">-</button>
@@ -22,129 +23,230 @@
           </div>
         </div>
 
-        <!-- COLOR -->
-        <div class="color-form color-form--mb js-radio-form">
-          <div class="color-form__title-wrap">
-            <h6 class="color-form__title">Цвет</h6>
-            <span class="color-form__relation js-form-relation"></span>
+        <div class="card-form__bottom-wrap">
+          <!-- COLOR -->
+          <div class="color-form color-form--mb js-radio-form">
+            <div class="color-form__title-wrap">
+              <h6 class="color-form__title">Цвет</h6>
+              <span class="color-form__relation js-form-relation"></span>
+            </div>
+            <div class="color-form__input-wrap">
+              <label class="color-form__label">
+                <input
+                  class="color-form__radio js-radio-btn"
+                  name="color"
+                  value="1"
+                  type="radio"
+                  data-name="Аляска 1"
+                  checked
+                />
+                <img
+                  class="color-form__img form-img--border"
+                  src="assets/images/card-product/color-img/color-img-1.png"
+                  alt="color-img"
+                />
+              </label>
+
+              <label class="color-form__label">
+                <input
+                  class="color-form__radio js-radio-btn"
+                  name="color"
+                  value="2"
+                  type="radio"
+                  data-name="Аляска 2"
+                />
+                <img
+                  class="color-form__img form-img--border"
+                  src="assets/images/card-product/color-img/color-img-2.png"
+                  alt="color-img"
+                />
+              </label>
+
+              <label class="color-form__label">
+                <input
+                  class="color-form__radio js-radio-btn"
+                  name="color"
+                  value="3"
+                  type="radio"
+                  data-name="Аляска 3"
+                />
+                <img
+                  class="color-form__img form-img--border"
+                  src="assets/images/card-product/color-img/color-img-3.png"
+                  alt="color-img"
+                />
+              </label>
+
+              <label class="color-form__label">
+                <input
+                  class="color-form__radio js-radio-btn"
+                  name="color"
+                  value="4"
+                  type="radio"
+                  data-name="Аляска 4"
+                />
+                <img
+                  class="color-form__img form-img--border"
+                  src="assets/images/card-product/color-img/color-img-4.png"
+                  alt="color-img"
+                />
+              </label>
+
+              <label class="color-form__label">
+                <input
+                  class="color-form__radio js-radio-btn"
+                  name="color"
+                  value="5"
+                  type="radio"
+                  data-name="Аляска 5"
+                />
+                <img
+                  class="color-form__img form-img--border"
+                  src="assets/images/card-product/color-img/color-img-5.png"
+                  alt="color-img"
+                />
+              </label>
+
+              <label class="color-form__label">
+                <input
+                  class="color-form__radio js-radio-btn"
+                  name="color"
+                  value="6"
+                  type="radio"
+                  data-name="Аляска 6"
+                />
+                <img
+                  class="color-form__img form-img--border"
+                  src="assets/images/card-product/color-img/color-img-6.png"
+                  alt="color-img"
+                />
+              </label>
+            </div>
           </div>
-          <div class="color-form__input-wrap">
-            <label class="color-form__label">
-              <input
-                class="color-form__radio js-radio-btn"
-                name="color"
-                value="1"
-                type="radio"
-                data-name="Аляска 1"
-                checked
-              />
-              <img class="color-form__img" src="assets/images/card-product/color-img/color-img-1.png" alt="color-img" />
-            </label>
 
-            <label class="color-form__label">
-              <input class="color-form__radio js-radio-btn" name="color" value="2" type="radio" data-name="Аляска 2" />
-              <img class="color-form__img" src="assets/images/card-product/color-img/color-img-2.png" alt="color-img" />
-            </label>
+          <!-- GlASS -->
+          <div class="glass-form glass-form--mb js-radio-form">
+            <div class="glass-form__title-wrap">
+              <h6 class="glass-form__title">Стекло</h6>
+              <span class="glass-form__relation js-form-relation"></span>
+            </div>
+            <div class="glass-form__input-wrap">
+              <label class="glass-form__label">
+                <input
+                  class="glass-form__radio js-radio-btn"
+                  name="glass"
+                  value="1"
+                  type="radio"
+                  data-name="Матовое 1"
+                  checked
+                />
+                <img
+                  class="glass-form__img form-img--border"
+                  src="assets/images/card-product/glass-img/glass-img-1.png"
+                  alt="color-img"
+                />
+              </label>
 
-            <label class="color-form__label">
-              <input class="color-form__radio js-radio-btn" name="color" value="3" type="radio" data-name="Аляска 3" />
-              <img class="color-form__img" src="assets/images/card-product/color-img/color-img-3.png" alt="color-img" />
-            </label>
+              <label class="glass-form__label">
+                <input
+                  class="glass-form__radio js-radio-btn"
+                  name="glass"
+                  value="2"
+                  type="radio"
+                  data-name="Матовое 2"
+                />
+                <img
+                  class="glass-form__img form-img--border"
+                  src="assets/images/card-product/glass-img/glass-img-2.png"
+                  alt="glass-img"
+                />
+              </label>
 
-            <label class="color-form__label">
-              <input class="color-form__radio js-radio-btn" name="color" value="4" type="radio" data-name="Аляска 4" />
-              <img class="color-form__img" src="assets/images/card-product/color-img/color-img-4.png" alt="color-img" />
-            </label>
+              <label class="glass-form__label">
+                <input
+                  class="glass-form__radio js-radio-btn"
+                  name="glass"
+                  value="3"
+                  type="radio"
+                  data-name="Матовое 3"
+                />
+                <img
+                  class="glass-form__img form-img--border"
+                  src="assets/images/card-product/glass-img/glass-img-3.png"
+                  alt="glass-img"
+                />
+              </label>
 
-            <label class="color-form__label">
-              <input class="color-form__radio js-radio-btn" name="color" value="5" type="radio" data-name="Аляска 5" />
-              <img class="color-form__img" src="assets/images/card-product/color-img/color-img-5.png" alt="color-img" />
-            </label>
+              <label class="glass-form__label">
+                <input
+                  class="glass-form__radio js-radio-btn"
+                  name="glass"
+                  value="4"
+                  type="radio"
+                  data-name="Матовое 4"
+                />
+                <img
+                  class="glass-form__img form-img--border"
+                  src="assets/images/card-product/glass-img/glass-img-4.png"
+                  alt="glass-img"
+                />
+              </label>
 
-            <label class="color-form__label">
-              <input class="color-form__radio js-radio-btn" name="color" value="6" type="radio" data-name="Аляска 6" />
-              <img class="color-form__img" src="assets/images/card-product/color-img/color-img-6.png" alt="color-img" />
-            </label>
+              <label class="glass-form__label">
+                <input
+                  class="glass-form__radio js-radio-btn"
+                  name="glass"
+                  value="5"
+                  type="radio"
+                  data-name="Матовое 5"
+                />
+                <img
+                  class="glass-form__img form-img--border"
+                  src="assets/images/card-product/glass-img/glass-img-5.png"
+                  alt="glass-img"
+                />
+              </label>
+            </div>
           </div>
-        </div>
 
-        <!-- GlASS -->
-        <div class="glass-form glass-form--mb js-radio-form">
-          <div class="glass-form__title-wrap">
-            <h6 class="glass-form__title">Стекло</h6>
-            <span class="glass-form__relation js-form-relation"></span>
-          </div>
-          <div class="glass-form__input-wrap">
-            <label class="glass-form__label">
-              <input
-                class="glass-form__radio js-radio-btn"
-                name="glass"
-                value="1"
-                type="radio"
-                data-name="Матовое 1"
-                checked
-              />
-              <img class="glass-form__img" src="assets/images/card-product/glass-img/glass-img-1.png" alt="color-img" />
-            </label>
+          <!-- MOLDING -->
+          <div class="molding-form js-radio-form">
+            <div class="molding-form__title-wrap">
+              <h6 class="molding-form__title">Молдинг</h6>
+              <span class="molding-form__relation js-form-relation"></span>
+            </div>
+            <div class="molding-form__input-wrap">
+              <label class="molding-form__label">
+                <input
+                  class="molding-form__radio js-radio-btn"
+                  name="molding"
+                  value="1"
+                  type="radio"
+                  data-name="Золото Матовое"
+                  checked
+                />
+                <img
+                  class="molding-form__img form-img--border"
+                  src="assets/images/card-product/molding-img/molding-img1.png"
+                  alt="molding-img"
+                />
+              </label>
 
-            <label class="glass-form__label">
-              <input class="glass-form__radio js-radio-btn" name="glass" value="2" type="radio" data-name="Матовое 2" />
-              <img class="glass-form__img" src="assets/images/card-product/glass-img/glass-img-2.png" alt="glass-img" />
-            </label>
-
-            <label class="glass-form__label">
-              <input class="glass-form__radio js-radio-btn" name="glass" value="3" type="radio" data-name="Матовое 3" />
-              <img class="glass-form__img" src="assets/images/card-product/glass-img/glass-img-3.png" alt="glass-img" />
-            </label>
-
-            <label class="glass-form__label">
-              <input class="glass-form__radio js-radio-btn" name="glass" value="4" type="radio" data-name="Матовое 4" />
-              <img class="glass-form__img" src="assets/images/card-product/glass-img/glass-img-4.png" alt="glass-img" />
-            </label>
-
-            <label class="glass-form__label">
-              <input class="glass-form__radio js-radio-btn" name="glass" value="5" type="radio" data-name="Матовое 5" />
-              <img class="glass-form__img" src="assets/images/card-product/glass-img/glass-img-5.png" alt="glass-img" />
-            </label>
-          </div>
-        </div>
-
-        <div class="molding-form js-radio-form">
-          <div class="molding-form__title-wrap">
-            <h6 class="molding-form__title">Молдинг</h6>
-            <span class="molding-form__relation js-form-relation"></span>
-          </div>
-          <div class="molding-form__input-wrap">
-            <label class="molding-form__label">
-              <input
-                class="molding-form__radio js-radio-btn"
-                name="molding"
-                value="1"
-                type="radio"
-                data-name="Золото Матовое"
-                checked
-              />
-              <img
-                class="molding-form__img"
-                src="assets/images/card-product/molding-img/molding-img1.png"
-                alt="molding-img"
-              />
-            </label>
-
-            <label class="molding-form__label">
-              <input
-                class="molding-form__radio js-radio-btn"
-                name="molding"
-                value="2"
-                type="radio"
-                data-name="Золото люкс"
-              />
-              <img
-                class="molding-form__img"
-                src="assets/images/card-product/molding-img/molding-img2.png"
-                alt="molding-img"
-              />
-            </label>
+              <label class="molding-form__label">
+                <input
+                  class="molding-form__radio js-radio-btn"
+                  name="molding"
+                  value="2"
+                  type="radio"
+                  data-name="Золото люкс"
+                />
+                <img
+                  class="molding-form__img form-img--border"
+                  src="assets/images/card-product/molding-img/molding-img2.png"
+                  alt="molding-img"
+                />
+              </label>
+            </div>
           </div>
         </div>
       </form>
