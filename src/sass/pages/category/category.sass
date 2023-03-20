@@ -1,4 +1,195 @@
-h1
-  color: green
-  font-size: 60px
-  font-weight: 700
+.category
+  padding: 45px 0 100px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  .category-col
+    max-width: 320px
+    +xxl
+      max-width: 194px
+    +lg 
+      display: none
+    &__title
+      padding-top: 63px
+      font-size: 85px
+      margin-bottom: 124px
+      +xxl 
+        padding-top: 0px
+        font-size: 50px
+        margin-bottom: 270px
+      +xl 
+        font-size: 50px
+        margin-bottom: 65px
+    &__subtitle
+      font-family: $second-font
+      font-weight: 700  
+      font-size: 30px
+      line-height: 115%
+      color:  $main-color
+      margin-bottom: 20px
+      +xxl
+        margin-bottom: 12px
+      +xl
+        margin-bottom: 20px
+    &__nav
+      margin-bottom: 30px
+    &__list
+      display: flex
+      flex-wrap: wrap
+      +xl
+        margin-bottom: 0
+    &__link
+      display: block
+      text-align: center
+      width: 64px
+      height: 63px
+      font-weight: 500
+      font-size: 12.1519px
+      line-height: 110%
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      color: #545454
+      border: 1px solid #E5E5E5
+      padding: 25.4px 17.09px
+      &:hover
+        text-decoration: underline
+        color: #2b3b50
+    &__color-block
+      margin-bottom: 30px
+      bottom: none
+      .active
+        border: 4px solid #2B3B50
+        width: 65px
+        height: 65px
+    &__choice-color
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+    &__btn
+      border: none
+      outline: none
+      &:nth-child(1)
+        margin-bottom: 20px
+      &:nth-child(2)
+        margin-bottom: 20px
+      &:nth-child(3)
+        margin-bottom: 20px
+      &:nth-child(4)
+        margin-bottom: 20px
+      +xxl
+        &:nth-child(7)
+          margin-top: 20px
+        &:nth-child(8)
+          margin-top: 20px
+    &__style
+      margin-bottom: 30px
+      +xl
+        margin-bottom: 20px
+  .category-content
+    max-width: 896px
+    +xl
+      max-width: 710px
+    +lg 
+      max-width: 896px
+    .nav-model
+      margin-bottom: 60px
+      +md 
+        display: none
+      li
+        width: calc(100% / 14)
+        border: 1px solid #f0f0f0
+        border-left: none
+        border-right: none
+        &:nth-child(14n - 14)
+          border-right: 1px solid #E5E5E5
+        &:nth-child(61)
+          border-right: 1px solid #E5E5E5
+        position: relative
+      ul
+        &:nth-child(14n - 13)
+          border-left: 1px solid #E5E5E5
+      &__list
+        display: flex
+        flex-wrap: wrap
+      &__link
+        display: block
+        text-align: center
+        font-weight: 600
+        font-size: 12px
+        line-height: 110%
+        color: #545454
+        padding: 24px 13px
+        +xl
+          padding: 24px 7px
+        &:hover
+          text-decoration: underline
+          color: #2b3b50
+        &:after
+          content: ""
+          position: absolute
+          top: 50%
+          right: -1px
+          margin-top: -16.5px
+          height: 33px
+          width: 1px
+          border: 1px solid #E5E5E5
+          border-right: none
+    &__column
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__item
+      max-width: 194px
+      margin-bottom: 40px
+      +xl 
+        max-width: 160px
+      +md 
+        max-width: 110px
+      +sm 
+        max-width: 160px
+        &:nth-child(7)
+          margin-top: 40px
+        &:nth-child(8)
+          margin-top: 40px
+      &:nth-child(5)
+        margin-bottom: 0
+      &:nth-child(6)
+        margin-bottom: 0
+      &:nth-child(7)
+        margin-bottom: 0
+      &:nth-child(8)
+        margin-bottom: 0
+    &__photo
+      margin-bottom: 25px
+      object-fit: cover
+    &__series
+      font-weight: 700
+      font-size: 24px
+      line-height: 100%
+      color: #2B3B50
+      margin-bottom: 10px
+      cursor: pointer
+      +lg 
+        font-size: 18px
+      &:hover
+        color: lighten(#222222, 30%)
+    &__price
+      font-weight: 600
+      font-size: 15.5px
+      line-height: 115%
+      color: #2B3B50
+      cursor: pointer
+      +md 
+        font-size: 12px
+      &:hover
+        color: #6f6f6f
+
+
+
+
+
+
+
+    
+    
