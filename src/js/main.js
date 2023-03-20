@@ -213,8 +213,6 @@ $('.slider').slick({
   infinite: false,
   prevArrow: $('.slider__prev'),
   nextArrow: $('.slider__next'),
-  // prevArrow: '<svg class="icon icon--prev-arrow"><use xlink:href="assets/svg-sprite.svg#prev-arrow"></use></svg>',
-  // nextArrow: '<svg class="icon icon--next-arrow"><use xlink:href="assets/svg-sprite.svg#next-arrow"></use></svg>',
   responsive: [
     {
       breakpoint: 1440,
@@ -256,129 +254,17 @@ const addBorderInActive = (element) => {
 
 addBorderInActive($('.form-img--border'));
 
-// Анимация плавного появления и исчезновения блоков
-//  с помощью методов fadeIn() и fadeOut():
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const colorButtonsContainer = document.querySelector('.category-col__choice-color');
-const colorButtons = colorButtonsContainer.querySelectorAll('.category-col__btn');
-
-colorButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    colorButtons.forEach(button => {
-      button.classList.remove('active');
-    });
-
-    button.classList.add('active');
-  });
-});
-
-
-// $('.tabs__items').on('click', 'li:not(.active)', function () {
-//   let index = $(this).index();
-//   $('.tabs__block.active').animate({ opacity: 0 }, 300, function () {
-//     $(this).removeClass('active');
-//     $('.tabs__block').eq(index).animate({ opacity: 1 }, 300).addClass('active');
+// const colorButtonsContainer = document.querySelector('.category-col__choice-color');
+// const colorButtons = colorButtonsContainer.querySelector('.category-col__btn');
+
+// colorButtons.forEach((button) => {
+//   button.addEventListener('click', () => {
+//     colorButtons.forEach((button) => {
+//       button.classList.remove('active');
+//     });
+
+//     button.classList.add('active');
 //   });
-//   $(this).addClass('active').siblings().removeClass('active');
 // });
 
 // Radio buttons
