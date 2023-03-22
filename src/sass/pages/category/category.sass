@@ -1,8 +1,11 @@
 .category
   padding: 45px 0 100px 0
+  +md
+    padding: 40px 0 80px 0
   &__wrapper
     display: flex
     justify-content: space-between
+  
   .category-col
     padding-top: 63px
     max-width: 320px
@@ -20,6 +23,7 @@
       +xl 
         font-size: 50px
         margin-bottom: 80px
+    
     &__subtitle
       font-family: $second-font
       font-weight: 700  
@@ -88,6 +92,7 @@
       margin-bottom: 30px
       +xl
         margin-bottom: 20px
+
   .category-content
     max-width: 896px
     +xl
@@ -138,10 +143,21 @@
           width: 1px
           border: 1px solid #E5E5E5
           border-right: none
-    &__column
+
+
+    &__inner
       display: flex
       justify-content: space-between
       flex-wrap: wrap
+
+    &__heading
+      max-width: 325px
+      font-size: 40px
+      display: none
+      +md 
+        display: block
+        margin-bottom: 40px
+ 
     &__item
       max-width: 194px
       margin-bottom: 40px
@@ -189,6 +205,8 @@
         color: #6f6f6f
 
 
+  
+ 
 
 
 
