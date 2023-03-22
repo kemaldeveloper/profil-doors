@@ -326,3 +326,47 @@ const quantityInput = () => {
 };
 
 quantityInput();
+
+
+
+
+// функция для загрузки изображения по адресу url и замены атрибута data-src на src
+function loadImage(url, img) {
+  const image = new Image();
+  image.onload = () => {
+    img.src = url;
+    img.classList.add("loaded");
+  };
+  image.src = url;
+}
+
+// функция для проверки, находится ли элемент в области прокрутки
+function isInView(elem) {
+  const bounding = elem.getBoundingClientRect();
+  return (
+    bounding.top >= 0 &&
+    bounding.left >= 0 &&
+    bounding.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <=
+      (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+
+
+// функция для загрузки изображений при прокрутке страницы
+function lazyLoad() {
+  const images = document.querySelectorAll("img[data-src]");
+  images.forEach((img) => {
+    if (isInView(img)) {
+      loadImage(img.getAttribute("data-src"), img);
+    }
+  });
+}
+
+window.addEventListener("scroll", lazyLoad);
+
+
+
