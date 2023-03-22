@@ -1,8 +1,7 @@
 .main-screen
   height: calc(100vh - 183px)
   position: relative
-  +md
-    min-height: 100%
+  +xxl
     height: auto
 
 .main-slider
@@ -76,20 +75,27 @@
       height: 100%
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
       z-index: -1
+    +xxl
+      height: auto
+      padding: 125px 0 85px 0
     +md
-      min-height: 100%
+      height: auto
       padding: 100px 0 40px 0
 
   &__item
+    +xxl
+      height: auto
     +md
-      min-height: 100%
+      height: auto
   &__title
     max-width: 442px
     margin-bottom: 26px
     span
       color: $lighten-blue
-    +xl
+    +xxl
       margin-bottom: 40px
+    +md 
+      padding: 0
     +sm
       margin-bottom: 31px
     +xsm
