@@ -205,11 +205,13 @@
     width: 5px
     height: 9px
     fill: $main-color
+
   &--next-prev
     display: block
     width: 14px
     height: 6px
     fill: $white
+
   &--main-mobile-left
     transform: rotate(180deg)
     width: 14px
@@ -220,3 +222,36 @@
     width: 15px
     height: 16.2px
     fill: $white
+
+  &--address-maps
+    display: block
+    width: 15px
+    height: 20px
+    fill: $main-color
+    transform: translateY(2px)
+    &:hover
+      fill: $lighten-blue
+    +sm
+      margin-left: 20px
+
+  &--address-phone
+    display: block
+    width: 20px
+    height: 20px
+    fill: $main-color
+    transform: translateY(5px)
+    &:hover
+      fill: $lighten-blue
+    +sm
+      margin-left: 20px
+
+  &--address-email
+    display: block
+    width: 20px
+    height: 20px
+    fill: $main-color
+    transform: translateY(6px)
+    &:hover
+      fill: $lighten-blue
+    +sm
+      margin-left: 20px
