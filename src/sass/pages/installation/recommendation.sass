@@ -1,0 +1,51 @@
+.recommendation
+  padding: 50px 0 100px 0
+  +sm 
+    padding: 50px 0 50px 0
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    +lg 
+      flex-wrap: wrap
+    +sm 
+      flex-direction: column-reverse
+  &__content
+    +lg 
+      margin-bottom: 50px
+    
+  &__title
+    font-size: 60px
+    max-width: 548px
+    color: $main-color
+    margin-bottom: 40px
+    max-width: 420px
+    +sm 
+      font-size: 40px
+      margin-bottom: 46px
+
+  &__item
+    max-width: 525px
+    display: flex
+    margin-bottom: 18px
+    &:last-child
+      margin-bottom: 0
+
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    letter-spacing: 0.01em
+    color: $main-color
+    
+  &__photo
+    max-width: 566px
+    height: 554px
+    object-fit: cover
+    +xl 
+      max-width: 400px
+    +lg 
+      max-width: 566px
+    +sm 
+      max-width: 100%
+      margin-bottom: 60px
