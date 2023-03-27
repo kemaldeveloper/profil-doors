@@ -20,7 +20,7 @@
     background-repeat: no-repeat
     background-size: cover
   +sm
-    padding: 79px 0
+    padding: 76px 0 79px 0
 
   &__content
     display: flex
@@ -35,34 +35,31 @@
     line-height: 147.5%
     color: $white
     +lg 
-      margin-bottom: 60px
-    +sm 
-      font-size: 14px
-      max-width: 100%
-      margin-bottom: 40px
+      display: none
+      // font-size: 14px
+      // max-width: 100%
+      // margin-bottom: 40px
 
   &__title
     max-width: 633px
     font-size: 60px
     color: $white
     margin-bottom: 22px
+    span
+      color: $accent
     +xxl
       font-size: 48px
       max-width: 500px
     +xl 
       max-width: 410px
+    // +lg
+    //   max-width: 633px
+    //   font-size: 60px
+    // +md 
+    //   font-size: 50px
     +lg
-      max-width: 633px
-      font-size: 60px
-    +md 
-      font-size: 50px
-    +sm
-      font-size: 40px
-      max-width: 100%
-      margin-bottom: 30px
-    span
-      color: $accent
-      
+      display: none
+    
   &__str
     max-width: 560px
     line-height: 147.5%
@@ -74,22 +71,46 @@
     +xl 
       max-width: 400px
       font-size: 13px
+    // +lg
+    //   max-width: 560px
+    //   margin-bottom: 75px
     +lg
-      max-width: 560px
-      margin-bottom: 75px
-    +sm
+      display: none
+    
+
+  &__btn
+    margin-top: 34px
+    padding: 16px 212px
+    +xl 
+      padding: 16px 175px
+    +md 
+      padding: 16px 212px
+    +sm 
+      padding: 16px 115px
+      margin-top: 9px
+
+    +xsm 
+      padding: 16px 95px
+
+  &__title-lg
+    display: none
+    +lg 
+      display: block
+      max-width: 312px
+      color: $white
+      font-size: 40px
+      margin-bottom: 23px
+    span
+      color: $accent
+
+  &__str-lg
+    display: none
+    +lg
+      display: block
+      color: $white
       max-width: 334px
       font-size: 14px
       line-height: 130%
-      margin-bottom: 24px
-    +xsm
-      max-width: 319px
-
-  &__btn
-    margin-top: 40px
-    +md 
-      padding: 16px 180px
-    +sm 
-      padding: 16px 115px
-    +xsm 
-      padding: 16px 95px
+      margin-bottom: 18px
+      +xsm
+        max-width: 319px

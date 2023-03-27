@@ -1,0 +1,92 @@
+.discount
+  padding: 35px 0 99px
+  +sm 
+    padding: 35px 0 80px 0
+  
+  &__content
+    max-width: 836px
+    +sm 
+      margin-left: -15px
+      margin-right: -15px
+
+  &__title
+    margin-bottom: 35px
+    +sm 
+      margin-left: 15px
+  
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    +md 
+      justify-content: center
+
+  &__new-doors
+    max-width: 400px
+    +lg 
+      max-width: 330px
+    +md 
+      max-width: 400px
+      margin-bottom: 46px
+      &:nth-child(2)
+        margin-bottom: 0
+
+  &__collections
+    margin-bottom: 19px
+    max-width: 100%
+    object-fit: cover
+
+  &__date
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: #8C8C8C
+    margin-bottom: 16px
+    +sm
+      font-size: 12px
+      margin-bottom: 13px
+      margin-left: 15px
+
+  &__subtitle
+    font-weight: 600
+    font-size: 18px
+    line-height: 115%
+    color: $title-color
+    display: block
+    margin-bottom: 11px
+    &:hover
+      color: $main-color
+    +sm 
+      margin-left: 15px
+      font-size: 14px
+      line-height: 130%
+
+  &__text
+    max-width: 351px
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    color: $black
+    letter-spacing: 0.01em
+    margin-bottom: 20px
+    +sm 
+      margin-left: 15px
+      font-size: 14px
+      line-height: 130%
+  &__btn
+    border: 1px solid $main-color
+    border-radius: 5px
+    padding: 5px 19px
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    color: $main-color
+    &:hover
+      color: $lighten-blue
+      border: 1px solid #DEDEDE
+    +sm 
+      margin-left: 15px
+      padding: 3px 15px
+
+  
+ 

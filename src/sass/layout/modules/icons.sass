@@ -290,6 +290,8 @@
     height: 35px
     fill: $main-color
     transform: translateY(14px)
+    +sm 
+      transform: translate3d(5px, 10px, 10px)
     &:hover
       fill: $lighten-blue
 
@@ -299,6 +301,8 @@
     height: 35px
     fill: $main-color
     transform: translateY(14px)
+    +sm 
+      transform: translate3d(5px, 8px, 10px)
     &:hover
       fill: $lighten-blue
 
@@ -308,6 +312,8 @@
     height: 35px
     fill: $main-color
     transform: translateY(24px)
+    +sm 
+      transform: translate3d(4px, 3px, 10px)
     &:hover
       fill: $lighten-blue
 
@@ -317,6 +323,18 @@
     height: 23.7px
     fill: $main-color
     margin-right: 37px
+    +sm 
+      margin-right: 32px
+      transform: translate3d(6px, 7px, 10px)
     // cursor: pointer
     // &:hover
     //   fill: $lighten-blue
+
+  &--view
+    display: block
+    width: 20px
+    height: 20px
+    fill: $main-color
+    margin-right: 15px
+    &:hover
+      fill: $lighten-blue
