@@ -1,67 +1,106 @@
 .price-services
-  padding: 100px 0 47px 0
+  padding: 100px 0 39px
   +sm 
-    padding: 77px 0 50px 0
+    padding: 80px 0 0 0
 
   &__wrapper
     display: flex
     justify-content: space-between
     +lg
-      flex-wrap: wrap
+      flex-direction: column
+
   &__content
-    max-width: 523px
+    width: 525px
+    +xl 
+      max-width: 460px
+    +lg 
+      max-width: 525px
     +sm 
       max-width: 100%
+      display: flex
+      flex-direction: column
 
   &__title
     color: $main-color
     margin-bottom: 88px
+    +lg 
+      margin-bottom: 30px
     +sm
       font-size: 40px
-      margin-bottom: 20px
-
+      margin-bottom: 11px
+    &--second
+      color: $white
+      margin-bottom: 21px
+      span
+        color: $accent
+      +sm 
+        font-size: 60px
+        margin-bottom: 20px
+    
   &__wrap
-    margin-bottom: 49px
+    margin-bottom: 56px
     &:last-child
       margin-bottom: 0
     +lg
-      margin-bottom: 90px
-    &--under
-      margin-bottom: 80px
-      +xl
-        margin-bottom: 167px
-      +lg
-        margin-bottom: 100px
-    &--down
-      margin-bottom: 93px
-    &--hide
-      +sm
-        display: none
+      margin-bottom: 30px
+    +sm 
+      margin-bottom: 66px
+
+  &__wrap-under
+    margin-bottom: 80px
+    +xl
+      margin-bottom: 167px
+    +lg
+      margin-bottom: 100px
+    +sm
+      margin-bottom: 88px
+
+  &__wrap-down
+    margin-bottom: 99px
+    +sm 
+      margin-bottom: 76px
+  
+  &__wrap-hide
+    +lg
+      display: none
 
   &__subtitle
     max-width: 520px
     font-size: 40px
     color: $main-color
     margin-bottom: 47px
+    +sm 
+      margin-bottom: 43px
     &--bottom
-      margin-bottom: 75px
-      +sm 
-        display: none
+      margin-bottom: 69px
+      +lg 
+        margin-bottom: 77px
     &--col-boottom
-      margin-bottom: 50px
-    +xl
-      max-width: 480px
-    +lg
-      max-width: 520px
+      margin-bottom: 55px
+      +xl
+        max-width: 480px
+      +lg
+        max-width: 520px
+      +sm 
+        margin-bottom: 38px
+    &--hide-sm
+      +sm
+        display: none
+
+  &__sub-hide
+    display: none
     +sm
-      max-width: 100%
-    // &--hide 
-    //   +sm 
-    //     color: $white
+      display: block
+      font-weight: 400
+      font-size: 14px
+      line-height: 130%
+      letter-spacing: 0.02em
+      margin-bottom: 39px
+
   &__inner
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: flex-end
 
   &__link
     font-weight: 600
@@ -72,11 +111,12 @@
       font-size: 17px
     +lg
       font-size: 18px
+    +md 
+      font-size: 16px
     +sm 
       font-size: 14px
       line-height: 130%
-      max-width: 225px
-    
+      max-width: 230px
 
   &__price
     font-weight: 700
@@ -92,14 +132,29 @@
       font-size: 26px
 
   &__text
-    max-width: 319px
+    max-width: 360px
     font-weight: 400
     font-size: 14px
     line-height: 130%
     color: $main-color
+    letter-spacing: 0.01em
+    +xl 
+      max-width: 330px
+    +lg 
+      max-width: 360px
     +sm 
+      max-width: 319px
       font-size: 10px
       max-width: 210px
+    &--text-fz-sm
+      +sm 
+        font-size: 14px
+        max-width: 249px
+        letter-spacing: 0.02em
+    &--text-fz
+      font-size: 14px
+      max-width: 261px
+      line-height: 100%
 
   &__discount
     font-family: $deff
@@ -111,12 +166,12 @@
 
   &__column
     padding-top: 166px
-    max-width: 524px
+    max-width: 526px
     +xl
-      max-width: 400px
+      max-width: 415px
       padding-top: 183px
     +lg
-      max-width: 524px
+      max-width: 526px
       padding-top: 70px
     +sm
       max-width: 100%
@@ -130,9 +185,14 @@
     background: url('/assets/images/installation/images.jpg') center (center/cover) no-repeat
     max-width: 533px
     height: 779px
+    +lg 
+      margin-bottom: 80px
     +sm
       padding: 75px 23px 75px 18px
       height: 500px
+      margin-left: -15px
+      margin-right: -15px
+      margin-bottom: 77px
     &:after
       content: ''
       position: absolute
@@ -149,7 +209,13 @@
     font-size: 16px
     line-height: 147.5%
     color: $white
-    margin-bottom: 33px
+    letter-spacing: 0.01em
+    margin-bottom: 32px
+    +sm 
+      max-width: 290px
+      font-size: 14px
+      line-height: 130%
+      margin-bottom: 39px
 
   &__btn
     padding: 16px 146px
@@ -160,15 +226,23 @@
     +md 
       padding: 16px 128px
     +sm 
-      padding: 16px 60px
+      padding: 14px 87px
     +xsm 
-      padding: 16px 50px
+      padding: 14px 50px
 
-.title
-  &--heading
-    color: $white
-    margin-bottom: 20px
-    span
-      color: $accent
-    +sm 
-      font-size: 60px
+  &__wrap-hide-element
+    display: none
+    +lg 
+      display: block
+      margin-bottom: 48px
+
+  // &__title
+  //   // color: $white
+  //   margin-bottom: 21px
+  //   span
+  //     color: $accent
+  //   +sm 
+  //     font-size: 40px
+  //     margin-bottom: 20px
+
+
