@@ -255,17 +255,6 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .addClass('active');
 });
 
-const addBorderInActive = (element) => {
-  element.on('click', function () {
-    element.removeClass('img--active');
-    $(this).addClass('img--active');
-  });
-};
-
-addBorderInActive($('.color-form__img'));
-addBorderInActive($('.glass-form__img'));
-addBorderInActive($('.molding-form__img'));
-
 // color btn-imaages
 const colorButtonsContainer = document.querySelector('.category-col__choice-color');
 
@@ -291,11 +280,15 @@ const radioButtonsLogic = () => {
     const formRelation = radioFormElement.find('.js-form-relation');
     const currentRadioDataName = currentElement.attr('data-name');
 
+    radioFormElement.find('input[type="radio"]').siblings('img').removeClass('img--active');
+    radioFormElement.find('input[type="radio"]:checked').siblings('img').addClass('img--active');
     formRelation.text(currentRadioDataName);
   });
 
   $('.js-radio-form').each((_, element) => {
-    const defaultCheckedRadioDataName = $(element).find('.js-radio-btn:checked').attr('data-name');
+    const currentCheckedElement = $(element).find('.js-radio-btn:checked');
+    currentCheckedElement.siblings('img').addClass('img--active');
+    const defaultCheckedRadioDataName = currentCheckedElement.attr('data-name');
     $(element).find('.js-form-relation').text(defaultCheckedRadioDataName);
   });
 };
