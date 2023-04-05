@@ -370,3 +370,70 @@ window.addEventListener("scroll", lazyLoad);
 
 
 
+
+
+
+
+// Получаем все элементы списка вкладок
+const tabItems = document.querySelectorAll('.tabs__item li');
+// Получаем все блоки контента вкладок
+const tabBlocks = document.querySelectorAll('.tabs__block');
+
+// Добавляем обработчик клика на каждый элемент списка вкладок
+tabItems.forEach(function(item, index) {
+  item.addEventListener('click', function() {
+    // Удаляем класс active у всех элементов списка вкладок
+    tabItems.forEach(function(item) {
+      item.classList.remove('active');
+    });
+    // Добавляем класс active текущему элементу списка вкладок
+    this.classList.add('active');
+
+    // Скрываем все блоки контента вкладок
+    tabBlocks.forEach(function(block) {
+      block.classList.remove('active');
+    });
+    // Отображаем текущий блок контента вкладки
+    tabBlocks[index].classList.add('active');
+  });
+});
+
+
+
+
+$('.tab__inner').on('click', 'li:not(.active)', function () {
+  $(this)
+    .addClass('active')
+    .siblings()
+    .removeClass('active')
+    .closest('.tab')
+    .find('.tab__block')
+    .removeClass('active')
+    .eq($(this).index())
+    .addClass('active');
+})
+
+
+$('.slider-content').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  infinite: true,
+  prevArrow: $('.prev--work'),
+  nextArrow: $('.next--work'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});

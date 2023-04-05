@@ -1,0 +1,83 @@
+.reviews
+  padding: 41px 0 100px 0
+  +sm 
+    padding: 41px 0 50px 0
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    +lg 
+      flex-wrap: wrap
+
+  &__title
+    margin-bottom: 43px
+    color: $main-color
+    +sm 
+      font-size: 40px
+
+  &__content
+    max-width: 586px
+    height: 100%
+    background: #F4F4F4
+    padding: 40px 30px
+    display: flex
+    &:nth-child(2)
+      margin-right: 16px
+    +xxl 
+      max-width: 530px
+    +xl 
+      max-width: 435px
+    +lg 
+      max-width: 100%
+      margin-bottom: 35px
+    +sm 
+      display: flow-root
+      &:nth-child(2)
+        margin-right: 0
+        margin-bottom: 0
+
+  &__photo
+    max-width: 100px
+    height: 100px
+    object-fit: cover
+    +sm 
+      margin-bottom: 30px
+
+  &__wrap
+    padding-left: 25px
+    +sm 
+      padding-left: 0
+  
+  &__list
+    display: flex
+    align-items: center
+    margin-bottom: 17px
+
+  &__item
+    font-weight: 600
+    font-size: 10px
+    line-height: 115%
+    color: #8FA5C0
+    border: 0.489083px solid #8FA5C0
+    padding: 4px 3px
+    margin-right: 10px
+
+  &__subtitle
+    font-weight: 600
+    font-size: 18px
+    line-height: 115%
+    color: $main-color
+    margin-bottom: 10px
+    +sm 
+      font-size: 14px
+
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    letter-spacing: 0.01em
+    color: $main-color
+    +sm 
+      font-size: 12px
+
+

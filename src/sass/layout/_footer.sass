@@ -1,43 +1,58 @@
 .footer
-  padding: 75px 0 44px 0
+  padding: 75px 0 70px 0
   background: $title-color
   +sm
     padding: 94px 0 80px 0
+
   &__content
     display: flex
     justify-content: space-between
     +lg
       flex-wrap: wrap
+  &__wrap
+    max-width: 550px
+    +xl 
+      max-width: 420px
+    +lg
+      max-width: 550px
+      width: 100%
+
+  &__item
+    max-width: 540px
+    +lg 
+      max-width: 100%
+
   &__title
     color: $white
-    max-width: 525px
     margin-bottom: 13px
-    +xl
-      max-width: 444px
-      font-size: 65px
-    +lg
-      font-size: 60px
     +sm
       margin-bottom: 13px
+      font-size: 60px
       padding: 0
     span
       color: $accent
+    &--size 
+      font-size: 60px
+    &--big 
+      +xxl
+        font-size: 70px
+      +sm 
+        font-size: 60px
+
   &__str
-    max-width: 504px
     font-weight: 400
     font-size: 16px
     line-height: 110%
     color: $white
     +xl
-      width: 310px
-    +lg
-      width: 504px
-      margin-bottom: 30px
+     padding-right: 20px
+    +lg 
+      margin-bottom: 20px
     +sm
-      max-width: 325px
       font-size: 14px
       line-height: 130%
       margin-bottom: 27px
+
   &__desc
     padding-top: 6px
     font-weight: 600
@@ -45,20 +60,36 @@
     line-height: 21px
     color: $white
     margin-bottom: 33px
+    +lg 
+      margin-bottom: 40px
     +sm
       padding: 0
       font-size: 14px
       margin-bottom: 25px
+
+  &__btn
+    margin-top: 40px
+    +xl
+      padding: 16px 165px
+    +lg 
+      padding: 16px 0
+      width: 100%
+    +sm 
+      margin-top: 30px
+      padding: 16px 137px
+    +xsm 
+      padding: 16px 100px
+
 .footer-bottom
   position: relative
   background: $title-color
+
   &__content
     position: relative
     display: flex
     border-top: 1px solid #383131
-    padding: 34px 0 70px
-    +sm
-      padding: 80px 0 75px 0
+    padding-top: 34px
+
     &--line-between
       margin-top: 44px
       +sm
@@ -70,21 +101,22 @@
       left: 0
     +lg
       flex-wrap: wrap
-    +sm
-      width: 350px
-      padding: 46px 0 74.5px 0
+
   &__logo
     +sm
       display: block
       width: 243px
       height: 47.22px
+
   &__info
     +lg 
       margin-bottom: 40px
+
   &__logo
     margin-bottom: 18px
     +sm
       max-width: 243px
+
   &__text
     max-width: 341px
     font-weight: 300
@@ -93,7 +125,9 @@
     color: $white
     margin: 22px 0 9px 0
     +sm 
+      max-width: 100%
       margin: 0
+
   &__str
     font-weight: 300
     font-size: 12px
@@ -102,6 +136,7 @@
     text-decoration: underline
     &:hover
       color: $lighten-blue
+
   &__wrap
     width: 576px
     display: flex
@@ -112,6 +147,7 @@
     +lg
       flex-direction: column
       margin-left: 0
+
   &__title
     font-weight: 600
     font-size: 16px
@@ -125,11 +161,11 @@
       margin-bottom: 20px
     +sm
       margin-bottom: 24px
+
   &__col
     +lg
       margin-top: 20px
-    // +sm
-    //   margin: 0
+   
   &__list
     font-weight: 400
     font-size: 14px
@@ -137,8 +173,10 @@
     color: $white
     +lg
       margin-bottom: 40px
+
   &__item:not(:last-child)
     margin-bottom: 15px
+
   &__link
     font-weight: 400
     font-size: 14px
@@ -146,10 +184,12 @@
     color: $white
     &:hover
       color: $lighten-blue
+
 .phone
   display: none
   +sm
     display: block
+
   &__tel-phone
     font-weight: 600
     font-size: 12px
@@ -157,6 +197,7 @@
     color: $white
     &:hover
       color: $lighten-blue
+      
   &__link
     font-weight: 600
     font-size: 10px

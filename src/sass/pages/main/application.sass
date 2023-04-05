@@ -27,6 +27,11 @@
     justify-content: space-between
     +lg
       flex-wrap: wrap
+  
+  &__wrapper
+    +sm
+      width: 100%
+
   &__title
     margin-bottom: 16px
     max-width: 525px
@@ -37,7 +42,6 @@
       font-size: 70px
     +sm
       font-size: 40px
-      max-width: 312px
       line-height: 100%
       margin-bottom: 30px
     span
@@ -55,9 +59,23 @@
       max-width: 513px
       margin-bottom: 75px
     +sm
-      max-width: 334px
       font-size: 14px
       line-height: 130%
       margin-bottom: 24px
     +xsm
       max-width: 319px
+    
+  &__btn
+    margin-top: 31px
+    +xxl
+      padding: 16px 200px
+    +xl
+      padding: 16px 175px
+    +lg
+      padding: 16px 230px
+    +md
+      padding: 16px 200px
+    +sm
+      margin-top: 33px
+      padding: 16px 0
+      width: 100%

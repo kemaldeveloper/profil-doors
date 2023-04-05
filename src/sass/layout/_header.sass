@@ -312,17 +312,20 @@
       color: $main-color
 
 .main-nav
-  transform: translateY(-2px)
 
   &__list
     display: flex
-    align-items: flex-start
-    justify-content: space-between
-    min-width: 732px
+    align-items: center
     +xxl
       min-width: 513px
     +xl
       min-width: 0
+
+  &__item
+    margin-right: 20px
+    &:nth-child(4)
+      margin-right: 0
+      
 
   &__item--1200-dn
     +xxl
@@ -330,7 +333,6 @@
 
   &__link
     display: block
-    max-height: 28px
     font-weight: 500
     font-size: 14px
     line-height: 100%
@@ -343,8 +345,7 @@
       color: $main-color
 
   &__link--btn
-    padding: 7px 20px
-    width: max-content
+    padding: 7px 19px
     +xl
       display: none
 
@@ -352,10 +353,8 @@
     display: flex
     justify-content: space-between
     align-items: center
-    width: 109px
-    height: 28px
     position: relative
-    padding: 9px 13px 7px 14px
+    padding: 7px 13px 7px 15px
 
 .basket__link
   position: relative

@@ -1,0 +1,189 @@
+.our-interior
+  padding: 35px 0 100px
+  +sm 
+    padding: 35px 0 40px
+
+  &__wrapper
+    +sm 
+      margin-left: -15px
+      margin-right: -15px
+
+  &__title
+    margin-bottom: 13px
+    color: $main-color
+    +md 
+      font-size: 55px
+    +sm 
+      margin-left: 15px
+      font-size: 40px
+    &--second
+      color: $white
+      font-size: 57px
+      margin-bottom: 17px
+      +xl
+        font-size: 40px
+      +lg 
+        font-size: 47px
+      +md 
+        font-size: 41px
+      span
+        color: $accent
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    +md 
+      justify-content: center
+  
+  &__images
+    margin-bottom: 56px
+    &:nth-child(4)
+      margin-bottom: 0
+    &:nth-child(5)
+      margin-bottom: 0
+    &:nth-child(6)
+      margin-bottom: 0
+    +md 
+      margin-bottom: 40px
+      &:nth-child(4)
+        margin-bottom: 40px
+      &:nth-child(5)
+        margin-bottom: 40px
+      
+
+  &__text-info
+    display: inline-block
+    max-width: 351px
+    margin-bottom: 64px
+    +sm 
+      margin-bottom: 40px
+
+  &__collections
+    max-width: 380px
+    height: 560px
+    object-fit: cover
+    +xxl 
+      max-width: 350px
+    +xl 
+      max-width: 300px
+    +lg 
+      max-width: 330px
+    +md 
+      max-width: 100%
+
+  &__view
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    gap: 63px
+    +sm 
+      margin-left: 15px
+  &__inner
+    display: flex
+    align-items: center
+
+  &__num
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: $main-color
+    &:hover
+      color: $lighten-blue
+    +sm 
+      font-size: 12px
+
+  &__date
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: #8C8C8C
+    +sm
+      font-size: 12px
+
+  &__subtitle
+    font-weight: 600
+    font-size: 18px
+    line-height: 115%
+    color: $title-color
+    display: block
+    margin-bottom: 11px
+    color: $main-color
+    &:hover
+      color: $main-color
+    +sm 
+      margin-left: 15px
+      font-size: 14px
+      line-height: 130%
+
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    color: $black
+    letter-spacing: 0.01em
+    +sm 
+      margin-left: 15px
+      font-size: 12px
+      line-height: 130%
+    
+  &__description
+    padding: 34px 55px 239px 22px
+    position: relative
+    z-index: 999
+    opacity: 1
+    background: url('/assets/images/our-interior/our-interior-6.jpg') center (center/cover) no-repeat
+    max-width: 380px
+    height: 560px
+    +xxl
+      max-width: 350px
+    +xl 
+      max-width: 300px
+    +lg 
+      max-width: 330px
+    +md 
+      max-width: 380px
+    +sm
+      margin-left: -15px
+      margin-right: -15px
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+      z-index: -1
+
+  &__string
+    max-width: 289px
+    font-weight: 400
+    font-size: 11.4px
+    line-height: 147.5%
+    color: $white
+    letter-spacing: 0.01em
+    margin-bottom: 18px
+    +xl 
+      font-size: 10px
+    +lg 
+      font-size: 11.4px
+    +sm 
+      margin-bottom: 25px
+
+  &__btn
+    padding: 10px 57px
+    font-weight: 400
+    font-size: 11.4px
+    line-height: 100%
+    color: #1A1F31
+    color: $blue-bg
+    &:hover
+      color: $blue-bg
+      background-color: $white
+    +xl
+      padding: 12px 49px
+    +lg
+      padding: 10px 57px
+
+
