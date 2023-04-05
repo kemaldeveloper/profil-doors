@@ -22,6 +22,7 @@
   &__title
     margin-bottom: 24px
     font-size: 60px
+    color: $main-color
     +sm 
       font-size: 40px
     &--str
@@ -43,7 +44,6 @@
       font-size: 15px
 
   &__inner
-    max-width: 406px
     display: flex
     justify-content: space-between
     align-items: flex-end
@@ -100,7 +100,6 @@
     line-height: 100%
     color: $main-color
 
-
   &__meta
     max-width: 329px
 
@@ -123,6 +122,10 @@
     letter-spacing: 0.01em
     color: $black
     margin-bottom: 40px
-    // +sm
-    //   &:last-child
-    //     margin-bottom: 0px
+    &--underline
+      border-bottom: 1px solid $black
+      &:hover
+        color: #88a0bf
+        border: none
+
+

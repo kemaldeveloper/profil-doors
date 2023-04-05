@@ -1,0 +1,86 @@
+.coworking
+  padding: 100px 0 67px 0
+  +lg 
+    padding: 50px 0 20px 0
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    +md 
+      flex-wrap: wrap
+
+  &__content
+    padding-top: 43px
+    max-width: 481px
+    +xxl 
+      max-width: 415px
+    +lg 
+      max-width: 315px
+    +md 
+      padding-top: 0
+      max-width: 100%
+      margin-bottom: 50px
+
+  &__title
+    color: $main-color
+    margin-bottom: 24px
+    +xxl
+      font-size: 75px
+    +lg 
+      font-size: 60px
+    +sm 
+      font-size: 40px
+  &__text
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    letter-spacing: 0.01em
+    color: $main-color
+    margin-bottom: 27px
+    +sm 
+      font-size: 14px
+
+  &__str
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    letter-spacing: 0.01em
+    color: $main-color
+    margin-bottom: 6px
+    +md 
+      margin-bottom: 15px
+    +sm 
+      font-size: 14px
+
+  &__btn
+    padding: 16px 97px
+    +lg 
+      padding: 16px 50px
+    +md 
+      padding: 16px 0 
+      width: 100%
+    &:hover
+      background-color: $main-color
+      color: $white
+
+  &__images
+    padding-right: 2px
+    +xxl 
+      padding-right: 0
+    +sm 
+      margin-left: -15px
+      margin-right: -15px
+
+  &__photo
+    max-width: 650px
+    height: 413px
+    object-fit: cover
+    +xl 
+      max-width: 490px
+    +lg 
+      max-width: 350px
+    +md 
+      max-width: 100%
+    +sm
+      height: auto
+

@@ -1,0 +1,96 @@
+.slider-our-work
+  padding: 45px 0 109px
+  +sm
+    padding: 40px 0 50px
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    margin-bottom: 33px
+    +md
+      align-items: flex-start
+
+  &__title
+    color: $main-color
+    +md 
+      font-size: 50px
+    +sm
+      font-size: 40px
+
+  &__link
+    margin-right: 50px
+    +sm 
+      margin-right: 30px
+
+  &__buttons-wrap
+    display: flex
+    align-items: center
+   
+
+  &__arrows-wrap
+    display: flex
+    column-gap: 21px
+    
+    +md
+      display: none
+
+.slider-content
+  position: relative
+
+  &-wrap
+    margin-left: calc((100vw - 1322px + 30px) / 2)
+    +xxl
+      margin-left: calc((100vw - 1140px + 30px) / 2)
+    +xl
+      margin-left: calc((100vw - 960px + 30px) / 2)
+    +lg
+      margin-left: calc((100vw - 720px + 30px) / 2)
+    +md
+      margin-left: calc((100vw - 520px + 30px) / 2)
+    +sm
+      margin-left: 15px
+    +xsm
+      margin-left: 20px
+
+  &__item
+    margin-right: 40px
+
+  &__images
+    width: 400px
+    height: 420px
+    object-fit: cover
+
+  &__inner
+    padding-top: 17px
+    display: block
+
+  &__date
+    margin-bottom: 7px
+    font-weight: 400
+    font-size: 16px
+    line-height: 100%
+    color: #8C8C8C
+    +sm 
+      font-size: 13px
+
+  &__subtitle
+    font-weight: 600
+    font-size: 18px
+    line-height: 115%
+    color: $main-color
+    display: block
+    margin-bottom: 12px
+    &:hover
+      color: $main-color
+    +sm 
+      font-size: 14px
+
+  &__text
+    padding-right: 50px
+    font-weight: 400
+    font-size: 16px
+    line-height: 147.5%
+    letter-spacing: 0.01em
+    color: $main-color
+    +sm 
+      font-size: 12px
