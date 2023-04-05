@@ -255,15 +255,6 @@ $('.tabs__items').on('click', 'li:not(.active)', function () {
     .addClass('active');
 });
 
-const addBorderInActive = (element) => {
-  element.on('click', function () {
-    element.removeClass('img--active');
-    $(this).addClass('img--active');
-  });
-};
-
-addBorderInActive($('.form-img--border'));
-
 // color btn-imaages
 const colorButtonsContainer = document.querySelector('.category-col__choice-color');
 
@@ -289,11 +280,15 @@ const radioButtonsLogic = () => {
     const formRelation = radioFormElement.find('.js-form-relation');
     const currentRadioDataName = currentElement.attr('data-name');
 
+    radioFormElement.find('input[type="radio"]').siblings('img').removeClass('img--active');
+    radioFormElement.find('input[type="radio"]:checked').siblings('img').addClass('img--active');
     formRelation.text(currentRadioDataName);
   });
 
   $('.js-radio-form').each((_, element) => {
-    const defaultCheckedRadioDataName = $(element).find('.js-radio-btn:checked').attr('data-name');
+    const currentCheckedElement = $(element).find('.js-radio-btn:checked');
+    currentCheckedElement.siblings('img').addClass('img--active');
+    const defaultCheckedRadioDataName = currentCheckedElement.attr('data-name');
     $(element).find('.js-form-relation').text(defaultCheckedRadioDataName);
   });
 };
@@ -327,15 +322,12 @@ const quantityInput = () => {
 
 quantityInput();
 
-
-
-
 // функция для загрузки изображения по адресу url и замены атрибута data-src на src
 function loadImage(url, img) {
   const image = new Image();
   image.onload = () => {
     img.src = url;
-    img.classList.add("loaded");
+    img.classList.add('loaded');
   };
   image.src = url;
 }
@@ -346,33 +338,22 @@ function isInView(elem) {
   return (
     bounding.top >= 0 &&
     bounding.left >= 0 &&
-    bounding.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    bounding.right <=
-      (window.innerWidth || document.documentElement.clientWidth)
+    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
-
-
-
 // функция для загрузки изображений при прокрутке страницы
 function lazyLoad() {
-  const images = document.querySelectorAll("img[data-src]");
+  const images = document.querySelectorAll('img[data-src]');
   images.forEach((img) => {
     if (isInView(img)) {
-      loadImage(img.getAttribute("data-src"), img);
+      loadImage(img.getAttribute('data-src'), img);
     }
   });
 }
 
-window.addEventListener("scroll", lazyLoad);
-
-
-
-
-
-
+window.addEventListener('scroll', lazyLoad);
 
 // Получаем все элементы списка вкладок
 const tabItems = document.querySelectorAll('.tabs__item li');
@@ -380,26 +361,23 @@ const tabItems = document.querySelectorAll('.tabs__item li');
 const tabBlocks = document.querySelectorAll('.tabs__block');
 
 // Добавляем обработчик клика на каждый элемент списка вкладок
-tabItems.forEach(function(item, index) {
-  item.addEventListener('click', function() {
+tabItems.forEach(function (item, index) {
+  item.addEventListener('click', function () {
     // Удаляем класс active у всех элементов списка вкладок
-    tabItems.forEach(function(item) {
+    tabItems.forEach(function (item) {
       item.classList.remove('active');
     });
     // Добавляем класс active текущему элементу списка вкладок
     this.classList.add('active');
 
     // Скрываем все блоки контента вкладок
-    tabBlocks.forEach(function(block) {
+    tabBlocks.forEach(function (block) {
       block.classList.remove('active');
     });
     // Отображаем текущий блок контента вкладки
     tabBlocks[index].classList.add('active');
   });
 });
-
-
-
 
 $('.tab__inner').on('click', 'li:not(.active)', function () {
   $(this)
@@ -411,8 +389,7 @@ $('.tab__inner').on('click', 'li:not(.active)', function () {
     .removeClass('active')
     .eq($(this).index())
     .addClass('active');
-})
-
+});
 
 $('.slider-content').slick({
   slidesToShow: 3,
@@ -426,14 +403,14 @@ $('.slider-content').slick({
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2
-      }
+        slidesToShow: 2,
+      },
     },
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
