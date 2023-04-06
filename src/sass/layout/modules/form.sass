@@ -65,10 +65,10 @@ textarea
   &__contacts
     display: flex
     align-items: center
+
   &__field
     margin-top: 29px
-    // &--line
-    //   margin-bottom: -8px
+  
   &__phone
     margin-top: 18px
     display: flex
@@ -92,6 +92,7 @@ textarea
 .form-item
   +sm
     margin-bottom: 18px
+
   &:after
     content: ""
     display: block
@@ -194,7 +195,6 @@ textarea
     padding: 0 25px 0 22px
     pointer-events: none
 
-  &__btn-wrap
 
   &__submit-btn
     width: 255px
@@ -405,9 +405,9 @@ textarea
 .img--active
   border: 2px solid $main-color
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button
-  display: none
+// input[type="number"]::-webkit-inner-spin-button,
+// input[type="number"]::-webkit-outer-spin-button
+//   display: none
 
 .input-group
   position: relative
@@ -432,40 +432,38 @@ input[type="number"]::-webkit-outer-spin-button
     +xxl
       top: 15px
       left: 46%
+
   &__addon
     font-weight: 600
     font-size: 12px
     line-height: 115%
     color: #2B3B50
+
   &__control
     max-width: 52px
     font-weight: 600
     font-size: 12px
     line-height: 115%
     color: #2B3B50
+
     &::placeholder
       font-weight: 600
       font-size: 12px
       line-height: 115%
       color: #2B3B50
 
-.form-checkbox
-  max-width: 148px
-  &__wrap
-    display: flex
-    align-items: center
-    cursor: pointer
-    &:nth-child(1)
-      margin-bottom: 14px
-    &:nth-child(2)
-      margin-bottom: 14px
-  &__btn
-    width: 17px
-    height: 17px
-    outline: 2px solid #2B3B50
-    &:checked::after
-      content: none
-      display: none !important
+
+
+
+.checkbox
+  position: relative
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  &:last-child
+    margin-bottom: 0
+
+
   &__text
     margin-left: 20px
     font-weight: 600
@@ -474,11 +472,36 @@ input[type="number"]::-webkit-outer-spin-button
     color: #2B3B50
     background-color: transparent
     cursor: pointer
-  &__img
-    width: 51.8px
-    height: 51.8px
-    object-fit: cover
-    cursor: pointer
-    +lg
-      width: 40px
-      height: 40px
+
+
+  &__input 
+    position: absolute
+    top: 0
+    left: 0
+    visibility: hidden
+    opacity: 0
+    width: 0
+    height: 0
+    pointer-events: none
+
+
+  &__icon-wrap 
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 2px solid $black
+    padding: 1px
+  
+  &__icon 
+    width: 100%
+    height: 100%
+    opacity: 0
+    transform: scale(0)
+    transition: all 0.3s ease
+
+
+  .checkbox__input:checked ~ .checkbox__icon-wrap .checkbox__icon 
+    transform: scale(1)
+    opacity: 1
+
+  
