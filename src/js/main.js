@@ -275,7 +275,6 @@ if (colorButtonsContainer) {
   });
 }
 
-
 // Radio buttons
 const radioButtonsLogic = () => {
   $('.js-radio-btn').on('change', (e) => {
@@ -348,8 +347,7 @@ function isInView(elem) {
 }
 
 // lazyload
-$("img").lazyload();
-
+$('img').lazyload();
 
 const tabItems = document.querySelectorAll('.tabs__item li');
 const tabBlocks = document.querySelectorAll('.tabs__block');
@@ -367,7 +365,6 @@ tabItems.forEach(function (item, index) {
     tabBlocks[index].classList.add('active');
   });
 });
-
 
 $('.tab__inner').on('click', 'li:not(.active)', function () {
   $(this)
@@ -404,3 +401,36 @@ $('.slider-content').slick({
     },
   ],
 });
+
+let center = [55.66750407008213, 37.601284366616014];
+
+function init() {
+  let map = new ymaps.Map('ymap', {
+    center: center,
+    zoom: 12,
+  });
+
+  let placemark = new ymaps.Placemark(
+    center,
+    {},
+    {
+      iconLayout: 'default#image',
+      iconImageHref: '/assets/icons/map-mark.svg',
+      iconImageSize: [42, 42],
+      iconImageOffset: [-15, -30],
+    },
+  );
+
+  map.controls.remove('geolocationControl'); // удаляем геолокацию
+  map.controls.remove('searchControl'); // удаляем поиск
+  map.controls.remove('trafficControl'); // удаляем контроль трафика
+  map.controls.remove('typeSelector'); // удаляем тип
+  map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+  map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+  map.controls.remove('rulerControl'); // удаляем контрол правил
+  // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+  map.geoObjects.add(placemark);
+}
+
+ymaps.ready(init);
