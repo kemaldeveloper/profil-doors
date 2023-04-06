@@ -261,6 +261,9 @@ const colorButtonsContainer = document.querySelector('.category-col__choice-colo
 if (colorButtonsContainer) {
   const colorButtons = colorButtonsContainer.querySelectorAll('.category-col__btn');
 
+  // установка класса "active" на первой кнопке по умолчанию
+  colorButtons[0].classList.add('active');
+
   colorButtons.forEach((button) => {
     button.addEventListener('click', () => {
       colorButtons.forEach((button) => {
@@ -271,6 +274,7 @@ if (colorButtonsContainer) {
     });
   });
 }
+
 
 // Radio buttons
 const radioButtonsLogic = () => {
@@ -343,41 +347,27 @@ function isInView(elem) {
   );
 }
 
-// функция для загрузки изображений при прокрутке страницы
-function lazyLoad() {
-  const images = document.querySelectorAll('img[data-src]');
-  images.forEach((img) => {
-    if (isInView(img)) {
-      loadImage(img.getAttribute('data-src'), img);
-    }
-  });
-}
+// lazyload
+$("img").lazyload();
 
-window.addEventListener('scroll', lazyLoad);
 
-// Получаем все элементы списка вкладок
 const tabItems = document.querySelectorAll('.tabs__item li');
-// Получаем все блоки контента вкладок
 const tabBlocks = document.querySelectorAll('.tabs__block');
 
-// Добавляем обработчик клика на каждый элемент списка вкладок
 tabItems.forEach(function (item, index) {
   item.addEventListener('click', function () {
-    // Удаляем класс active у всех элементов списка вкладок
     tabItems.forEach(function (item) {
       item.classList.remove('active');
     });
-    // Добавляем класс active текущему элементу списка вкладок
     this.classList.add('active');
 
-    // Скрываем все блоки контента вкладок
     tabBlocks.forEach(function (block) {
       block.classList.remove('active');
     });
-    // Отображаем текущий блок контента вкладки
     tabBlocks[index].classList.add('active');
   });
 });
+
 
 $('.tab__inner').on('click', 'li:not(.active)', function () {
   $(this)
