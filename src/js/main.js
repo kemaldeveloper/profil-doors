@@ -433,4 +433,19 @@ function init() {
   map.geoObjects.add(placemark);
 }
 
-ymaps.ready(init);
+const initMaps = () => {
+  const yandexMapsSection = $('section[data-id="yandex-map"]');
+
+  if (yandexMapsSection.length) {
+    const ymapsSrc = yandexMapsSection.attr('data-src');
+
+    $.ajax({
+      url: ymapsSrc,
+      dataType: 'script',
+    }).done(function () {
+      ymaps.ready(init);
+    });
+  }
+};
+
+initMaps();
